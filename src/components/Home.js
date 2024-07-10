@@ -1,21 +1,27 @@
 import React from 'react';
-import '../assets/style.css'; // Assuming you have a CSS file for styles
+import { Link } from 'react-router-dom'; // Assuming you're using React Router for navigation
+import '../assets/style.css'; // Assuming you have a CSS file for custom styles
+import AMBHHBrochureImage from '../assets/images/AGPRINT/AMB HH Brochures/AMB-HH-Brochure-Mockups.png';
+import SbarroImage from '../assets/images/SBARRO/SBARRO-01.png';
+import MagCoverSpread from '../assets/images/MAGAZINES/magazine-cover-spread.png';
+import RoziThumbnail from '../assets/images/ROZIS/menu-mockup.png';
+import PosterThumbnail from '../assets/images/POSTERS/paramore-columbus-poster.png';
+import LagunaThumbnail from '../assets/images/LAGUNA/laguna-thumbnail.png';
+import MileyThumbnail from '../assets/images/MILEY/miley-cyrus-thumbnail.png';
 
 function HomePage() {
     return (
         <div>
             <header className="nav-header bg-gray-800 text-white py-6">
                 <div className="container mx-auto flex justify-between items-center">
-                    <a href="./index.html">
-                        <h1 style={{ fontFamily: 'Bebas Neue', fontSize: '90px' }}>Stephanie Zolton</h1>
-                    </a>
+                    <Link to="/"><h1 style={{ fontFamily: 'Bebas Neue', fontSize: '90px' }}>Stephanie Zolton</h1></Link>
                 </div>
                 <nav className="mt-8">
                     <ul className="flex">
-                        <li><a href="./index-apparel.html" className="hover:text-gray-600">ILLUSTRATIONS</a></li>
-                        <li><a href="./index-web.html" className="hover:text-gray-600">WEB DESIGN</a></li>
-                        <li><a href="./index-about.html" className="hover:text-gray-600">ABOUT</a></li>
-                        <li><a href="./images/Zolton_resume.pdf" className="hover:text-gray-600">RESUME</a></li>
+                        <li><Link to="/illustrations" className="hover:text-gray-600">ILLUSTRATIONS</Link></li>
+                        <li><Link to="/webdesign" className="hover:text-gray-600">WEB DESIGN</Link></li>
+                        <li><Link to="/about" className="hover:text-gray-600">ABOUT</Link></li>
+                        <li><a href="/images/Zolton_resume.pdf" className="hover:text-gray-600" target="_blank" rel="noopener noreferrer">RESUME</a></li>
                     </ul>
                 </nav>
             </header>
@@ -35,40 +41,39 @@ function HomePage() {
             </section>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-4 p-4">
-                {/* Replace each portfolio item with React components */}
                 <PortfolioItem
                     link="./PrintMedia.js"
-                    image="./AMB HH Brochures/AMB-HH-Brochure-Mockups.png"
+                    image={AMBHHBrochureImage}
                     title="Print Media: Brochures & Advertising"
                 />
                 <PortfolioItem
-                    link="./index-sbarro.html"
-                    image="./images/SBARRO/SBARRO-01.png"
+                    link="./SbarroPizza.js"
+                    image={SbarroImage}
                     title="Sbarro Rebranding Design"
                 />
                 <PortfolioItem
-                    link="./index-magazines.html"
-                    image="./images/MAGAZINES/magazine-cover-spread.png"
+                    link="./Magazine.js"
+                    image={MagCoverSpread}
                     title="Magazine Spreads"
                 />
                 <PortfolioItem
-                    link="./index-rozis.html"
-                    image="./images/ROZIS/menu-mockup.png"
+                    link="./ROziBrandIdentity.js"
+                    image={RoziThumbnail}
                     title="Rozi's Brand Identity"
                 />
                 <PortfolioItem
-                    link="./index-posters.html"
-                    image="./images/POSTERS/paramore-columbus-poster.png"
+                    link="./PosterDesign.js"
+                    image={PosterThumbnail}
                     title="Poster Designs"
                 />
                 <PortfolioItem
-                    link="./index-laguna.html"
-                    image="./images/LAGUNA/laguna-thumbnail.png"
+                    link="./Laguna.js"
+                    image={LagunaThumbnail}
                     title="'Laguna' Typeface Design"
                 />
                 <PortfolioItem
-                    link="./index-miley.html"
-                    image="./images/MILEY/miley-cyrus-thumbnail.png"
+                    link="./Miley.js"
+                    image={MileyThumbnail}
                     title="Book Publishing"
                 />
             </div>
@@ -80,7 +85,7 @@ function HomePage() {
 function PortfolioItem({ link, image, title }) {
     return (
         <div className="bg-transparent rounded overflow-hidden">
-            <a href={link} className="block group">
+            <Link to={link} className="block group">
                 <div className="relative">
                     <div className="w-full h-64 bg-white rounded overflow-hidden transition duration-300 ease-in-out transform group-hover:opacity-50">
                         <img src={image} className="w-full h-full object-cover rounded" alt={title} />
@@ -89,7 +94,7 @@ function PortfolioItem({ link, image, title }) {
                         {title}
                     </h2>
                 </div>
-            </a>
+            </Link>
         </div>
     );
 }
