@@ -1,0 +1,270 @@
+/* main */
+
+body {
+  font-family: "FranklinGothic URW", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, white, lightcyan)
+}
+
+/* paragraphs */
+
+p {
+  font-family: "FranklinGothic URW", Arial, sans-serif;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* navigation panels */
+
+.nav-header {
+  background-color: #6ac9cb;
+  font-size: 18px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+/* blue navigation bar */
+
+header {
+  background-color: #6ac9cb;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* stephanie zolton title */
+
+.name {
+  color: white;
+  font-family: "Bebas Neue", Arial, sans-serif;
+  text-align: center;
+}
+
+.name h1 {
+  font-size: 90px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* mobile responsiveness */
+
+@media only screen and (max-width: 720px) {
+  /* about me page image */
+
+  .selfie {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-text {
+    margin: auto;
+  }
+
+  /* stephanie zolton text */
+
+  .name h1 {
+    padding: 20px;
+    text-align: left;
+    font-size: 73px;
+    color: white;
+  }
+
+  .name {
+    order: 2;
+  }
+
+  /* navigation bar info */
+
+  .nav-header {
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 28px;
+  }
+
+  nav {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  /* the page titles */
+
+  .title-headers {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .sub-header {
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+  }
+
+  p {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+/* portfolio images  */
+
+.paramore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.paramore img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* navigation */
+
+nav {
+  float: right;
+}
+
+/* unordered list on nav bar */
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* h1 header titles */
+
+.title-headers {
+  font-family: "Bebas Neue", Arial, sans-serif;
+  color: #6ac9cb;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: -10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sub-header {
+  font-family: "Bebas Neue", Arial, sans-serif;
+  color: #6ac9cb;
+  text-align: left;
+  font-size: 48px;
+  padding-top: 18px;
+}
+
+/* images */
+
+.paramore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paramore img {
+  width: 800px;
+  padding: 20px;
+}
+
+/* about info page */
+
+.about {
+  font-family: "Bebas Neue", Arial, sans-serif;
+  flex-direction: row;
+  text-align: center;
+  font-size: 32px;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+/* about me text paragraphs */
+
+.about-text {
+  font-family: "FranklinGothic URW", Arial, sans-serif;
+  font-size: 18px;
+  padding: 20px;
+  text-align: justify;
+}
+
+/* about me image */
+
+.selfie {
+  display: flex;
+  flex-direction:
+}
+
+.selfie img {
+  display: flex;
+  max-width: 500px;
+  height: auto;
+  padding: 20px;
+}
+
+/* animation for welcome to my portfolio text */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: .15em white;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: lightcyan;
+  }
+}
