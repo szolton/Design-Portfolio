@@ -21,6 +21,7 @@ function App() {
     <Router>
       <Routes>
       <Route path="/PrintMedia" element={<PrintMedia />} />
+      <Route path="/Illustrations" element={<Illustrations />} />
       <Route path="/SbarroPizza" element={<SbarroPizza />} />
       <Route path="/Magazine" element={<Magazine />} />
       <Route path="/Laguna" element={<Laguna />} />
