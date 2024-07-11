@@ -2,6 +2,7 @@ import React from 'react';
 import '../components/'; // Import your custom CSS if needed
 import './tailwind.min.css'; // Import Tailwind CSS
 import './assets/style.css';
+import './index.css';
 
 // Header Component
 const Header = () => (

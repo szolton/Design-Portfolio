@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './assets/style.css'; // Import your custom styles where you have Tailwind CSS
+import './index.css';
 
 import Miley from './components/Miley';
 import Rozi from './components/RoziBrandIdentity';

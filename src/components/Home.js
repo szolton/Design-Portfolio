@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Assuming you're using React Router for navigation
+import { Link } from 'react-router-dom';
 import '../assets/style.css'; // Assuming you have a CSS file for custom styles
 import AMBHHBrochureImage from '../assets/images/AGPRINT/AMB HH Brochures/AMB-HH-Brochure-Mockups.png';
 import SbarroImage from '../assets/images/SBARRO/SBARRO-01.png';
@@ -17,7 +17,7 @@ function HomePage() {
                     <Link to="/"><h1 style={{ fontFamily: 'Bebas Neue', fontSize: '90px' }}>Stephanie Zolton</h1></Link>
                 </div>
                 <nav className="mt-8">
-                    <ul className="flex">
+                    <ul className="flex space-x-4">
                         <li><Link to="/illustrations" className="hover:text-gray-600">ILLUSTRATIONS</Link></li>
                         <li><Link to="/webdesign" className="hover:text-gray-600">WEB DESIGN</Link></li>
                         <li><Link to="/about" className="hover:text-gray-600">ABOUT</Link></li>

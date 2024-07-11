@@ -2,6 +2,7 @@ import React from 'react';
 import '../assets/style.css';
 import 'tailwindcss/tailwind.css';
 
+
 const Illustrations = () => {
   return (
     <div>
