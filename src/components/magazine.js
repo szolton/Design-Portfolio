@@ -1,6 +1,4 @@
-// Assuming Header.jsx is in the same directory
 import React from 'react';
-import Header from './Header'; // Ensure this path is correct
 import '../assets/style.css';
 
 import magazineMockup1 from '../assets/images/MAGAZINES/cmba magazine mockups 1.png';
@@ -13,7 +11,6 @@ import legalDirectory2 from '../assets/images/MAGAZINES/legal directory 2.png';
 const Magazine = () => {
   return (
     <div>
-      <Header />
       <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
         Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
       </h4>

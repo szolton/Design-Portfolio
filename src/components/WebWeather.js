@@ -11,10 +11,14 @@ import mobile3Image from '../assets/images/WEB DESIGN/weather-planner/mobile-3.p
 const WebWeather = () => {
     return (
         <div>
-         
+            <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
+                Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
+            </h4>
 
             <main className="container mx-auto p-5">
-                <h2 className="text-center text-6xl text-teal-500 font-bold mb-8">Weather 5-Day Forecast</h2>
+                <h2 className="text-center text-6xl text-teal-500 font-bold mb-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
+                    Weather 5-Day Forecast
+                </h2>
                 <p className="text-gray-600 text-center mb-10">
                     The purpose of this project was to create a weather dashboard that shows a 5-Day forecast.
                     It uses a weather API that I got from <a href="https://home.openweathermap.org/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline">here</a>.
@@ -26,10 +30,10 @@ const WebWeather = () => {
                 </div>
 
                 <h2 className="text-center text-6xl text-teal-500 font-bold my-8">The Challenge</h2>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-center">
                     I began by doing research and finding sources -- these videos were equally helpful in various parts of the assignment.
                 </p>
-                <p className="text-gray-600 mt-3">
+                <p className="text-gray-600 text-center mt-3">
                     Sources:
                     <a href="https://www.youtube.com/watch?v=m9OSBJaQTlM&ab_channel=PortEXE" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Weather API Forecast Resource 1</a>,
                     <a href="https://www.codingnepalweb.com/weather-app-project-html-javascript/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Weather API Forecast Resource 2</a>,
@@ -43,7 +47,7 @@ const WebWeather = () => {
                     <img src={cityStateImage} className="object-cover rounded shadow-md" alt="city-state-screenshot" />
                 </div>
 
-                <p className="text-gray-600 mt-8">
+                <p className="text-gray-600 text-center mt-8">
                     When the page first loads, the user's location automatically pops up as seen in the left screenshot.
                     We used localStorage to save recent searches and make them linkable.
                 </p>
@@ -54,18 +58,20 @@ const WebWeather = () => {
                     <img src={mobile3Image} className="object-cover rounded shadow-md" alt="mobile-screenshot-3" />
                 </div>
 
-                <h2 className="text-center text-6xl text-teal-500 font-bold my-8">In Conclusion</h2>
-                <p className="text-gray-600">
+                <h2 className="text-center text-6xl text-teal-500 font-bold my-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
+                    In Conclusion
+                </h2>
+                <p className="text-gray-600 text-center">
                     In conclusion, I set up the quiz to meet the challenge requirements and improved it. I:
                 </p>
-                <ul className="list-disc list-inside text-gray-600">
+                <ul className="list-disc list-inside text-gray-600 text-center">
                     <li>Provided a weather dashboard with form inputs where the user can search by city, state, or zip code.</li>
                     <li>Displayed current and future weather conditions including weather icons, temperature, wind, and humidity.</li>
                     <li>Implemented localStorage to save recent searches and make them accessible.</li>
                     <li>Ensured responsiveness across different devices.</li>
                 </ul>
 
-                <p className="text-gray-600 mt-3">
+                <p className="text-gray-600 text-center mt-3">
                     Check out the fully deployed site on GitHub:
                     <a href="https://szolton.github.io/Stephanie-Web-Design/index-web.html" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Stephanie Zolton - Web Design</a>.
                 </p>

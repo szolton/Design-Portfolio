@@ -17,34 +17,8 @@ const PosterDesign = () => {
   return (
     <div>
       {/* Navigation header info bar */}
-      <header className="nav-header bg-gray-800 text-white py-6">
-        <div className="container mx-auto flex justify-between items-center">
-          <Link to="/">
-            <h1 style={{ fontFamily: 'Bebas Neue', fontSize: '90px' }}>Stephanie Zolton</h1>
-          </Link>
-        </div>
-
-        <nav className="mt-8">
-          <ul className="flex">
-            <li><Link to="/illustrations" className="hover:text-gray-600">ILLUSTRATIONS</Link></li>
-            <li><Link to="/webdesign" className="hover:text-gray-600">WEB DESIGN</Link></li>
-            <li><Link to="/about" className="hover:text-gray-600">ABOUT</Link></li>
-            <li><a href="/images/Zolton_resume.pdf" className="hover:text-gray-600" target="_blank" rel="noopener noreferrer">RESUME</a></li>
-          </ul>
-        </nav>
-
-        <style>
-          {`
-            /* Adjust the font size and spacing */
-            nav ul li a {
-              padding: 0 10px; /* Adjust the padding as needed */
-              white-space: nowrap; /* Prevent line breaks */
-              font-size: 20px; /* Adjust the font size as needed */
-            }
-          `}
-        </style>
-      </header>
-
+      
+    
       <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
         Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
       </h4>

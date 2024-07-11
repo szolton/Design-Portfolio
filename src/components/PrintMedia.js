@@ -22,23 +22,7 @@ const PrintMedia = () => {
   return (
     <div>
       {/* Navigation Header Info Bar */}
-      <header className="nav-header bg-gray-800 text-white py-6">
-        <div className="container mx-auto flex justify-between items-center">
-          <a href="./index.html">
-            <h1 style={{ fontFamily: 'Bebas Neue', fontSize: '90px' }}>Stephanie Zolton</h1>
-          </a>
-        </div>
-
-        <nav className="mt-8">
-          <ul className="flex">
-            <li><a href="./index-apparel.html" className="hover:text-gray-600">ILLUSTRATIONS</a></li>
-            <li><a href="./index-web.html" className="hover:text-gray-600">WEB DESIGN</a></li>
-            <li><a href="./index-about.html" className="hover:text-gray-600">ABOUT</a></li>
-            <li><a href="./images/Zolton_resume.pdf" className="hover:text-gray-600">RESUME</a></li>
-          </ul>
-        </nav>
-      </header>
-
+    
       <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW, sans-serif', color: '#6ac9cb', fontSize: '18px' }}>
         Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
       </h4>
