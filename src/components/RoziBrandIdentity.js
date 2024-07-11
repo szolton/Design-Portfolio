@@ -2,6 +2,21 @@
 import React from 'react';
 import '../assets/style.css';
 
+// Importing images
+
+import oldLogos from '../assets/images/ROZIS/Old logos.png';
+import rebrandLogo from '../assets/images/ROZIS/rozis rebrand logo stuff background-09.png';
+import menuMockup from '../assets/images/ROZIS/menu-mockup.png';
+import businessCards from '../assets/images/ROZIS/business_cards.png';
+import websiteMockups from '../assets/images/ROZIS/website mockups new/website mockups.png';
+import websiteMockupsA from '../assets/images/ROZIS/website mockups new/website mockups a.png';
+import websiteMockupsB from '../assets/images/ROZIS/website mockups new/website mockups b.png';
+import websiteMockupsC from '../assets/images/ROZIS/website mockups new/website mockups c.png';
+import websiteMockupsD from '../assets/images/ROZIS/website mockups new/website mockups d.png';
+import socialMediaAd1 from '../assets/images/ROZIS/rozistwitter-01.png';
+import socialMediaAd2 from '../assets/images/ROZIS/rozistwitter-05.png';
+import socialMediaAd3 from '../assets/images/ROZIS/rozistwitter-06.png';
+
 const RoziBrandIdentity = () => {
   return (
     <>
@@ -47,39 +62,39 @@ const RoziBrandIdentity = () => {
 
       {/* Logo Presentation */}
       <div className="columns-1 p-10 m-10">
-        <img src="./images/ROZIS/Old logos.png" className="w-300 h-200 object-cover rounded shadow-md" alt="rozi's logos" />
+        <img src={oldLogos} className="w-300 h-200 object-cover rounded shadow-md" alt="rozi's logos" />
         <p className="mt-3 text-center text-gray-600 mb-10">Their old, original logos I referenced.</p>
-        <img src="./images/ROZIS/rozi's rebrand logo stuff background-09.png" className="w-150 h-100 object-cover rounded shadow-md" alt="rozi's logo" />
+        <img src={rebrandLogo} className="w-150 h-100 object-cover rounded shadow-md" alt="rozi's logo" />
         <p className="mt-3 text-center text-gray-600 mb-10">The final design solution.</p>
 
         {/* Wine Menu */}
-        <img src="./images/ROZIS/menu-mockup.png" className="w-150 h-100 object-cover rounded shadow-md" alt="wine menu mockup" />
+        <img src={menuMockup} className="w-150 h-100 object-cover rounded shadow-md" alt="wine menu mockup" />
         <p className="mt-3 text-center text-gray-600 mb-10">Wine Menu Printed Design. It uses subtle splashes of watercolor with a simple color palette that highlights the wines.</p>
 
         {/* Business Cards */}
-        <img src="./images/ROZIS/business_cards.png" className="w-150 h-100 object-cover rounded shadow-md" alt="business cards" />
+        <img src={businessCards} className="w-150 h-100 object-cover rounded shadow-md" alt="business cards" />
         <p className="mt-3 text-center text-gray-600 mb-10">Business Cards for Rozi's. It helps demonstrate how the logo's flexibility and how it can be broken up but still be easily recognizable to the brand and its integrity.</p>
 
         {/* Website Mockups */}
-        <img src="./images/ROZIS/website mockups new/website mockups.png" className="w-150 h-100 object-cover rounded shadow-md" alt="website design" />
+        <img src={websiteMockups} className="w-150 h-100 object-cover rounded shadow-md" alt="website design" />
         <p className="mt-3 text-center text-gray-600 mb-10">The website redesigned -- it comes with a pop-up modal on the landing page.</p>
 
         <div className="grid grid-cols-2 gap-4 mt-4">
-          <img src="./images/ROZIS/website mockups new/website mockups a.png" className="w-150 h-100 object-cover rounded shadow-md" alt="website design mockup" />
-          <img src="./images/ROZIS/website mockups new/website mockups b.png" className="w-150 h-100 object-cover rounded shadow-md" alt="website design mockup" />
+          <img src={websiteMockupsA} className="w-150 h-100 object-cover rounded shadow-md" alt="website design mockup" />
+          <img src={websiteMockupsB} className="w-150 h-100 object-cover rounded shadow-md" alt="website design mockup" />
         </div>
         <p className="mb-3 text-center text-gray-600 mt-2">Here, is the landing page where you can scroll through the main highlights of the brand.</p>
 
         <div className="grid grid-cols-2 gap-4 mt-4">
-          <img src="./images/ROZIS/website mockups new/website mockups c.png" className="w-150 h-100 object-cover rounded shadow-md" alt="website design mockup" />
-          <img src="./images/ROZIS/website mockups new/website mockups d.png" className="w-150 h-100 object-cover rounded shadow-md" alt="website design mockup" />
+          <img src={websiteMockupsC} className="w-150 h-100 object-cover rounded shadow-md" alt="website design mockup" />
+          <img src={websiteMockupsD} className="w-150 h-100 object-cover rounded shadow-md" alt="website design mockup" />
         </div>
         <p className="mb-3 text-center text-gray-600 mt-2">Here, is where you can see how it would look when you hover over the navigation bar and when you click on the about page.</p>
 
         <div className="grid grid-cols-3 gap-4 mt-4">
-          <img src="./images/ROZIS/rozistwitter-01.png" className="w-150 h-100 object-cover rounded shadow-md" alt="social media instagram ads" />
-          <img src="./images/ROZIS/rozistwitter-05.png" className="w-150 h-100 object-cover rounded shadow-md" alt="social media instagram ads" />
-          <img src="./images/ROZIS/rozistwitter-06.png" className="w-150 h-100 object-cover rounded shadow-md" alt="social media instagram ads" />
+          <img src={socialMediaAd1} className="w-150 h-100 object-cover rounded shadow-md" alt="social media instagram ads" />
+          <img src={socialMediaAd2} className="w-150 h-100 object-cover rounded shadow-md" alt="social media instagram ads" />
+          <img src={socialMediaAd3} className="w-150 h-100 object-cover rounded shadow-md" alt="social media instagram ads" />
         </div>
         <p className="mb-3 text-center text-gray-600 mt-2">Here, are some examples of social media instagram campaign ads I mocked up for them.</p>
       </div>

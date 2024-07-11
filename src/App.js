@@ -14,6 +14,7 @@ import Illustrations from './components/Illustrations';
 import SbarroPizza from './components/SbarroPizza';
 import Magazine from './components/Magazine';
 import Header from './components/Header';
+import Laguna from './components/Laguna';
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
       <Route path="/PrintMedia" element={<PrintMedia />} />
       <Route path="/SbarroPizza" element={<SbarroPizza />} />
       <Route path="/Magazine" element={<Magazine />} />
+      <Route path="/Laguna" element={<Laguna />} />
         <Route path="/Miley" element={<Miley />} />
-        <Route path="/Rozi" element={<Rozi />} />
+        <Route path="/RoziBrandIdentity" element={<Rozi />} />
         <Route path="/PosterDesign" element={<PosterDesign />} />
         <Route path="/WebPlanner" element={<WebPlanner />} />
         <Route path="/WebScheduler" element={<WebScheduler />} />

@@ -1,10 +1,9 @@
+// Assuming Header.jsx is in the same directory
 import React from 'react';
-import Header from './Header'; // Adjust the path based on your project structure
+import Header from './Header'; // Ensure this path is correct
 import '../assets/style.css';
 
-
 import magazineMockup1 from '../assets/images/MAGAZINES/cmba magazine mockups 1.png';
-
 import magazineMockup2 from '../assets/images/MAGAZINES/cmba magazine mockups 2.png';
 import magazineMockup3 from '../assets/images/MAGAZINES/cmba magazine mockups 3.png';
 import flyerAd from '../assets/images/MAGAZINES/flyeer ad.png';

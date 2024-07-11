@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/style.css'; // Assuming you have a CSS file for custom styles
 import Magzine from './Magazine';
+import Rozi from './RoziBrandIdentity';
+import PosterDesign from './PosterDesign';
+import Laguna from './Laguna';
+import Miley from './Miley';
 
 import AMBHHBrochureImage from '../assets/images/AGPRINT/AMB HH Brochures/AMB-HH-Brochure-Mockups.png';
 import SbarroImage from '../assets/images/SBARRO/SBARRO-01.png';
@@ -59,7 +63,7 @@ function HomePage() {
                     title="Magazine Spreads"
                 />
                 <PortfolioItem
-                    link="/rozibrandidentity"
+                    link="/RoziBrandIdentity"
                     image={RoziThumbnail}
                     title="Rozi's Brand Identity"
                 />

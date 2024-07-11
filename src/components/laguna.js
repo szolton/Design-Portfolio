@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './header';
-import './assets/style.css';
+import Header from './Header';
+import '../assets/style.css';
 
 
 const Laguna = () => {
