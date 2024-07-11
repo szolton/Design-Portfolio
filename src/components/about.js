@@ -5,12 +5,9 @@ import aboutMeImage from '../assets/images/about-me.jpeg'; // Importing the imag
 // About Component
 const About = () => (
   <main className="about-container p-4">
-       
-       <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
-                Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
-            </h4>
-    <h1 
-      className="about-header text-6xl mb-8" 
+    <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
+      Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.</h4>
+    <h1 className="about-header text-6xl mb-8" 
       style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px', textAlign: 'center' }}
     >
       Meet the Artist
