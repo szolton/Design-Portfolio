@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
-import './assets/style.css';
+import '../assets/style.css';
 
 const Header = () => (
   <header className="nav-header bg-custom-turquoise text-white py-6">

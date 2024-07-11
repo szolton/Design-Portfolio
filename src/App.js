@@ -11,18 +11,24 @@ import WebScheduler from './components/WebScheduler';
 import Home from './components/Home';
 import PrintMedia from './components/PrintMedia';
 import Illustrations from './components/Illustrations';
+import SbarroPizza from './components/SbarroPizza';
+import Magazine from './components/Magazine';
+import Header from './components/Header';
 
 function App() {
   return (
     <Router>
       <Routes>
       <Route path="/PrintMedia" element={<PrintMedia />} />
+      <Route path="/SbarroPizza" element={<SbarroPizza />} />
+      <Route path="/Magazine" element={<Magazine />} />
         <Route path="/Miley" element={<Miley />} />
         <Route path="/Rozi" element={<Rozi />} />
         <Route path="/PosterDesign" element={<PosterDesign />} />
         <Route path="/WebPlanner" element={<WebPlanner />} />
         <Route path="/WebScheduler" element={<WebScheduler />} />
         <Route path="/" element={<Home />} />
+        <Route path="/" element={<Header />} />
       </Routes>
     </Router>
   );

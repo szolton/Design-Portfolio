@@ -1,7 +1,15 @@
 import React from 'react';
-import Header from './header';
-import './assets/style.css';
+import Header from './Header'; // Adjust the path based on your project structure
+import '../assets/style.css';
 
+
+import magazineMockup1 from '../assets/images/MAGAZINES/cmba magazine mockups 1.png';
+
+import magazineMockup2 from '../assets/images/MAGAZINES/cmba magazine mockups 2.png';
+import magazineMockup3 from '../assets/images/MAGAZINES/cmba magazine mockups 3.png';
+import flyerAd from '../assets/images/MAGAZINES/flyeer ad.png';
+import legalDirectory1 from '../assets/images/MAGAZINES/legal directory 1.png';
+import legalDirectory2 from '../assets/images/MAGAZINES/legal directory 2.png';
 
 const Magazine = () => {
   return (
@@ -19,25 +27,25 @@ const Magazine = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="w-full md:w-auto px-1 md:px-0">
-            <img src="./images/MAGAZINES/cmba magazine mockups 1.png" className="w-full h-auto object-cover rounded shadow-md" alt="brochure design mockup" />
+            <img src={magazineMockup1} className="w-full h-auto object-cover rounded shadow-md" alt="brochure design mockup" />
             <p className="mb-3 text-center text-gray-600 mt-2">Layout Designs for the CMBA's monthly Bar Journal Magazine.</p>
           </div>
           <div className="w-full md:w-auto px-1 md:px-0">
-            <img src="./images/MAGAZINES/cmba magazine mockups 2.png" className="w-full h-auto object-cover rounded shadow-md" alt="cmba magazine spread mockups" />
+            <img src={magazineMockup2} className="w-full h-auto object-cover rounded shadow-md" alt="cmba magazine spread mockups" />
           </div>
           <div className="w-full md:w-auto px-1 md:px-0">
-            <img src="./images/MAGAZINES/cmba magazine mockups 3.png" className="w-full h-auto object-cover rounded shadow-md" alt="cmba magazine spread mockups" />
+            <img src={magazineMockup3} className="w-full h-auto object-cover rounded shadow-md" alt="cmba magazine spread mockups" />
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <div className="col-span-2">
-            <img src="./images/MAGAZINES/flyeer ad.png" className="w-full h-300 object-cover rounded shadow-md" alt="cmba flier design" />
+            <img src={flyerAd} className="w-full h-300 object-cover rounded shadow-md" alt="cmba flier design" />
             <p className="mb-3 text-center text-gray-600 mt-2">Fliers I designed for the association to assist the marketing dept.</p>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img src="./images/MAGAZINES/legal directory 1.png" className="w-full h-100 object-cover rounded shadow-md" alt="cmba magazine legal directory mockup" />
-          <img src="./images/MAGAZINES/legal directory 2.png" className="w-full h-100 object-cover rounded shadow-md" alt="cmba magazine legal directory mockup" />
+          <img src={legalDirectory1} className="w-full h-100 object-cover rounded shadow-md" alt="cmba magazine legal directory mockup" />
+          <img src={legalDirectory2} className="w-full h-100 object-cover rounded shadow-md" alt="cmba magazine legal directory mockup" />
         </div>
         <p className="mb-3 text-center text-gray-600 mt-2">Cleveland Metropolitan Bar Association's Legal Directory Design</p>
       </div>

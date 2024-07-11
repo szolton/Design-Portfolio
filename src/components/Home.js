@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/style.css'; // Assuming you have a CSS file for custom styles
+import Magzine from './Magazine';
+
 import AMBHHBrochureImage from '../assets/images/AGPRINT/AMB HH Brochures/AMB-HH-Brochure-Mockups.png';
 import SbarroImage from '../assets/images/SBARRO/SBARRO-01.png';
 import MagCoverSpread from '../assets/images/MAGAZINES/magazine-cover-spread.png';
@@ -47,7 +49,7 @@ function HomePage() {
                     title="Print Media: Brochures & Advertising"
                 />
                 <PortfolioItem
-                    link="/sbarropizza"
+                    link="/SbarroPizza"
                     image={SbarroImage}
                     title="Sbarro Rebranding Design"
                 />
