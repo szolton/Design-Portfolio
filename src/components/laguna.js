@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 import '../assets/style.css';
 
 // Importing images
@@ -15,7 +14,6 @@ import page8 from '../assets/images/LAGUNA/page 14 copy.png';
 const Laguna = () => {
   return (
     <div>
-      <Header />
       <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
         Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
       </h4>

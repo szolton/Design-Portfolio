@@ -15,10 +15,10 @@ const Header = () => (
           <Link to="/illustrations" className="hover:text-gray-600">ILLUSTRATIONS</Link>
         </li>
         <li>
-          <Link to="/webdesign" className="hover:text-gray-600">WEB DESIGN</Link>
+          <Link to="/WebHome" className="hover:text-gray-600">WEB DESIGN</Link>
         </li>
         <li>
-          <Link to="/about" className="hover:text-gray-600">ABOUT</Link>
+          <Link to="/About" className="hover:text-gray-600">ABOUT</Link>
         </li>
         <li>
           <a href="/images/Zolton_resume.pdf" className="hover:text-gray-600" target="_blank" rel="noopener noreferrer">RESUME</a>

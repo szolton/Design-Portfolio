@@ -33,40 +33,6 @@ import sigmaKappa from '../assets/images/APPAREL/sigma kappa.png';
 const Illustrations = () => {
   return (
     <div>
-      {/* Navigation Header Info Bar */}
-      <header className="nav-header bg-gray-800 text-white py-6">
-        <div className="container mx-auto flex justify-between items-center">
-          <a href="./index.html">
-            <h1 style={{ fontFamily: 'Bebas Neue', fontSize: '90px' }}>Stephanie Zolton</h1>
-          </a>
-        </div>
-
-        <nav className="mt-8">
-          <ul className="flex">
-            <li>
-              <a href="./index-apparel.html" className="hover:text-gray-600">ILLUSTRATIONS</a>
-            </li>
-            <li>
-              <a href="./index-web.html" className="hover:text-gray-600">WEB DESIGN</a>
-            </li>
-            <li>
-              <a href="./index-about.html" className="hover:text-gray-600">ABOUT</a>
-            </li>
-            <li>
-              <a href="./images/Zolton_resume.pdf" className="hover:text-gray-600">RESUME</a>
-            </li>
-          </ul>
-        </nav>
-        
-        <style jsx>{`
-          nav ul li a {
-            padding: 0 10px;
-            white-space: nowrap;
-            font-size: 20px;
-          }
-        `}</style>
-      </header>
-      
       <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW, sans-serif', color: '#6ac9cb', fontSize: '18px' }}>
         Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
       </h4>
@@ -153,7 +119,11 @@ const Illustrations = () => {
 
       {/* Nav Footer */}
       <footer className="py-12 bg-gray-800 text-white text-center">
-        <p>&copy; 2024 Stephanie Zolton. All rights reserved.</p>
+        <div className="flex justify-center space-x-6">
+          <a href="https://pages.convertkit.com/b29f60ad6e/206893bfe5">Contact Me</a>
+          <a href="https://pages.convertkit.com/b29f60ad6e/206893bfe5">Portfolio</a>
+          <a href="https://pages.convertkit.com/b29f60ad6e/206893bfe5">Instagram</a>
+        </div>
       </footer>
     </div>
   );

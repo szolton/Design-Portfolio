@@ -1,109 +1,81 @@
-// src/components/WebScheduler.js
-
 import React from 'react';
 
-const WebScheduler = () => {
+// Import images
+import colorsImage from '../assets/images/WEB DESIGN/weather-planner/colors.png';
+import locationImage from '../assets/images/WEB DESIGN/weather-planner/location.png';
+import cityStateImage from '../assets/images/WEB DESIGN/weather-planner/city, state.png';
+import mobile1Image from '../assets/images/WEB DESIGN/weather-planner/mobile-1.png';
+import mobile2Image from '../assets/images/WEB DESIGN/weather-planner/mobile-2.png';
+import mobile3Image from '../assets/images/WEB DESIGN/weather-planner/mobile-3.png';
+
+const WebWeather = () => {
     return (
-        <>
-            <head>
-                <meta charSet="UTF-8" />
-                <title>Stephanie Zolton - Web Design</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
-                <link rel="stylesheet" href="./assets/style.css" />
-            </head>
-            <body>
-                <header className="nav-header bg-gray-800 text-white py-6">
-                    <div className="container mx-auto flex justify-between items-center">
-                        <a href="./index.html">
-                            <h1 style={{ fontFamily: 'Bebas Neue', fontSize: '48px', color: '#6ac9cb' }}>Stephanie Zolton</h1>
-                        </a>
-                    </div>
-                    <nav className="mt-8">
-                        <ul className="flex">
-                            <li><a href="./index-apparel.html" className="hover:text-gray-600">ILLUSTRATIONS</a></li>
-                            <li><a href="./index-web.html" className="hover:text-gray-600">WEB DESIGN</a></li>
-                            <li><a href="./index-about.html" className="hover:text-gray-600">ABOUT</a></li>
-                            <li><a href="./images/Zolton_resume.pdf" className="hover:text-gray-600">RESUME</a></li>
-                        </ul>
-                    </nav>
-                    <style>
-                        {`
-                            nav ul li a {
-                                padding: 0 10px;
-                                white-space: nowrap;
-                                font-size: 20px;
-                            }
-                        `}
-                    </style>
-                </header>
+        <div>
+         
 
-                <main>
-                    <section className="container mx-auto p-5">
-                        <h2 className="text-center text-6xl text-teal-500 font-bold mb-8">Weather 5-Day Forecast</h2>
-                        <p className="text-gray-600 text-center mb-10">
-                            The purpose of this project was to create a weather dashboard that shows a 5-Day forecast.
-                            It uses a weather API that I got from <a href="https://home.openweathermap.org/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline">here</a>.
-                            This was to help us learn how to use a Server-Side API with a functioning weather dashboard.
-                        </p>
+            <main className="container mx-auto p-5">
+                <h2 className="text-center text-6xl text-teal-500 font-bold mb-8">Weather 5-Day Forecast</h2>
+                <p className="text-gray-600 text-center mb-10">
+                    The purpose of this project was to create a weather dashboard that shows a 5-Day forecast.
+                    It uses a weather API that I got from <a href="https://home.openweathermap.org/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline">here</a>.
+                    This was to help us learn how to use a Server-Side API with a functioning weather dashboard.
+                </p>
 
-                        <div className="flex justify-center">
-                            <iframe title="vimeo-player" src="https://player.vimeo.com/video/933899063?h=58a2fcc064" width="1000" height="575" frameBorder="0" allowFullScreen></iframe>
-                        </div>
+                <div className="flex justify-center mb-8">
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/933899063?h=58a2fcc064" width="1000" height="575" frameBorder="0" allowFullScreen></iframe>
+                </div>
 
-                        <h2 className="text-center text-6xl text-teal-500 font-bold my-8">The Challenge</h2>
-                        <p className="text-gray-600">
-                            I began by doing research and finding sources -- these videos were equally helpful in various parts of the assignment.
-                        </p>
-                        <p className="text-gray-600 mt-3">
-                            Sources:
-                            <a href="https://www.youtube.com/watch?v=m9OSBJaQTlM&ab_channel=PortEXE" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Weather API Forecast Resource 1</a>,
-                            <a href="https://www.codingnepalweb.com/weather-app-project-html-javascript/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Weather API Forecast Resource 2</a>,
-                            <a href="https://www.youtube.com/watch?v=MIYQR-Ybrn4" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Coding Source</a>
-                        </p>
+                <h2 className="text-center text-6xl text-teal-500 font-bold my-8">The Challenge</h2>
+                <p className="text-gray-600">
+                    I began by doing research and finding sources -- these videos were equally helpful in various parts of the assignment.
+                </p>
+                <p className="text-gray-600 mt-3">
+                    Sources:
+                    <a href="https://www.youtube.com/watch?v=m9OSBJaQTlM&ab_channel=PortEXE" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Weather API Forecast Resource 1</a>,
+                    <a href="https://www.codingnepalweb.com/weather-app-project-html-javascript/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Weather API Forecast Resource 2</a>,
+                    <a href="https://www.youtube.com/watch?v=MIYQR-Ybrn4" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Coding Source</a>
+                </p>
 
-                        <img src="./images/WEB DESIGN/weather-planner/colors.png" className="w-full max-w-full mx-auto my-8" alt="color-palette" />
+                <img src={colorsImage} className="w-full max-w-full mx-auto my-8" alt="color-palette" />
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <img src="./images/WEB DESIGN/weather-planner/location.png" className="object-cover rounded shadow-md" alt="location-screenshot" />
-                            <img src="./images/WEB DESIGN/weather-planner/city, state.png" className="object-cover rounded shadow-md" alt="city-state-screenshot" />
-                        </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <img src={locationImage} className="object-cover rounded shadow-md" alt="location-screenshot" />
+                    <img src={cityStateImage} className="object-cover rounded shadow-md" alt="city-state-screenshot" />
+                </div>
 
-                        <p className="text-gray-600 mt-8">
-                            When the page first loads, the user's location automatically pops up as seen in the left screenshot.
-                            We used localStorage to save recent searches and make them linkable.
-                        </p>
+                <p className="text-gray-600 mt-8">
+                    When the page first loads, the user's location automatically pops up as seen in the left screenshot.
+                    We used localStorage to save recent searches and make them linkable.
+                </p>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-                            <img src="./images/WEB DESIGN/weather-planner/mobile-1.png" className="object-cover rounded shadow-md" alt="mobile-screenshot-1" />
-                            <img src="./images/WEB DESIGN/weather-planner/mobile-2.png" className="object-cover rounded shadow-md" alt="mobile-screenshot-2" />
-                            <img src="./images/WEB DESIGN/weather-planner/mobile-3.png" className="object-cover rounded shadow-md" alt="mobile-screenshot-3" />
-                        </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                    <img src={mobile1Image} className="object-cover rounded shadow-md" alt="mobile-screenshot-1" />
+                    <img src={mobile2Image} className="object-cover rounded shadow-md" alt="mobile-screenshot-2" />
+                    <img src={mobile3Image} className="object-cover rounded shadow-md" alt="mobile-screenshot-3" />
+                </div>
 
-                        <h2 className="text-center text-6xl text-teal-500 font-bold my-8">In Conclusion</h2>
-                        <p className="text-gray-600">
-                            In conclusion, I set up the quiz to meet the challenge requirements and improved it. I:
-                        </p>
-                        <ul className="list-disc list-inside text-gray-600">
-                            <li>Provided a weather dashboard with form inputs where the user can search by city, state, or zip code.</li>
-                            <li>Displayed current and future weather conditions including weather icons, temperature, wind, and humidity.</li>
-                            <li>Implemented localStorage to save recent searches and make them accessible.</li>
-                            <li>Ensured responsiveness across different devices.</li>
-                        </ul>
+                <h2 className="text-center text-6xl text-teal-500 font-bold my-8">In Conclusion</h2>
+                <p className="text-gray-600">
+                    In conclusion, I set up the quiz to meet the challenge requirements and improved it. I:
+                </p>
+                <ul className="list-disc list-inside text-gray-600">
+                    <li>Provided a weather dashboard with form inputs where the user can search by city, state, or zip code.</li>
+                    <li>Displayed current and future weather conditions including weather icons, temperature, wind, and humidity.</li>
+                    <li>Implemented localStorage to save recent searches and make them accessible.</li>
+                    <li>Ensured responsiveness across different devices.</li>
+                </ul>
 
-                        <p className="text-gray-600 mt-3">
-                            Check out the fully deployed site on GitHub:
-                            <a href="https://szolton.github.io/Stephanie-Web-Design/index-web.html" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Stephanie Zolton - Web Design</a>.
-                        </p>
-                    </section>
-                </main>
+                <p className="text-gray-600 mt-3">
+                    Check out the fully deployed site on GitHub:
+                    <a href="https://szolton.github.io/Stephanie-Web-Design/index-web.html" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Stephanie Zolton - Web Design</a>.
+                </p>
+            </main>
 
-                <footer className="bg-gray-800 text-white py-6 text-center">
-                    <p>&copy; 2024 Stephanie Zolton. All rights reserved.</p>
-                </footer>
-            </body>
-        </>
+            <footer className="bg-blue-800 text-white py-6 text-center">
+                <p>&copy; 2024 Stephanie Zolton. All rights reserved.</p>
+            </footer>
+        </div>
     );
 }
 
-export default WebScheduler;
+export default WebWeather;
