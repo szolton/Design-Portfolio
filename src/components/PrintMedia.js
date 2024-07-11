@@ -1,5 +1,7 @@
 import React from 'react';
 import '../assets/style.css'; // Assuming this imports your external styles
+import Footer from './Footer'; // Importing the Footer component
+
 
 import AMBMockup from '../assets/images/AGPRINT/AMB HH Brochures/AMB-HH-Brochure-Mockups.png';
 import AMBReference1 from '../assets/images/AGPRINT/AMB HH Brochures/AMB-HH-reference.png';
@@ -23,10 +25,6 @@ const PrintMedia = () => {
     <div>
       {/* Navigation Header Info Bar */}
     
-      <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW, sans-serif', color: '#6ac9cb', fontSize: '18px' }}>
-        Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
-      </h4>
-
       {/* AMB Brochure */}
       <div className="columns-1 p-3 md:p-10 m-5 md:m-10">
         <h1 className="-mt-10" style={{ fontFamily: 'Bebas Neue, sans-serif', color: '#6ac9cb', fontSize: '48px', textAlign: 'center' }}>
@@ -108,6 +106,7 @@ const PrintMedia = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

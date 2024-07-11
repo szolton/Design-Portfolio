@@ -1,4 +1,6 @@
 import React from 'react';
+import Footer from './Footer'; // Importing the Footer component
+
 
 // Import images
 import colorsImage from '../assets/images/WEB DESIGN/weather-planner/colors.png';
@@ -76,10 +78,9 @@ const WebWeather = () => {
                     <a href="https://szolton.github.io/Stephanie-Web-Design/index-web.html" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Stephanie Zolton - Web Design</a>.
                 </p>
             </main>
+            <Footer />
 
-            <footer className="bg-blue-800 text-white py-6 text-center">
-                <p>&copy; 2024 Stephanie Zolton. All rights reserved.</p>
-            </footer>
+
         </div>
     );
 }

@@ -1,5 +1,7 @@
 import React from 'react';
 import '../assets/style.css'; // Assuming this path is correct
+import Footer from './Footer'; // Importing the Footer component
+
 
 function WebCodingQuiz() {
     return (
@@ -46,6 +48,7 @@ function WebCodingQuiz() {
                     </div>
                 </div>
             </main>
+            <Footer />
         </div>
     );
 }

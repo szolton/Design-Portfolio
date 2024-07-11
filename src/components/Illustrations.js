@@ -1,6 +1,8 @@
 import React from 'react';
 import '../assets/style.css';
 import 'tailwindcss/tailwind.css';
+import Footer from './Footer'; // Importing the Footer component
+
 
 // Importing images
 import paramoreBag from '../assets/images/APPAREL/paramore-bag.png';
@@ -118,13 +120,7 @@ const Illustrations = () => {
       </div>
 
       {/* Nav Footer */}
-      <footer className="py-12 bg-gray-800 text-white text-center">
-        <div className="flex justify-center space-x-6">
-          <a href="https://pages.convertkit.com/b29f60ad6e/206893bfe5">Contact Me</a>
-          <a href="https://pages.convertkit.com/b29f60ad6e/206893bfe5">Portfolio</a>
-          <a href="https://pages.convertkit.com/b29f60ad6e/206893bfe5">Instagram</a>
-        </div>
-      </footer>
+    <Footer />
     </div>
   );
 };

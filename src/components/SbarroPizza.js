@@ -1,6 +1,8 @@
 import React from 'react';
 import '../assets/style.css';
 import 'tailwindcss/tailwind.css';
+import Footer from './Footer'; // Importing the Footer component
+
 
 // Import your images
 import logoPortfolio from '../assets/images/SBARRO/logo for portfolio.png';
@@ -95,6 +97,7 @@ const SbarroPizza = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

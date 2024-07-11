@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/style.css'; // Assuming you have a CSS file for custom styles
+import Footer from './Footer'; // Import the Footer component
 
 import AMBHHBrochureImage from '../assets/images/AGPRINT/AMB HH Brochures/AMB-HH-Brochure-Mockups.png';
 import SbarroImage from '../assets/images/SBARRO/SBARRO-01.png';
@@ -13,7 +14,6 @@ import MileyThumbnail from '../assets/images/MILEY/miley-cyrus-thumbnail.png';
 function HomePage() {
     return (
         <div>
-          
             <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
                 Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
             </h4>
@@ -66,6 +66,8 @@ function HomePage() {
                     title="Book Publishing"
                 />
             </div>
+
+            <Footer /> {/* Add the Footer component here */}
         </div>
     );
 }

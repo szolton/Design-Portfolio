@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/style.css'; // Assuming you have custom styles
+import Footer from './Footer'; // Importing the Footer component
+
 
 import wireframeImage from '../assets/images/WEB DESIGN/daily-planner/wireframe.png';
 import colorPaletteImage from '../assets/images/WEB DESIGN/daily-planner/color2.png';
@@ -43,6 +45,7 @@ function WebPlanner() {
                     </div>
                 </div>
             </main>
+            <Footer />
         </div>
     );
 }

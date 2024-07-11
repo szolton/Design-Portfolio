@@ -3,6 +3,8 @@
 import React from 'react';
 import '../App.css';
 import '../assets/style.css';
+import Footer from './Footer'; // Importing the Footer component
+
 
 function Miley() {
   return (
@@ -36,6 +38,7 @@ function Miley() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

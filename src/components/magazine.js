@@ -1,5 +1,7 @@
 import React from 'react';
 import '../assets/style.css';
+import Footer from './Footer'; // Importing the Footer component
+
 
 import magazineMockup1 from '../assets/images/MAGAZINES/cmba magazine mockups 1.png';
 import magazineMockup2 from '../assets/images/MAGAZINES/cmba magazine mockups 2.png';
@@ -45,6 +47,7 @@ const Magazine = () => {
         </div>
         <p className="mb-3 text-center text-gray-600 mt-2">Cleveland Metropolitan Bar Association's Legal Directory Design</p>
       </div>
+      <Footer />
     </div>
   );
 };

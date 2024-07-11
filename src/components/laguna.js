@@ -1,5 +1,7 @@
 import React from 'react';
 import '../assets/style.css';
+import Footer from './Footer'; // Importing the Footer component
+
 
 // Importing images
 import page1 from '../assets/images/LAGUNA/page 1 copy.png';
@@ -39,6 +41,8 @@ const Laguna = () => {
         </div>
         <img src={page8} className="max-w-full mx-auto h-auto object-cover rounded shadow-md mt-4" alt="laguna page 15+16" />
       </div>
+          {/* Footer */}
+    <Footer />
     </div>
   );
 };

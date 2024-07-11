@@ -18,6 +18,8 @@ import Laguna from './components/Laguna';
 import WebHome from './components/WebHome';
 import WebWeather from './components/WebWeather';
 import WebCodingQuiz from './components/WebCodingQuiz';
+import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/PrintMedia" element={<PrintMedia />} />
+          <Route path="/About" element={<About />} />
           <Route path="/Illustrations" element={<Illustrations />} />
           <Route path="/SbarroPizza" element={<SbarroPizza />} />
           <Route path="/Magazine" element={<Magazine />} />
@@ -39,6 +42,7 @@ function App() {
           <Route path="/WebWeather" element={<WebWeather />} />
           <Route path="/WebCodingQuiz" element={<WebCodingQuiz />} />
           <Route path="/" element={<Home />} />
+          <Route path="/Footer" element={<Footer />} />
         </Routes>
       </div>
     </Router>

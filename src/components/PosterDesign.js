@@ -4,6 +4,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import '../assets/style.css';
+import Footer from './Footer'; // Importing the Footer component
+
 
 // Importing images
 import halloweenSign from '../assets/images/POSTERS/halloween sign.png';
@@ -62,6 +64,7 @@ const PosterDesign = () => {
           Cleveland Skyline Screenprints for a building in downtown Cleveland.
         </p>
       </div>
+      <Footer />
     </div>
   );
 }

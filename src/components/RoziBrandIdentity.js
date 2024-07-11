@@ -1,6 +1,8 @@
 // src/components/RoziBrandIdentity.js
 import React from 'react';
 import '../assets/style.css';
+import Footer from './Footer'; // Importing the Footer component
+
 
 // Importing images
 
@@ -82,6 +84,7 @@ const RoziBrandIdentity = () => {
           <img src={socialMediaAd3} className="w-150 h-100 object-cover rounded shadow-md" alt="social media instagram ads" />
         </div>
         <p className="mb-3 text-center text-gray-600 mt-2">Here, are some examples of social media instagram campaign ads I mocked up for them.</p>
+      <Footer />
       </div>
     </>
   );

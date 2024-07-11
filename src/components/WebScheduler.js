@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/style.css'; // Assuming you have custom styles
+import Footer from './Footer'; // Importing the Footer component
+
 
 function WebScheduler() {
     return (
@@ -24,6 +26,7 @@ function WebScheduler() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }
