@@ -9,12 +9,14 @@ import PosterDesign from './components/PosterDesign';
 import WebPlanner from './components/WebPlanner';
 import WebScheduler from './components/WebScheduler';
 import Home from './components/Home';
+import PrintMedia from './components/PrintMedia';
 import Illustrations from './components/Illustrations';
 
 function App() {
   return (
     <Router>
       <Routes>
+      <Route path="/PrintMedia" element={<PrintMedia />} />
         <Route path="/Miley" element={<Miley />} />
         <Route path="/Rozi" element={<Rozi />} />
         <Route path="/PosterDesign" element={<PosterDesign />} />

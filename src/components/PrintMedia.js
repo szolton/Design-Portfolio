@@ -1,5 +1,22 @@
 import React from 'react';
-import './assets/style.css'; // Assuming this imports your external styles
+import '../assets/style.css'; // Assuming this imports your external styles
+
+import AMBMockup from '../assets/images/AGPRINT/AMB HH Brochures/AMB-HH-Brochure-Mockups.png';
+import AMBReference1 from '../assets/images/AGPRINT/AMB HH Brochures/AMB-HH-reference.png';
+import AMBReference2 from '../assets/images/AGPRINT/AMB HH Brochures/AMB-HH-reference-2.png';
+import AMBFinal1 from '../assets/images/AGPRINT/AMB HH Brochures/AMB HH Brochures 2023 final_01.png';
+import AMBFinal2 from '../assets/images/AGPRINT/AMB HH Brochures/AMB HH Brochures 2023 final_02.png';
+import AvenueMockup from '../assets/images/AGPRINT/Avenue at Lyndhurst/Avenue Lyndhurst Brochure Mockups.png';
+import AvenueReference from '../assets/images/AGPRINT/Avenue at Lyndhurst/Avenue Lyndhurst big-flowy brochure.png';
+import AvenueFinal1 from '../assets/images/AGPRINT/Avenue at Lyndhurst/Avenue Lyndhurst Brochures 2022_01.png';
+import AvenueFinal2 from '../assets/images/AGPRINT/Avenue at Lyndhurst/Avenue Lyndhurst Brochures 2022_02-01.png';
+import VillageMockup from '../assets/images/AGPRINT/Village of HH Brochure/Village of Huber Heights Mockups.png';
+import VillageReference1 from '../assets/images/AGPRINT/Village of HH Brochure/Village Brochure 1 (2).png';
+import VillageReference2 from '../assets/images/AGPRINT/Village of HH Brochure/Village Brochure 2 (2).png';
+import VillageFinal1 from '../assets/images/AGPRINT/Village of HH Brochure/Village of Huber Memory Care Brochures 2023 JJ_01.png';
+import VillageFinal2 from '../assets/images/AGPRINT/Village of HH Brochure/Village of Huber Memory Care Brochures 2023 JJ_02.png';
+import Stickers from '../assets/images/AGPRINT/stickers-01.png';
+import ODOTMockup from '../assets/images/AGPRINT/ODOT Banner Stands.png';
 
 const PrintMedia = () => {
   return (
@@ -35,19 +52,19 @@ const PrintMedia = () => {
           Brochures and print collateral designed for healthcare facilities, government, and local colleges while at The Sourcing Group/AG Print Promo Solutions.
         </p>
 
-        <img src="./images/AGPRINT/AMB HH Brochures/AMB-HH-Brochure-Mockups.png" className="w-300 h-200 object-cover rounded shadow-md" alt="amb brochure design mockup" />
+        <img src={AMBMockup} className="w-300 h-200 object-cover rounded shadow-md" alt="amb brochure design mockup" />
         <p className="mb-3 text-center text-gray-600 mt-2">A brochure designed for AM Behavioral Health.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img src="./images/AGPRINT/AMB HH Brochures/AMB-HH-reference.png" className="w-full md:w-300 h-200 object-cover rounded shadow-md" alt="amb brochure reference" />
-          <img src="./images/AGPRINT/AMB HH Brochures/AMB-HH-reference-2.png" className="w-full md:w-300 h-200 object-cover rounded shadow-md" alt="amb brochure final design" />
+          <img src={AMBReference1} className="w-full md:w-300 h-200 object-cover rounded shadow-md" alt="amb brochure reference" />
+          <img src={AMBReference2} className="w-full md:w-300 h-200 object-cover rounded shadow-md" alt="amb brochure final design" />
         </div>
 
         <p className="mb-3 text-center text-gray-600 mt-2">Their old brochure design that we referenced to update their artwork.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img src="./images/AGPRINT/AMB HH Brochures/AMB HH Brochures 2023 final_01.png" className="object-cover rounded shadow-md" alt="brochure design mockup" />
-          <img src="./images/AGPRINT/AMB HH Brochures/AMB HH Brochures 2023 final_02.png" className="object-cover rounded shadow md" alt="brochure design mockup" />
+          <img src={AMBFinal1} className="object-cover rounded shadow-md" alt="brochure design mockup" />
+          <img src={AMBFinal2} className="object-cover rounded shadow md" alt="brochure design mockup" />
         </div>
 
         <p className="mb-3 text-center text-gray-600 mt-2">The final design they approved and that went to print. It was cleaned up, modernized, and used more shades of blue like they wanted.</p>
@@ -55,80 +72,56 @@ const PrintMedia = () => {
         {/* Avenue Lyndhurst Brochures */}
         <div className="grid grid-cols-2 gap-4 mt-4">
           <div className="col-span-2">
-            <img src="./images/AGPRINT/Avenue at Lyndhurst/Avenue Lyndhurst Brochure Mockups.png" className="w-full h-300 object-cover rounded shadow-md" alt="brochure design mockup" />
+            <img src={AvenueMockup} className="w-full h-300 object-cover rounded shadow-md" alt="brochure design mockup" />
             <p className="mb-3 text-center text-gray-600 mt-2">A brochure designed for Avenue at Lyndhurst.</p>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4 mt-4">
           <div className="col-span-2">
-            <img src="./images/AGPRINT/Avenue at Lyndhurst/Avenue Lyndhurst big-flowy brochure.png" className="w-full h-300 object-cover rounded shadow-md" alt="brochure design references" />
+            <img src={AvenueReference} className="w-full h-300 object-cover rounded shadow-md" alt="brochure design references" />
             <p className="mb-3 text-center text-gray-600 mt-2">We sent them a few screenshots of design inspo, and this is the reference they liked the most.</p>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img src="./images/AGPRINT/Avenue at Lyndhurst/Avenue Lyndhurst Brochures 2022_01.png" className="object-cover rounded shadow-md" alt="final brochure design" />
-          <img src="./images/AGPRINT/Avenue at Lyndhurst/Avenue Lyndhurst Brochures 2022_02-01.png" className="object-cover rounded shadow md" alt="final brochure design" />
+          <img src={AvenueFinal1} className="object-cover rounded shadow-md" alt="final brochure design" />
+          <img src={AvenueFinal2} className="object-cover rounded shadow md" alt="final brochure design" />
         </div>
         <p className="mb-3 text-center text-gray-600 mt-2">The final design they approved and that went to print. It was cleaned up, modernized, and focused more on the vegas gold color they requested.</p>
 
         {/* Village of Huber Heights Brochures */}
         <div className="grid grid-cols-2 gap-4 mt-4">
           <div className="col-span-2">
-            <img src="./images/AGPRINT/Village of HH Brochure/Village of Huber Heights Mockups.png" className="w-full h-300 object-cover rounded shadow-md" alt="brochure design mockup" />
+            <img src={VillageMockup} className="w-full h-300 object-cover rounded shadow-md" alt="brochure design mockup" />
             <p className="mb-3 text-center text-gray-600 mt-2">A brochure designed for the Village of Huber Heights.</p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img src="./images/AGPRINT/Village of HH Brochure/Village Brochure 1 (2).png" className="object-cover rounded shadow-md" alt="brochure design reference" />
-          <img src="./images/AGPRINT/Village of HH Brochure/Village Brochure 2 (2).png" className="object-cover rounded shadow md" alt="brochure design reference" />
+          <img src={VillageReference1} className="object-cover rounded shadow-md" alt="brochure design reference" />
+          <img src={VillageReference2} className="object-cover rounded shadow md" alt="brochure design reference" />
         </div>
-        <p className="mb-3 text-center text-gray-600 mt-2">Their original design that they wanted us to work with and a new version that was refreshed.</p>
+        <p className="mb-3 text-center text-gray-600 mt-2">Their old brochure design that we referenced to update their artwork.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img src="./images/AGPRINT/Village of HH Brochure/Village of Huber Memory Care Brochures 2023 JJ_01.png" className="object-cover rounded shadow-md" alt="brochure design final" />
-          <img src="./images/AGPRINT/Village of HH Brochure/Village of Huber Memory Care Brochures 2023 JJ_02.png" className="object-cover rounded shadow md" alt="brochure design final" />
+          <img src={VillageFinal1} className="object-cover rounded shadow-md" alt="final brochure design" />
+          <img src={VillageFinal2} className="object-cover rounded shadow md" alt="final brochure design" />
         </div>
-        <p className="mb-3 text-center text-gray-600 mt-2">The final design they approved and that went to print. The text was cleaned up, modernized, and added an illustrated map.</p>
+        <p className="mb-3 text-center text-gray-600 mt-2">The final design they approved and that went to print. It was cleaned up, modernized, and used more shades of blue like they wanted.</p>
 
-        {/* Sticker Designs */}
+        {/* Stickers */}
         <div className="grid grid-cols-2 gap-4 mt-4">
           <div className="col-span-2">
-            <img src="./images/AGPRINT/stickers-01.png" className="w-full h-300 object-cover rounded shadow-md" alt="illustrated sticker designs" />
-            <p className="mb-3 text-center text-gray-600 mt-2">Illustrated sticker designs created for Kent State and Akron using their mascot.</p>
+            <img src={Stickers} className="w-full h-300 object-cover rounded shadow-md" alt="brochure design mockup" />
+            <p className="mb-3 text-center text-gray-600 mt-2">A sample of stickers that I have designed for AMB HH.</p>
           </div>
         </div>
 
-        {/* ODOT Banner Stands */}
+        {/* ODOT Banner */}
         <div className="grid grid-cols-2 gap-4 mt-4">
           <div className="col-span-2">
-            <img src="./images/AGPRINT/ODOT Banner Stands.png" className="w-full h-300 object-cover rounded shadow-md" alt="odot banner stand design" />
-            <p className="mb-3 text-center text-gray-600 mt-2">A banner stand collage designed for ODOT.</p>
+            <img src={ODOTMockup} className="w-full h-300 object-cover rounded shadow-md" alt="brochure design mockup" />
+            <p className="mb-3 text-center text-gray-600 mt-2">A banner stand designed for ODOT for a career fair event.</p>
           </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img src="./images/AGPRINT/ODOT Banner Stand-01.png" className="object-cover rounded shadow-md" alt="final odot banner stand design" />
-          <img src="./images/AGPRINT/ODOT Banner Stand-02.png" className="object-cover rounded shadow md" alt="final odot banner stand design" />
-        </div>
-        <p className="mb-3 text-center text-gray-600 mt-2">The final design they approved and that went to print. The text was cleaned up, modernized, and removed the black and red colors.</p>
-
-        {/* McGee-DiVeronica Insurance Brochure */}
-        <div className="grid grid-cols-2 gap-4 mt-4">
-          <div className="col-span-2">
-            <img src="./images/AGPRINT/McGee-DiVeronica Insurance/McGee-DiVeronica Mockups.png" className="w-full h-300 object-cover rounded shadow-md" alt="insurance brochure design" />
-            <p className="mb-3 text-center text-gray-600 mt-2">A brochure designed for McGee-DiVeronica Insurance.</p>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img src="./images/AGPRINT/McGee-DiVeronica Insurance/McGee-DiVeronica Brochure 2022 01.png" className="object-cover rounded shadow-md" alt="insurance brochure design" />
-          <img src="./images/AGPRINT/McGee-DiVeronica Insurance/McGee-DiVeronica Brochure 2022 02.png" className="object-cover rounded shadow md" alt="insurance brochure design" />
-        </div>
-        <p className="mb-3 text-center text-gray-600 mt-2">The final design they approved and that went to print. They wanted it updated and more modern and to keep the same color scheme as their first version.</p>
-
-        {/* Back to Top */}
-        <div className="text-center mb-10 mt-10">
-          <a href="#top" className="text-xs uppercase font-medium tracking-widest text-gray-800 bg-white py-3 px-5 rounded-md hover:bg-gray-300 hover:text-gray-900 transition duration-300">Back to Top</a>
         </div>
       </div>
     </div>

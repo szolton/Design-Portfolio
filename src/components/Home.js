@@ -42,37 +42,37 @@ function HomePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-4 p-4">
                 <PortfolioItem
-                    link="./PrintMedia.js"
+                    link="/PrintMedia"
                     image={AMBHHBrochureImage}
                     title="Print Media: Brochures & Advertising"
                 />
                 <PortfolioItem
-                    link="./SbarroPizza.js"
+                    link="/sbarropizza"
                     image={SbarroImage}
                     title="Sbarro Rebranding Design"
                 />
                 <PortfolioItem
-                    link="./Magazine.js"
+                    link="/magazine"
                     image={MagCoverSpread}
                     title="Magazine Spreads"
                 />
                 <PortfolioItem
-                    link="./ROziBrandIdentity.js"
+                    link="/rozibrandidentity"
                     image={RoziThumbnail}
                     title="Rozi's Brand Identity"
                 />
                 <PortfolioItem
-                    link="./PosterDesign.js"
+                    link="/posterdesign"
                     image={PosterThumbnail}
                     title="Poster Designs"
                 />
                 <PortfolioItem
-                    link="./Laguna.js"
+                    link="/laguna"
                     image={LagunaThumbnail}
                     title="'Laguna' Typeface Design"
                 />
                 <PortfolioItem
-                    link="./Miley.js"
+                    link="/miley"
                     image={MileyThumbnail}
                     title="Book Publishing"
                 />
