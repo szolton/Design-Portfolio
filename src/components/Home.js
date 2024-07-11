@@ -1,11 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/style.css'; // Assuming you have a CSS file for custom styles
-import Magzine from './Magazine';
-import Rozi from './RoziBrandIdentity';
-import PosterDesign from './PosterDesign';
-import Laguna from './Laguna';
-import Miley from './Miley';
 
 import AMBHHBrochureImage from '../assets/images/AGPRINT/AMB HH Brochures/AMB-HH-Brochure-Mockups.png';
 import SbarroImage from '../assets/images/SBARRO/SBARRO-01.png';
@@ -24,8 +19,8 @@ function HomePage() {
                 </div>
                 <nav className="mt-8">
                     <ul className="flex space-x-4">
-                        <li><Link to="/illustrations" className="hover:text-gray-600">ILLUSTRATIONS</Link></li>
-                        <li><Link to="/webdesign" className="hover:text-gray-600">WEB DESIGN</Link></li>
+                        <li><Link to="/Illustrations" className="hover:text-gray-600">ILLUSTRATIONS</Link></li>
+                        <li><Link to="/WebHome" className="hover:text-gray-600">WEB DESIGN</Link></li>
                         <li><Link to="/about" className="hover:text-gray-600">ABOUT</Link></li>
                         <li><a href="/images/Zolton_resume.pdf" className="hover:text-gray-600" target="_blank" rel="noopener noreferrer">RESUME</a></li>
                     </ul>

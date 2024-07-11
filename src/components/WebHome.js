@@ -1,6 +1,10 @@
-// src/components/WebHome.js
-
 import React from 'react';
+
+// Import images
+import dailyPlannerImage from '../assets/images/WEB DESIGN/daily-planner/Screen Shot 2024-04-09 at 6.21.28 PM.png';
+import weatherForecastImage from '../assets/images/WEB DESIGN/weather-planner/thumbnail-a.png';
+import codingQuizImage from '../assets/images/WEB DESIGN/coding-quiz-thumbnail.png';
+import schedulerImage from '../assets/images/WEB DESIGN/workday-scheduler-thumbnail.png';
 
 function WebHome() {
   return (
@@ -50,7 +54,7 @@ function WebHome() {
           <a href="/index-web-planner" className="block group">
             <div className="relative">
               <div className="w-full h-64 bg-white rounded overflow-hidden transition duration-300 ease-in-out transform group-hover:opacity-50">
-                <img src="./images/WEB DESIGN/daily-planner/Screen Shot 2024-04-09 at 6.21.28 PM.png" className="w-full h-full object-cover rounded" alt="interactive daily planner" />
+                <img src={dailyPlannerImage} className="w-full h-full object-cover rounded" alt="interactive daily planner" />
               </div>
               <h2 className="mt-2 pt-1 text-center font-bebas text-teal-400 text-2xl">Interactive Daily Planner</h2>
             </div>
@@ -62,7 +66,7 @@ function WebHome() {
           <a href="/index-web-weather" className="block group">
             <div className="relative">
               <div className="w-full h-64 bg-white rounded overflow-hidden transition duration-300 ease-in-out transform group-hover:opacity-50">
-                <img src="./images/WEB DESIGN/weather-planner/thumbnail-a.png" className="w-full h-full object-cover rounded" alt="weather 5-day forecast thumbnail" />
+                <img src={weatherForecastImage} className="w-full h-full object-cover rounded" alt="weather 5-day forecast thumbnail" />
               </div>
               <h2 className="mt-2 pt-1 text-center font-bebas text-teal-400 text-2xl">Weather 5-Day Forecast</h2>
             </div>
@@ -74,7 +78,7 @@ function WebHome() {
           <a href="/index-web-coding-quiz" className="block group">
             <div className="relative">
               <div className="w-full h-64 bg-white rounded overflow-hidden transition duration-300 ease-in-out transform group-hover:opacity-50">
-                <img src="./images/WEB DESIGN/coding-quiz-thumbnail.png" className="w-full h-full object-cover rounded" alt="coding quiz" />
+                <img src={codingQuizImage} className="w-full h-full object-cover rounded" alt="coding quiz" />
               </div>
               <h2 className="mt-2 pt-1 text-center font-bebas text-teal-400 text-2xl">Coding JavaScript Quiz</h2>
             </div>
@@ -86,7 +90,7 @@ function WebHome() {
           <a href="/index-web-scheduler" className="block group">
             <div className="relative">
               <div className="w-full h-64 bg-white rounded overflow-hidden transition duration-300 ease-in-out transform group-hover:opacity-50">
-                <img src="./images/WEB DESIGN/workday-scheduler-thumbnail.png" className="w-full h-full object-cover rounded" alt="workday scheduler" />
+                <img src={schedulerImage} className="w-full h-full object-cover rounded" alt="workday scheduler" />
               </div>
               <h2 className="mt-2 pt-1 text-center font-bebas text-teal-400 text-2xl">Workday Scheduler</h2>
             </div>
