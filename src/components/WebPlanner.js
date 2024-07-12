@@ -1,7 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
 
-
 import wireframeImage from '../assets/images/WEB DESIGN/daily-planner/wireframe.png';
 import colorPaletteImage from '../assets/images/WEB DESIGN/daily-planner/color2.png';
 import taskList from '../assets/images/WEB DESIGN/daily-planner/working-process.png';
@@ -56,7 +55,7 @@ function WebPlanner() {
                         <Image src={colorPaletteImage} alt="Color Palette" />
                     </div>
 
-                    <WorkingProcessSection src={taskList} text="Here's a screenshot of our working process with the task list as we built the page:" />
+                    <WorkingProcessSection src={taskList} text="Here's a screenshot of our working process with the task list as we built the page:" className="full-page-image rounded-lg" />
                     <WorkingProcessSection src={workingProcess2} text="Here's more of our working process:" />
                     <WorkingProcessSection src={workingProcess3} text="Here, you can see how we incorporated the Bulma styling:" />
                     <WorkingProcessSection src={workingFinal} text="Here's a screenshot of our final deployed app in process, where you can search the city weather, add to your task list that saves to local storage, and search for trendy topics:" />
@@ -103,28 +102,27 @@ const Section = ({ title, text, className }) => (
 );
 
 const VideoEmbed = ({ src }) => (
-    <div className="max-w-full mx-auto h-auto overflow-hidden rounded shadow-md md:-mt-20">
-        <div className="aspect-w-16 aspect-h-9">
-            <iframe title="vimeo-player" src={src} width="1100" height="625" frameBorder="0" allowFullScreen></iframe>
-        </div>
+    <div className="embed-container mb-10" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '100%', background: '#000' }}>
+        <iframe
+            src={src}
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            title="Embedded Video"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+        ></iframe>
+    </div>
+);
+
+const WorkingProcessSection = ({ src, text, className }) => (
+    <div className={`working-process mt-10 ${className}`}>
+        <img src={src} alt="working-process" />
+        <p className="text-center text-gray-600 mt-2">{text}</p>
     </div>
 );
 
 const Image = ({ src, alt }) => (
-    <img src={src} className="object-contain rounded shadow-md h-auto md:h-full mx-auto" alt={alt} />
+    <img src={src} alt={alt} className="rounded-lg shadow-lg object-contain" />
 );
-
-
-const WorkingProcessSection = ({ src, text }) => (
-    <div className="my-8">
-        <p className="text-center text-gray-600 mb-3">{text}</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="flex justify-center">
-                <Image src={src} alt="Working Process" />
-            </div>
-        </div>
-    </div>
-);
-
 
 export default WebPlanner;
