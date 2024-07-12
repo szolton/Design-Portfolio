@@ -21,8 +21,13 @@ function WebPlanner() {
                     </h2>
                     <p className="mb-3 text-center text-gray-600 px-10">
                         The purpose of this project was to work in a group setting and apply everything learned in class over the past six weeks to create a real-world front-end application for portfolios. We integrated interactive daily tasks with weather and news updates using APIs. The project features a cool-toned color palette, utilizes Bulma styling, and updates the date daily.
-                    </p>
+                        To see more of my project, please follow this link to my GitHub: 
+                    <a href="https://szolton.github.io/05-challenge-week5/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Daily Interactive Planner</a>, or look at my code:<a href="https://github.com/szolton/05-challenge-week5" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">here</a>.
+
+                        </p>
+
                 </div>
+                
             </section>
 
             <main className="container mx-auto mt-10">
@@ -43,6 +48,21 @@ function WebPlanner() {
                         <img src={wireframeImage} className="object-contain rounded shadow-md h-full mx-auto" alt="Wireframe" />
                         <img src={colorPaletteImage} className="object-contain rounded shadow-md h-full mx-auto" alt="Color Palette" />
                     </div>
+              
+
+                <h2 className="text-center text-6xl text-teal-500 font-bold my-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
+                    In Conclusion
+                </h2>
+                <div className="flex justify-center">
+                    <ul className="list-disc list-inside text-gray-600 text-left">
+                        <li>You can scroll down, and see time blocks for that day during the business hours of 9-5.</li>
+                        <li>The time blocks are color-coded for past, present, and future events.</li>
+                        <li>When you click on a time block, you can add text that saves straight to the page, as well as the save button.</li>
+                        <li>The cool feature I added is editable text and being able to keep it on the page without having to press save</li>
+                        <li>Text is then saved in local storage, where when you refresh the page, it shows up</li>
+                        <li>You can also edit it and remove text as well</li>
+                    </ul>
+                </div>
                 </div>
             </main>
             <Footer />

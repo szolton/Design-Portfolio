@@ -1,11 +1,8 @@
-// src/components/RoziBrandIdentity.js
 import React from 'react';
 import '../assets/style.css';
 import Footer from './Footer'; // Importing the Footer component
 
-
 // Importing images
-
 import oldLogos from '../assets/images/ROZIS/Old logos.png';
 import rebrandLogo from '../assets/images/ROZIS/rozis rebrand logo stuff background-09.png';
 import menuMockup from '../assets/images/ROZIS/menu-mockup.png';
@@ -23,8 +20,6 @@ const RoziBrandIdentity = () => {
   return (
     <>
       {/* Navigation Header Info Bar */}
-     
-
       <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW, sans-serif', color: '#6ac9cb', fontSize: '18px' }}>
         Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
       </h4>
@@ -66,26 +61,27 @@ const RoziBrandIdentity = () => {
         <img src={websiteMockups} className="w-150 h-100 object-cover rounded shadow-md" alt="website design" />
         <p className="mt-3 text-center text-gray-600 mb-10">The website redesigned -- it comes with a pop-up modal on the landing page.</p>
 
-        <div className="grid grid-cols-2 gap-4 mt-4">
+        <div className="grid grid-cols-2 gap-4 mt-4 md:hidden">
           <img src={websiteMockupsA} className="w-150 h-100 object-cover rounded shadow-md" alt="website design mockup" />
           <img src={websiteMockupsB} className="w-150 h-100 object-cover rounded shadow-md" alt="website design mockup" />
         </div>
         <p className="mb-3 text-center text-gray-600 mt-2">Here, is the landing page where you can scroll through the main highlights of the brand.</p>
 
-        <div className="grid grid-cols-2 gap-4 mt-4">
+        <div className="grid grid-cols-2 gap-4 mt-4 md:hidden">
           <img src={websiteMockupsC} className="w-150 h-100 object-cover rounded shadow-md" alt="website design mockup" />
           <img src={websiteMockupsD} className="w-150 h-100 object-cover rounded shadow-md" alt="website design mockup" />
         </div>
         <p className="mb-3 text-center text-gray-600 mt-2">Here, is where you can see how it would look when you hover over the navigation bar and when you click on the about page.</p>
 
-        <div className="grid grid-cols-3 gap-4 mt-4">
+        <div className="grid grid-cols-3 gap-4 mt-4 md:hidden">
           <img src={socialMediaAd1} className="w-150 h-100 object-cover rounded shadow-md" alt="social media instagram ads" />
           <img src={socialMediaAd2} className="w-150 h-100 object-cover rounded shadow-md" alt="social media instagram ads" />
           <img src={socialMediaAd3} className="w-150 h-100 object-cover rounded shadow-md" alt="social media instagram ads" />
         </div>
         <p className="mb-3 text-center text-gray-600 mt-2">Here, are some examples of social media instagram campaign ads I mocked up for them.</p>
-      <Footer />
       </div>
+
+      <Footer />
     </>
   );
 };

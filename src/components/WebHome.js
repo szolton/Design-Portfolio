@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import '../assets/style.css';
 import Footer from './Footer'; // Importing the Footer component
 
-
 import dailyPlannerImage from '../assets/images/WEB DESIGN/daily-planner/Screen Shot 2024-04-09 at 6.21.28 PM.png';
 import weatherForecastImage from '../assets/images/WEB DESIGN/weather-planner/thumbnail-a.png';
 import codingQuizImage from '../assets/images/WEB DESIGN/coding-quiz-thumbnail.png';
@@ -49,6 +48,9 @@ function WebHome() {
           title="Workday Scheduler"
         />
       </div>
+
+      {/* Footer component only once at the bottom */}
+      <Footer />
     </div>
   );
 }
@@ -67,7 +69,6 @@ function PortfolioItem({ link, image, title }) {
           </h2>
         </div>
       </Link>
-      <Footer />
     </div>
   );
 }

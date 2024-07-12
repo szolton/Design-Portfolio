@@ -19,6 +19,9 @@ function WebScheduler() {
                         </h2>
                         <p className="mb-3 text-center text-gray-600 mb-10 px-10">
                             The purpose of this project was to create a calendar that functions during normal business hours. We built a page that allows users to add important events to a daily planner, facilitating effective time management.
+                            To see more of my project, please follow this link to my GitHub: 
+                    <a href="https://szolton.github.io/05-challenge-week5/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Interactive Weather Page</a>, or look at my code:<a href="https://github.com/szolton/05-challenge-week5" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">here</a>.
+
                         </p>
                         <p className="text-center text-gray-600 mb-10 px-10">
                             For this project, we integrated a Server-Side API to provide weather updates, which you can explore <a href="https://home.openweathermap.org/" target="_blank" className="hover:text-gray-900 hover:underline">here</a>.
