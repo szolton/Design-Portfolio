@@ -17,7 +17,7 @@ const WebWeather = () => {
             </h4>
 
             <main className="container mx-auto p-5">
-                <h2 className="text-center text-6xl text-teal-500 font-bold mb-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
+                <h2 className="text-center text-6xl text-teal-500 mb-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
                     Weather 5-Day Forecast
                 </h2>
                 <p className="text-gray-600 text-center mb-10">
@@ -31,9 +31,15 @@ const WebWeather = () => {
                     <iframe title="vimeo-player" src="https://player.vimeo.com/video/933899063?h=58a2fcc064" width="1000" height="575" frameBorder="0" allowFullScreen></iframe>
                 </div>
 
-                <h2 className="text-center text-6xl text-teal-500 font-bold my-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
-                    The Challenge
+                <h2 className="text-center text-6xl text-teal-500 my-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
+                    The Challenge: Server-Side APIs
                 </h2>
+                <p className="text-gray-600 text-center">
+                    The purpose of this project was to create a weather dashboard that displays a 5-Day forecast. We were to build a page that allows the user to see the weather outlook for multiple cities, so that I can plan a trip accordingly.
+                    <br></br>
+                    <br></br>
+                    I followed the resources to create the Javascript, HTML, and CSS. Here are some screenshots of how my process worked. First, I grabbed colors I liked more and messed around with them for the weather palette. These were adjusted slightly as I went along to make something fun, but still kept the colors in a teal-palette I liked.
+                </p>
                 <p className="text-gray-600 text-center">
                     I began by doing research and finding sources -- these videos were equally helpful in various parts of the assignment.
                 </p>
@@ -45,6 +51,11 @@ const WebWeather = () => {
                 </p>
 
                 <img src={colorsImage} className="w-full max-w-full mx-auto my-8" alt="color-palette" />
+
+                <p className="text-gray-600 text-center">
+                Next, I updated it to create HTML and CSS to make a weather site with the mentioned teals and peaches. Then, I updated the JavaScript. Here is a cool feature of making city, state and zip codes searchable as well, for ultimate accuracy.
+
+Search by city. </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <img src={locationImage} className="object-cover rounded shadow-md" alt="location-screenshot" />
@@ -62,7 +73,7 @@ const WebWeather = () => {
                     <img src={mobile3Image} className="object-cover rounded shadow-md" alt="mobile-screenshot-3" />
                 </div>
 
-                <h2 className="text-center text-6xl text-teal-500 font-bold my-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
+                <h2 className="text-center text-6xl text-teal-500 my-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
                     In Conclusion
                 </h2>
                 <p className="text-gray-600 text-center">
