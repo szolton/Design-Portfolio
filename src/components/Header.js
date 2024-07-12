@@ -3,15 +3,24 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
 
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = `${process.env.PUBLIC_URL}/images/Zolton_resume.pdf`; // Adjust path relative to the public folder
-    link.setAttribute('download', 'Zolton_Resume.pdf');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const handleDownload = async () => {
+    try {
+      const downloadUrl = `${process.env.PUBLIC_URL}/images/Zolton_resume.pdf`;
+      const response = await fetch(downloadUrl);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(new Blob([blob]));
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'Zolton_Resume.pdf');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading file:', error);
+    }
   };
-
+  
+  
   return (
     <header className="nav-header bg-custom-turquoise text-white py-6">
       <div className="container mx-auto flex justify-between items-center">

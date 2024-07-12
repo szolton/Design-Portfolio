@@ -22,11 +22,9 @@ function WebPlanner() {
                     <p className="mb-3 text-center text-gray-600 px-10">
     The purpose of this project was to work in a group setting and apply everything learned in class over the past six weeks to create a real-world front-end application for portfolios. We integrated interactive daily tasks with weather and news updates using APIs. The project features a cool-toned color palette, utilizes Bulma styling, and updates the date daily.
     To see more of my project, please follow this link to my GitHub: 
-    <a href="https://szolton.github.io/05-challenge-week5/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2 text-gray-600">Daily Interactive Planner</a>, or look at my code:<a href="https://github.com/szolton/05-challenge-week5" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2 text-gray-600">here</a>.
+    <a href="https://github.com/davidbeane1983/Daily-Task-List" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2 text-gray-600">here</a>.
 </p>
-
-              
-            </section>
+     </section>
 
             <main className="container mx-auto mt-10">
                 <div className="md:p-20 md:m-20 p-5">
@@ -52,14 +50,19 @@ function WebPlanner() {
                     </h2>
                     <div className="flex justify-center">
                         <ul className="list-disc list-inside text-gray-600 text-left">
-                            <li>You can scroll down, and see time blocks for that day during the business hours of 9-5.</li>
-                            <li>The time blocks are color-coded for past, present, and future events.</li>
-                            <li>When you click on a time block, you can add text that saves straight to the page, as well as the save button.</li>
-                            <li>The cool feature I added is editable text and being able to keep it on the page without having to press save</li>
-                            <li>Text is then saved in local storage, where when you refresh the page, it shows up</li>
-                            <li>You can also edit it and remove text as well</li>
+                            <li>Uses CSS framework other than Bootstrap. See: Bulma styling.</li>
+                            <li>Is deployed to GitHub</li>
+                            <li>Is interactive and uses 2 server-side API's</li>
+                            <li>Has one pop up modal and client-side storage to store data.</li>
+                            <li>Is responsive with a polished UI.</li>
+                            <li>Has a clean repository.</li>
                         </ul>
+                   
                     </div>
+                    <br></br>
+                    <p>Please follow this link to our fully deployed project on GitHub, and enjoy looking through the work our collective team effort produced:
+
+https://davidbeane1983.github.io/Daily-Task-List/</p>
                 </div>
             </main>
             <Footer />
