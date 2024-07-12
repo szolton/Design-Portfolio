@@ -119,7 +119,7 @@ const Illustrations = () => {
         </div>
       </div>
 
-      {/* Nav Footer */}
+      {/* Footer */}
     <Footer />
     </div>
   );
