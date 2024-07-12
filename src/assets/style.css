@@ -1,4 +1,14 @@
 /* main */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 body {
   font-family: "FranklinGothic URW", Arial, sans-serif;
