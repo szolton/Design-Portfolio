@@ -68,9 +68,9 @@ function WebPlanner() {
                         <Image src={mobile2} alt="mobile" />
                     </div>
 
-                    <WorkingProcessSection src={dateChange} text="One cool feature we included was the day of the week, month, date, and year that updates daily accordingly and really ties our project together:" />
+                    <WorkingProcessSection src={dateChange} text="One cool feature we included was the day of the week, month, date, and year that updates daily accordingly and really ties our project together." />
 
-                    <Section title="In Conclusion" text="Our group worked together to make a functional, fully deployed web application where you can check the weather, add to a task list, and search for news articles. It was our first experience in a coding group working with others, and we did a great job with collaboration and communication, as well as the ability to problem-solve as a whole, as well as maintaining positivity throughout the project while resolving merge conflicts. We are ultimately proud of the product we developed, and how we used our different skills and interests to work together in a successful, efficient and collaborative environment." />
+                    <Section title="In Conclusion" text="Our group worked together to make a functional, fully deployed web application where you can check the weather, add to a task list, and search for news articles. It was our first experience in a coding group working with others, and we did a great job with collaboration and communication, as well as the ability to problem-solve as a whole, as well as maintaining positivity throughout the project while resolving merge conflicts. We are ultimately proud of the product we developed, and how we used our different skills and interests to work together in a successful, efficient and collaborative environment. Together, we created an application that:" />
 
                     <div className="flex justify-center">
                         <ul className="list-disc list-inside text-gray-600 text-left">
@@ -83,8 +83,7 @@ function WebPlanner() {
                         </ul>
                     </div>
                     <br />
-                    <p>Please follow this link to our fully deployed project on GitHub, and enjoy looking through the work our collective team effort produced: https://davidbeane1983.github.io/Daily-Task-List/</p>
-                </div>
+                              </div>
                 
             </main>
             <Footer />

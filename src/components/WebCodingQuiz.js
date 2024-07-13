@@ -9,14 +9,15 @@ function WebCodingQuiz() {
                 Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
             </h4>
             <main className="container mx-auto p-5">
-                <h2 className="text-center text-6xl text-teal-500 font-bold mb-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
+                <h2 className="text-center text-6xl text-teal-500 mb-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
                     Coding JavaScript Quiz
                 </h2>
                 <p className="text-gray-600 text-center mb-10">
-                    The purpose of this project was to create a weather dashboard that shows a 5-Day forecast.
-                    It uses a weather API that I got from <a href="https://home.openweathermap.org/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline">here</a>.
-                    This was to help us learn how to use a Server-Side API with a functioning weather dashboard. To see more of my project, please follow this link to my GitHub: 
-                    <a href="https://szolton.github.io/06-challenge-week6-Interactive-Weather-Page/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Interactive Weather Page</a>, or look at my code:<a href="https://github.com/szolton/06-challenge-week6-Interactive-Weather-Page" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">here</a>.
+                The purpose of this project was to create a full coding quiz assessment in JavaScript, a project we might face in a real world interview process. A coding assessment is the combination of multiple-choice questions and interactive coding challenges.
+
+We were to build a timed coding quiz with multiple choice questions, that will run in a browser, feature dynamically updated HTML and CSS powered by written JavaScript code.
+
+                    <a href="https://szolton.github.io/04-Challenge-Week4-Coding-Quiz/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Take a look at my deployed page</a>, or look at my code:<a href="https://github.com/szolton/04-Challenge-Week4-Coding-Quiz" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">here</a>.
                 </p>
 
                 {/* Project details */}
@@ -30,17 +31,23 @@ function WebCodingQuiz() {
                         A video walkthrough of our project. We used a Weather API and another API for the news section, and used JavaScript for the interactive to-do list. We wanted a cool-toned color palette, used Bulma styling, and set the date to update every day.
                     </p>
                     
-                <h2 className="text-center text-6xl text-teal-500 font-bold my-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
+                <h2 className="text-center text-6xl text-teal-500 my-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
                     In Conclusion
                 </h2>
                 <div className="flex justify-center">
                     <ul className="list-disc list-inside text-gray-600 text-left">
-                        <li>Uses CSS framework other than Bootstrap. See: Bulma styling.</li>
+                        <li>The high scores are visible when the page first loads if there are any stored in localStorage, or if there are none, the user receives an error message.
+</li>
                         <li>Is deployed to GitHub.</li>
-                        <li>Is interactive and uses 2 server-side API's.</li>
-                        <li>Has one pop up modal and client-side storage to store data.</li>
-                        <li>Is responsive with a polished UI.</li>
-                        <li>Has a clean repository.</li>
+                        <li>The quiz answers change color when you hover over them.</li>
+                        <li>They change green/red if you get one correct/incorrect, and also are labelled as such below the options.</li>
+                        <li>The quiz is timed, and you lose time if you get an answer wrong.</li>
+                        <li>If you go back, the timer shows up and restarts at the beginning as well.</li>
+                        <li>After you finish the quiz, you are directed to a submit initials page where you can type in your name, and hit submit.</li>
+                        <li>You then see the high scores results.</li>
+                        <li>You can hit the 'go back' button, then hit the 'view high scores' link, where you can see the same results.</li>
+                        <li>You can clear the high scores results if the user wishes
+.</li>
                     </ul>
                 </div>
                 </div>
