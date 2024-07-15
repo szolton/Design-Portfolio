@@ -7,6 +7,7 @@ import dailyPlannerImage from '../assets/images/WEB DESIGN/daily-planner/Screen 
 import weatherForecastImage from '../assets/images/WEB DESIGN/weather-planner/thumbnail-a.png';
 import codingQuizImage from '../assets/images/WEB DESIGN/coding-quiz-thumbnail.png';
 import schedulerImage from '../assets/images/WEB DESIGN/workday-scheduler-thumbnail.png';
+import passwordThumbnail from '../assets/images/WEB DESIGN/password-generator/password-thumbnail.png'
 
 function WebHome() {
   return (
@@ -46,6 +47,18 @@ function WebHome() {
           link="/WebScheduler"
           image={schedulerImage}
           title="Workday Scheduler"
+        />
+
+        <PortfolioItem
+          link="/Planisphere"
+          image={schedulerImage}
+          title="Planisphere: an event planner"
+        />
+
+          <PortfolioItem
+          link="/PasswordGenerator"
+          image={passwordThumbnail}
+          title="Password Generator"
         />
       </div>
 

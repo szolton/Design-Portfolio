@@ -20,6 +20,7 @@ import WebWeather from './components/WebWeather';
 import WebCodingQuiz from './components/WebCodingQuiz';
 import About from './components/About';
 import Footer from './components/Footer';
+import PasswordGenerator from './components/PasswordGenerator';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route path="/WebCodingQuiz" element={<WebCodingQuiz />} />
           <Route path="/" element={<Home />} />
           <Route path="/Footer" element={<Footer />} />
+          <Route path="/PasswordGenerator" element={<PasswordGenerator />} />
         </Routes>
       </div>
     </Router>
