@@ -3,21 +3,12 @@ import '../assets/style.css';
 import 'tailwindcss/tailwind.css';
 import Footer from './Footer'; // Importing the Footer component
 
-
 // Import your images
 import logoPortfolio from '../assets/images/SBARRO/logo for portfolio.png';
 import logoRefA from '../assets/images/SBARRO/logos-15-a.png';
 import logoRefB from '../assets/images/SBARRO/logos-15-b.png';
 import sketchesGif from '../assets/images/SBARRO/sbarro-sketches.gif';
 import backgrounds from '../assets/images/SBARRO/logos on different backgrounds-28.png';
-import brandGuideCover from '../assets/images/SBARRO/brand-guide/cover page.png';
-import brandGuide34 from '../assets/images/SBARRO/brand-guide/page 3,4.png';
-import brandGuide56 from '../assets/images/SBARRO/brand-guide/page 5,6.png';
-import brandGuide78 from '../assets/images/SBARRO/brand-guide/page 7,8.png';
-import brandGuide910 from '../assets/images/SBARRO/brand-guide/page 9,10.png';
-import brandGuide1112 from '../assets/images/SBARRO/brand-guide/page 11,12.png';
-import brandGuide1314 from '../assets/images/SBARRO/brand-guide/page 13,14.png';
-import brandGuide1516 from '../assets/images/SBARRO/brand-guide/page 15,16.png';
 import pizzaBoxMockup from '../assets/images/SBARRO/sbarro packaging-02.png';
 import socialMediaMockups from '../assets/images/SBARRO/ig ad 2-02.png';
 import appMockup from '../assets/images/SBARRO/more ig ads.png';
@@ -26,7 +17,6 @@ const SbarroPizza = () => {
   return (
     <div>
       {/* Navigation header info bar */}
-
       <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
         Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
       </h4>
@@ -43,7 +33,7 @@ const SbarroPizza = () => {
           <img src={logoPortfolio} className="w-300 h-200 object-cover rounded shadow-md" alt="final logo design" />
         </div>
 
-        <div className="columns-3 p-1 md:p-7 m-1 md:m-7 flex flex-row gap-4">
+        <div className="columns-3 p-1 md:p-4 m-1 md:m-4 flex flex-row gap-4">
           <div className="aspect-w-3 aspect-h-2 flex-grow">
             <img src={logoRefA} className="w-full h-full object-cover rounded shadow-md" alt="old sbarro logo reference" />
           </div>
@@ -66,15 +56,22 @@ const SbarroPizza = () => {
           </p>
         </div>
 
-        <div className="flex justify-center">
-          <div className="p-6 -mt-3">
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/745628232?h=0d3d1ad992" width="1120" height="670" frameBorder="0" allowFullScreen></iframe>
-          </div>
-        </div>
+        <div className="max-w-full mx-auto h-auto overflow-hidden rounded shadow-md">
+  <div className="aspect-w-16 aspect-h-9">
+    <iframe 
+      title="vimeo-player" 
+      src="https://player.vimeo.com/video/745628232?h=0d3d1ad992" 
+      width="1100" 
+      height="625" 
+      frameBorder="0" 
+      allowFullScreen
+    ></iframe>
+  </div>
+  <p className="text-center text-gray-600 mt-3 mb-10">
+    A quick video animation of how the logo might look at the end of an advertisement.
+  </p>
+</div>
 
-        <p className="-mb-8 text-center text-gray-600">
-          <p className="mb-3 text-center text-gray-600 mb-10">A quick video animation of how the logo might look at the end of an advertisement.</p>
-        </p>
 
         <div className="columns-1 p-3 md:p-10 m-5 md:m-10">
           <img src={pizzaBoxMockup} className="w-300 h-200 object-cover rounded shadow-md" alt="pizza box mockup" />
