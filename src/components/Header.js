@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import resumePdf from '../assets/images/Zolton_resume.pdf';
+//const resumePdf = `${process.env.PUBLIC_URL}/images/Zolton_resume.pdf`;
 
 const Header = () => {
+
+  console.log("Resume PDF: ", resumePdf)
 
   const handleDownload = async () => {
     try {
@@ -34,13 +38,18 @@ const Header = () => {
             <Link to="/Illustrations" className="hover:text-gray-600">ILLUSTRATIONS</Link>
           </li>
           <li>
-            <Link to="/WebHome" className="hover:text-gray-600">WEB DESIGN</Link>
+            <Link to="/WebDesign" className="hover:text-gray-600">WEB DESIGN</Link>
           </li>
           <li>
             <Link to="/About" className="hover:text-gray-600">ABOUT</Link>
           </li>
           <li>
-            <button className="hover:text-gray-600" onClick={handleDownload}>RESUME</button>
+            <Link 
+              className="hover:text-gray-600" 
+              download="Zolton_Resume"
+              to={resumePdf} 
+              target='_blank'
+              >RESUME</Link>
           </li>
         </ul>
       </nav>

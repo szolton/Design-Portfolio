@@ -15,7 +15,7 @@ import SbarroPizza from './components/SbarroPizza';
 import Magazine from './components/Magazine';
 import Header from './components/Header';
 import Laguna from './components/Laguna';
-import WebHome from './components/WebHome';
+import WebHome from './components/WebDesign';
 import WebWeather from './components/WebWeather';
 import WebCodingQuiz from './components/WebCodingQuiz';
 import About from './components/About';
@@ -36,7 +36,7 @@ function App() {
           <Route path="/Miley" element={<Miley />} />
           <Route path="/RoziBrandIdentity" element={<Rozi />} />
           <Route path="/PosterDesign" element={<PosterDesign />} />
-          <Route path="/WebHome" element={<WebHome />} />
+          <Route path="/WebDesign" element={<WebHome />} />
           <Route path="/WebPlanner" element={<WebPlanner />} />
           <Route path="/WebScheduler" element={<WebScheduler />} />
           <Route path="/WebWeather" element={<WebWeather />} />

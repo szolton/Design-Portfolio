@@ -83,7 +83,7 @@ function WebPlanner() {
                         </ul>
                     </div>
                     <br />
-                              </div>
+                    </div>
                 
             </main>
             <Footer />
