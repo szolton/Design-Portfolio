@@ -22,7 +22,7 @@ function WebPlanner() {
             <section className="container mx-auto">
                 <div className="title-headers text-center mt-10">
                     <h2 className="mt-2 pt-5 text-center" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
-                        Interactive Daily Planner
+                        Planisphere: An Interactive Event Planner
                     </h2>
                 </div>
                 <p className="mb-3 text-center text-gray-600 px-10 -mb-24">
