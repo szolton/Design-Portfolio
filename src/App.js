@@ -12,7 +12,7 @@ import Home from './components/Home';
 import PrintMedia from './components/PrintMedia';
 import Illustrations from './components/Illustrations';
 import SbarroPizza from './components/SbarroPizza';
-import Magazine from './components/';
+import Magazine from './components/magazine';
 import Header from './components/Header';
 import Laguna from './components/Laguna';
 import WebHome from './components/WebDesign';
@@ -21,6 +21,7 @@ import WebCodingQuiz from './components/WebCodingQuiz';
 import About from './components/About';
 import Footer from './components/Footer';
 import PasswordGenerator from './components/PasswordGenerator';
+import Planisphere from './components/Planisphere';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Footer" element={<Footer />} />
           <Route path="/PasswordGenerator" element={<PasswordGenerator />} />
+          <Route path="/Planisphere" element={<Planisphere />} />
         </Routes>
       </div>
     </Router>

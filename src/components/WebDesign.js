@@ -8,6 +8,7 @@ import weatherForecastImage from '../assets/images/WEB DESIGN/weather-planner/th
 import codingQuizImage from '../assets/images/WEB DESIGN/coding-quiz-thumbnail.png';
 import schedulerImage from '../assets/images/WEB DESIGN/workday-scheduler-thumbnail.png';
 import passwordThumbnail from '../assets/images/WEB DESIGN/password-generator/password-thumbnail.png'
+import planisphereThumbnail from '../assets/images/WEB DESIGN/planisphere/planisphere-thumbnail.png'
 
 function WebHome() {
   return (
@@ -51,8 +52,8 @@ function WebHome() {
 
         <PortfolioItem
           link="/Planisphere"
-          image={schedulerImage}
-          title="Planisphere: an event planner"
+          image={planisphereThumbnail}
+          title="Planisphere: An Interactive Event Planner"
         />
 
           <PortfolioItem
