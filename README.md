@@ -11,6 +11,7 @@ AS AN Employer looking for candidates with experience building single-page appli
 I WANT to view a potential employee's deployed React portfolio of work samples,
 SO THAT I can assess whether they're a good candidate for an open position.
 
+# Process
 Fortunately, I already had a head start on this project and was able to pull from the original portfolio assignment, seen here: https://github.com/szolton/My-Design-Portfolio, and was able to switch a lot of work over to be functional with React easily. It wasn't hard, just tedious.
 
 I followed class resources to create the Javascript, HTML, and CSS. Here are some screenshots of how my process worked. First, I grabbed colors I liked that go with my own personal creative design brand. Next, I updated the JavaScript, HTML and CSS to make a functional site with React.
@@ -52,6 +53,10 @@ I set up a portfolio using react for a web developer. I:
 - WHEN I am presented with the Portfolio section, I see titled images of the developer's applications with links to both deployed applications and corresponding GitHub repository
 - WHEN I am presented with the Resume section, THEN I see a link to a downloadable resume and a list of the developer's proficiencies
 
-The hardest part was just working with the JavaScript and the weather API's to adjust them to how I wanted the information to look on the page, and fine-tuning the CSS.
+Please follow this link to my GitHub to see the code: https://github.com/szolton/Design-Portfolio
 
-Please follow this link to the successful, full deployed site on GitHub: https://szolton.github.io/06-challenge-week6-Interactive-Weather-Page/
+OR 
+
+Find the fully deployed site here: https://zoltondesign.netlify.app.
+
+Thank you!
