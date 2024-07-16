@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# React Challenge: React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The purpose of this project was to create a portfolio to share my protjects, not only if I'm applying to jobs but also so I can share my work with my colleagues to help collaborate on future projects.
 
-## Available Scripts
+We were to build a page that lets the user seee the weather outlook for multiple cities, so that I can plan a trip accordingly.
 
-In the project directory, you can run:
+The task is t ocreate a portfolio by using React, to help set you apart from other developers whose portfolios don't use the latest technologies.
 
-### `npm start`
+# User Story
+AS AN Employer looking for candidates with experience building single-page applications,
+I WANT to view a potential employee's deployed React portfolio of work samples,
+SO THAT I can assess whether they're a good candidate for an open position.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Fortunately, I already had a head start on this project and was able to pull from the original portfolio assignment, seen here: https://github.com/szolton/My-Design-Portfolio, and was able to switch a lot of work over to be functional with React easily. It wasn't hard, just tedious.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I followed class resources to create the Javascript, HTML, and CSS. Here are some screenshots of how my process worked. First, I grabbed colors I liked that go with my own personal creative design brand. Next, I updated the JavaScript, HTML and CSS to make a functional site with React.
 
-### `npm test`
+![home-page](./src/assets/images/ReadMe/home.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here is the About page with information on the designer (me), and how to contact me -- the email is linked.
 
-### `npm run build`
+![about-page](./src/assets/images/ReadMe/about.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Here's the landing page for the Web Design tab, that takes you to all of the projects I've worked on during the class that I enjoyed the most.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![web-design](./src/assets/images/ReadMe/web-page.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The page is also responsive and works well on a mobile device.
 
-### `npm run eject`
+![mobile-web-page](./src/assets/images/ReadMe/web-page-mobile.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The page is also responsive and works well on a mobile device.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![mobile-web-page](./src/assets/images/ReadMe/web-page-mobile.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Here's an example of a page once you click on it -- this takes you to the Interactive Daily Planner page that talks about my work and process on this project.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![interactive-planner](./src/assets/images/ReadMe/interactive-planner.png)
 
-## Learn More
+My resume is also downloadable automatically if you click on the resume link in the navigation:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![resume](./src/assets/images/ReadMe/resume.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# In conclusion
 
-### Code Splitting
+I set up a portfolio using react for a web developer. I:
+- When I load the portfolio, THEN I am presented with a page containing a header, content,  and a footer
+- WHEN I view the header, I'm presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
+- WHEN I view the navigation titles, THEN I am presented with titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
+- WHEN I click on a navigation title, THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
+- WHEN I am presented with the About Me section, THEN I see a recent photo or avatar of the developer with a short bio
+- WHEN I am presented with the Portfolio section, I see titled images of the developer's applications with links to both deployed applications and corresponding GitHub repository
+- WHEN I am presented with the Resume section, THEN I see a link to a downloadable resume and a list of the developer's proficiencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The hardest part was just working with the JavaScript and the weather API's to adjust them to how I wanted the information to look on the page, and fine-tuning the CSS.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please follow this link to the successful, full deployed site on GitHub: https://szolton.github.io/06-challenge-week6-Interactive-Weather-Page/
