@@ -12,7 +12,7 @@ import Home from './components/Home';
 import PrintMedia from './components/PrintMedia';
 import Illustrations from './components/Illustrations';
 import SbarroPizza from './components/SbarroPizza';
-import Magazine from './components/Magazine';
+import Magazine from './components/';
 import Header from './components/Header';
 import Laguna from './components/Laguna';
 import WebHome from './components/WebDesign';
