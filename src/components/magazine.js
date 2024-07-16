@@ -22,18 +22,22 @@ const Magazine = () => {
         <p className="mb-3 text-center text-gray-600 mb-10">
           For the Cleveland Metropolitan Bar Association, I created several designs that included badges, a monthly Bar Journal magazine, advertisements and flyers, and the legal directory for committees within the association. I carefully followed their brand guidelines and enjoyed adding touches of creativity to the work.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="w-full md:w-auto px-1 md:px-0 mobile-padding">
-            <img src={magazineMockup1} className="w-full h-auto object-cover rounded shadow-md" alt="brochure design mockup" />
-            <p className="mb-3 text-center text-gray-600 mt-2">Layout Designs for the CMBA's monthly Bar Journal Magazine.</p>
-          </div>
-          <div className="w-full md:w-auto px-1 md:px-0 mobile-padding">
-            <img src={magazineMockup2} className="w-full h-auto object-cover rounded shadow-md" alt="cmba magazine spread mockups" />
-          </div>
-          <div className="w-full md:w-auto px-1 md:px-0 mobile-padding">
-            <img src={magazineMockup3} className="w-full h-auto object-cover rounded shadow-md" alt="cmba magazine spread mockups" />
-          </div>
-        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+  <div className="w-full px-1 md:px-0 mobile-padding">
+    <img src={magazineMockup1} className="w-full h-auto object-cover rounded shadow-md" alt="brochure design mockup" />
+    </div>
+  <div className="w-full px-1 md:px-0 mobile-padding">
+    <img src={magazineMockup2} className="w-full h-auto object-cover rounded shadow-md" alt="cmba magazine spread mockups" />
+  </div>
+  <div className="w-full px-1 md:px-0 mobile-padding">
+    <img src={magazineMockup3} className="w-full h-auto object-cover rounded shadow-md" alt="cmba magazine spread mockups" />
+  </div>
+  
+</div>
+
+<p className="mb-3 text-center text-gray-600 mt-2 pb-5">Layout Designs for the CMBA's monthly Bar Journal Magazine.</p>
+
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 mobile-padding">
           <div className="col-span-2">
             <img src={flyerAd} className="w-full h-300 object-cover rounded shadow-md" alt="cmba flier design" />
