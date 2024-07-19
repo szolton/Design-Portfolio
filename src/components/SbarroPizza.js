@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../assets/style.css';
 import 'tailwindcss/tailwind.css';
-import Footer from './Footer'; // Importing the Footer component
+import Footer from './Footer';
+import FullScreenImage from './FullScreenImage'; // Import the FullScreenImage component
 
 // Import your images
 import logoPortfolio from '../assets/images/SBARRO/logo for portfolio.png';
@@ -14,12 +15,45 @@ import socialMediaMockups from '../assets/images/SBARRO/ig ad 2-02.png';
 import appMockup from '../assets/images/SBARRO/more ig ads.png';
 
 const SbarroPizza = () => {
+  const [fullScreenImage, setFullScreenImage] = useState(null);
+
+  const handleImageClick = (src) => {
+    setFullScreenImage(src);
+  };
+
+  const handleCloseFullScreen = () => {
+    setFullScreenImage(null);
+  };
+
+  const images = [
+    logoPortfolio,
+    logoRefA,
+    logoRefB,
+    sketchesGif,
+    backgrounds,
+    pizzaBoxMockup,
+    socialMediaMockups,
+    appMockup,
+  ];
+
+  const handlePrevImage = () => {
+    const currentIndex = images.indexOf(fullScreenImage);
+    const prevIndex = (currentIndex - 1 + images.length) % images.length;
+    setFullScreenImage(images[prevIndex]);
+  };
+
+  const handleNextImage = () => {
+    const currentIndex = images.indexOf(fullScreenImage);
+    const nextIndex = (currentIndex + 1) % images.length;
+    setFullScreenImage(images[nextIndex]);
+  };
+
   return (
     <div>
       {/* Navigation header info bar */}
-      <h4 className="text-left p-5 pl-7 pt-6 mobile-padding" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
-      Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
-    </h4>
+      <h4 className="text-left p-5 pl-7 pt-5 mobile-padding" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
+        Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
+      </h4>
 
       <div className="columns-1 p-3 md:p-10 m-5 md:m-10">
         <h1 className="-mt-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px', textAlign: 'center' }}>
@@ -30,18 +64,18 @@ const SbarroPizza = () => {
         </p>
 
         <div className="columns-1 p-1 md:p-7 m-1 md:m-10">
-          <img src={logoPortfolio} className="w-300 h-200 object-cover rounded shadow-md" alt="final logo design" />
+          <img src={logoPortfolio} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="final logo design" onClick={() => handleImageClick(logoPortfolio)} />
         </div>
 
         <div className="columns-3 p-1 md:p-4 m-1 md:m-4 flex flex-row gap-4">
           <div className="aspect-w-3 aspect-h-2 flex-grow">
-            <img src={logoRefA} className="w-full h-full object-cover rounded shadow-md" alt="old sbarro logo reference" />
+            <img src={logoRefA} className="w-full h-full object-cover rounded shadow-md cursor-pointer" alt="old sbarro logo reference" onClick={() => handleImageClick(logoRefA)} />
           </div>
           <div className="aspect-w-3 aspect-h-2 flex-grow">
-            <img src={logoRefB} className="w-full h-full object-cover rounded shadow-md" alt="old sbarro logo reference" />
+            <img src={logoRefB} className="w-full h-full object-cover rounded shadow-md cursor-pointer" alt="old sbarro logo reference" onClick={() => handleImageClick(logoRefB)} />
           </div>
           <div className="aspect-w-3 aspect-h-2 flex-grow">
-            <img src={sketchesGif} className="w-full h-full object-cover rounded shadow-md" alt="gif of sketches, other iterations" />
+            <img src={sketchesGif} className="w-full h-full object-cover rounded shadow-md cursor-pointer" alt="gif of sketches, other iterations" onClick={() => handleImageClick(sketchesGif)} />
           </div>
         </div>
 
@@ -50,7 +84,7 @@ const SbarroPizza = () => {
         </p>
 
         <div className="columns-1 p-1 md:p-10 m-1 md:m-10">
-          <img src={backgrounds} className="w-300 h-200 object-cover rounded shadow-md" alt="logo on diff backgrounds" />
+          <img src={backgrounds} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="logo on diff backgrounds" onClick={() => handleImageClick(backgrounds)} />
           <p className="mb-3 text-center text-gray-600 mt-2">
             Here, I explored how the logo would look against different backgrounds.
           </p>
@@ -73,26 +107,36 @@ const SbarroPizza = () => {
         </div>
 
         <div className="columns-1 p-1 md:p-10 m-1 md:m-10">
-          <img src={pizzaBoxMockup} className="w-300 h-200 object-cover rounded shadow-md" alt="pizza box mockup" />
+          <img src={pizzaBoxMockup} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="pizza box mockup" onClick={() => handleImageClick(pizzaBoxMockup)} />
           <p className="mb-3 text-center text-gray-600 mt-2">
             Above, I explored how the logo might look printed on the pizza box packaging.
           </p>
         </div>
 
         <div className="columns-1 p-1 md:p-10 m-1 md:m-10">
-          <img src={socialMediaMockups} className="w-300 h-200 object-cover rounded shadow-md" alt="social media ad mockup" />
+          <img src={socialMediaMockups} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="social media ad mockup" onClick={() => handleImageClick(socialMediaMockups)} />
           <p className="mb-3 text-center text-gray-600 mt-2">
             Here are some mockups of how the new brand identity might look on social media advertisements.
           </p>
         </div>
 
         <div className="columns-1 p-1 md:p-10 m-1 md:m-10">
-          <img src={appMockup} className="w-300 h-200 object-cover rounded shadow-md" alt="mobile app mockup" />
+          <img src={appMockup} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="mobile app mockup" onClick={() => handleImageClick(appMockup)} />
           <p className="mb-3 text-center text-gray-600 mt-2">
             Above is a mobile app design to make ordering on the go quick and easy.
           </p>
         </div>
       </div>
+
+      {fullScreenImage && (
+        <FullScreenImage 
+          src={fullScreenImage} 
+          onClose={handleCloseFullScreen} 
+          prevImage={handlePrevImage} 
+          nextImage={handleNextImage} 
+        />
+      )}
+
       <Footer />
     </div>
   );

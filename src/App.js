@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './assets/style.css'; // Import your custom styles
 import './index.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';

@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import '../App.css';
 import '../assets/style.css';
-import Footer from './Footer'; // Importing the Footer component
+import Footer from './Footer';
+import FullScreenImage from './FullScreenImage'; // Ensure correct import path
 
 // Importing images
 import halloweenSign from '../assets/images/POSTERS/halloween sign.png';
@@ -13,6 +13,32 @@ import agoraMockup from '../assets/images/POSTERS/AGORA MOCKUP.png';
 import screenprintMockup from '../assets/images/POSTERS/banner copy.jpg';
 
 const PosterDesign = () => {
+  const [fullScreenMedia, setFullScreenMedia] = useState(null);
+
+  const mediaItems = [
+    halloweenSign,
+    yardSigns,
+    paramorePoster,
+    cedarPoster,
+    agoraMockup,
+    screenprintMockup
+  ];
+
+  const handleMediaClick = (src) => setFullScreenMedia(src);
+  const handleCloseFullScreen = () => setFullScreenMedia(null);
+
+  const handlePrevMedia = () => {
+    const currentIndex = mediaItems.indexOf(fullScreenMedia);
+    const prevIndex = (currentIndex - 1 + mediaItems.length) % mediaItems.length;
+    setFullScreenMedia(mediaItems[prevIndex]);
+  };
+
+  const handleNextMedia = () => {
+    const currentIndex = mediaItems.indexOf(fullScreenMedia);
+    const nextIndex = (currentIndex + 1) % mediaItems.length;
+    setFullScreenMedia(mediaItems[nextIndex]);
+  };
+
   return (
     <div>
       {/* Navigation header info bar */}
@@ -22,43 +48,39 @@ const PosterDesign = () => {
 
       {/* Poster designs */}
       <div className="columns-1 p-5 md:p-10 m-5 md:m-10">
-        {/* Embassy Halloween signs */}
+        {/* Poster title and description */}
         <h1 className="-mt-10" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px', textAlign: 'center' }}>
           Poster Designs
         </h1>
         <p className="mb-3 text-center text-gray-600 mb-10">
           High quality artwork illustration designs created using Adobe Illustrator, Photoshop, InDesign, Fresco, and mixed media.
         </p>
-        <img src={halloweenSign} className="w-300 h-200 object-cover rounded shadow-md mt-5 md:mt-0" alt="embassy halloween illustration sign" />
-        <p className="text-center text-gray-600 mt-2 mb-4">
-          A sign that I created for Embassy Healthcare Lebanon's Halloween Trunk or Treat Event
-        </p>
-        <img src={yardSigns} className="w-300 h-200 object-cover rounded shadow-md mt-5 md:mt-0" alt="embassy halloween illustration sign" />
 
-        {/* Paramore Columbus poster */}
-        <img src={paramorePoster} className="w-300 h-200 object-cover rounded shadow-md mt-5 md:mt-0" alt="paramore columbus poster" />
-        <p className="mb-3 text-center text-gray-600 mt-2">
-          A personal project where I designed a poster for the Paramore Tour 2023 Columbus date, it's part of a series.
-        </p>
-
-        {/* Cedar Point poster */}
-        <img src={cedarPoster} className="w-300 h-200 object-cover rounded shadow-md mt-5 md:mt-0" alt="cedar point photo collage illustration" />
-        <p className="mb-3 text-center text-gray-600 mt-2">
-          An illustrative Photoshop Poster Design for Cedar Fair.
-        </p>
-
-        {/* Agora building drawing */}
-        <img src={agoraMockup} className="w-300 h-200 object-cover rounded shadow-md mt-5 md:mt-0" alt="the agora building illustration" />
-        <p className="mb-3 text-center text-gray-600 mt-2">
-          An illustrative Poster Design Advertisement for The Agora in Cleveland.
-        </p>
-
-        {/* Cleveland screenprint mockup */}
-        <img src={screenprintMockup} className="w-300 h-200 object-cover rounded shadow-md mt-5 md:mt-0" alt="cle screenprint mockup" />
-        <p className="mb-3 text-center text-gray-600 mt-2">
-          Cleveland Skyline Screenprints for a building in downtown Cleveland.
-        </p>
+        {/* Poster images */}
+        {mediaItems.map((item, index) => (
+          <div key={index}>
+            <img
+              src={item}
+              className="w-300 h-200 object-cover rounded shadow-md mt-5 md:mt-0 cursor-pointer"
+              alt={`Poster ${index + 1}`}
+              onClick={() => handleMediaClick(item)}
+            />
+            <p className="text-center text-gray-600 mt-2 mb-4">
+              {/* Add descriptive text for each image if needed */}
+            </p>
+          </div>
+        ))}
       </div>
+
+      {fullScreenMedia && (
+        <FullScreenImage
+          src={fullScreenMedia}
+          onClose={handleCloseFullScreen}
+          prevImage={handlePrevMedia}
+          nextImage={handleNextMedia}
+        />
+      )}
+
       <Footer />
     </div>
   );

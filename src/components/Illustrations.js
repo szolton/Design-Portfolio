@@ -1,9 +1,11 @@
-import React from 'react';
-import '../assets/style.css'; // Assuming this is your custom CSS file
-import 'tailwindcss/tailwind.css'; // Importing Tailwind CSS
-import Footer from './Footer'; // Importing the Footer component
+import React, { useState } from 'react';
+import '../assets/style.css';
+import 'tailwindcss/tailwind.css';
+import Footer from './Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-// Importing images (example import, ensure paths are correct)
+// Importing images
 import paramoreBag from '../assets/images/APPAREL/paramore-bag.png';
 import mockup from '../assets/images/APPAREL/mockup.png';
 import puppiesMixer from '../assets/images/APPAREL/puppies mixer.png';
@@ -31,96 +33,349 @@ import gammaPhiWatercolor from '../assets/images/APPAREL/gamma phi watercolor co
 import indyBarCrawl from '../assets/images/APPAREL/indy bar crawl.png';
 import sigmaKappa from '../assets/images/APPAREL/sigma kappa.png';
 
+// FullScreenImage component
+const FullScreenImage = ({ src, onClose, prevImage, nextImage }) => {
+  React.useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        onClose();
+      } else if (event.key === 'ArrowLeft') {
+        prevImage();
+      } else if (event.key === 'ArrowRight') {
+        nextImage();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [onClose, prevImage, nextImage]);
+
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <button
+        className="absolute top-4 right-4 text-white text-3xl bg-black p-2 rounded-full focus:outline-none"
+        onClick={onClose}
+        aria-label="Close"
+      >
+        &times;
+      </button>
+      <img
+        src={src}
+        className="max-w-full max-h-full object-contain"
+        alt="Full screen"
+        aria-label="Full screen view"
+      />
+      <button
+        className="absolute top-1/2 left-4 text-white text-3xl bg-black p-2 rounded-full focus:outline-none"
+        onClick={prevImage}
+        aria-label="Previous image"
+      >
+        <FontAwesomeIcon icon={faChevronLeft} />
+      </button>
+      <button
+        className="absolute top-1/2 right-4 text-white text-3xl bg-black p-2 rounded-full focus:outline-none"
+        onClick={nextImage}
+        aria-label="Next image"
+      >
+        <FontAwesomeIcon icon={faChevronRight} />
+      </button>
+    </div>
+  );
+};
+
+// Main Illustrations component
 const Illustrations = () => {
+  const [fullScreenImage, setFullScreenImage] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(null);
+
+  const images = [
+    paramoreBag,
+    mockup,
+    puppiesMixer,
+    lovinLifeFest,
+    lovinLifeCollage,
+    clevelandBaseball,
+    paramoreCleMockup,
+    homecomingFootball,
+    steelVengeance,
+    kentStateBag,
+    akronBag,
+    akronChineseNewYear,
+    paramoreDetroit,
+    avocados,
+    uaGreekLifeCollage,
+    runningOutOfTime,
+    cedarPointCollage,
+    iowaFootballStadium,
+    houseSticker,
+    houseDrawing,
+    illustratedCollage,
+    fallHouseSticker,
+    pumpkinIllustration,
+    gammaPhiWatercolor,
+    indyBarCrawl,
+    sigmaKappa
+  ];
+
+  const handleImageClick = (src, index) => {
+    setFullScreenImage(src);
+    setCurrentIndex(index);
+  };
+
+  const handleCloseFullScreen = () => {
+    setFullScreenImage(null);
+    setCurrentIndex(null);
+  };
+
+  const handlePrevImage = () => {
+    if (currentIndex > 0) {
+      setFullScreenImage(images[currentIndex - 1]);
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
+  const handleNextImage = () => {
+    if (currentIndex < images.length - 1) {
+      setFullScreenImage(images[currentIndex + 1]);
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
   return (
     <>
       <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW, sans-serif', color: '#6ac9cb', fontSize: '18px' }}>
         Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
       </h4>
 
-      {/* Illustration Main */}
       <div className="container mx-auto">
-      <div className="p-5 sm:p-10">
-        <h1 className="text-center mb-8" style={{ fontFamily: 'Bebas Neue, sans-serif', color: '#6ac9cb', fontSize: '48px' }}>
-          Illustrations
-        </h1>
-        <p className="text-center text-gray-600 mb-10">
-          Designs and illustrations created using Adobe Illustrator, InDesign, Photoshop, and Fresco. Composition, typography, and creative illustration were key components in creating these designs.
-        </p>
+        <div className="p-5 sm:p-10">
+          <h1 className="text-center mb-8" style={{ fontFamily: 'Bebas Neue, sans-serif', color: '#6ac9cb', fontSize: '48px' }}>
+            Illustrations
+          </h1>
+          <p className="text-center text-gray-600 mb-10">
+            Designs and illustrations created using Adobe Illustrator, InDesign, Photoshop, and Fresco. Composition, typography, and creative illustration were key components in creating these designs.
+          </p>
 
-        {/* Paramore Illustrated Collage */}
-        <img src={paramoreBag} className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8" style={{ maxWidth: '100%' }} alt="paramore bag mockup" />
+          {/* Paramore Illustrated Collage */}
+          <img
+            src={paramoreBag}
+            className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+            onClick={() => handleImageClick(paramoreBag, 0)}
+            alt="Paramore bag mockup"
+          />
 
-        {/* Fall Out Boy and Pumpkin/Puppy Illustration */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img src={mockup} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="mockup illustration" />
-          <img src={puppiesMixer} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="pumpkin puppy illustration" />
+          {/* Fall Out Boy and Pumpkin/Puppy Illustration */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img
+              src={mockup}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(mockup, 1)}
+              alt="Mockup illustration"
+            />
+            <img
+              src={puppiesMixer}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(puppiesMixer, 2)}
+              alt="Pumpkin puppy illustration"
+            />
+          </div>
+
+          {/* Lovin Life Illustrations x2 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img
+              src={lovinLifeFest}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(lovinLifeFest, 3)}
+              alt="Lovin life illustration"
+            />
+            <img
+              src={lovinLifeCollage}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(lovinLifeCollage, 4)}
+              alt="Lovin life collage illustration"
+            />
+          </div>
+
+          {/* Cleveland Baseball, Paramore Cleveland, Homecoming Football */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <img
+              src={clevelandBaseball}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(clevelandBaseball, 5)}
+              alt="Cleveland baseball illustration"
+            />
+            <img
+              src={paramoreCleMockup}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(paramoreCleMockup, 6)}
+              alt="Paramore Cleveland mockup"
+            />
+            <img
+              src={homecomingFootball}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(homecomingFootball, 7)}
+              alt="Homecoming football illustration"
+            />
+          </div>
+
+          {/* Steel Vengeance, Kent State Bag */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img
+              src={steelVengeance}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(steelVengeance, 8)}
+              alt="Steel vengeance illustration"
+            />
+            <img
+              src={kentStateBag}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(kentStateBag, 9)}
+              alt="Kent State bag illustration"
+            />
+          </div>
+
+          {/* Akron Bag, Akron Chinese New Year */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img
+              src={akronBag}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(akronBag, 10)}
+              alt="Akron bag illustration"
+            />
+            <img
+              src={akronChineseNewYear}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(akronChineseNewYear, 11)}
+              alt="Akron Chinese New Year illustration"
+            />
+          </div>
+
+          {/* Paramore Detroit, Avocados */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img
+              src={paramoreDetroit}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(paramoreDetroit, 12)}
+              alt="Paramore Detroit illustration"
+            />
+            <img
+              src={avocados}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(avocados, 13)}
+              alt="Avocados illustration"
+            />
+          </div>
+
+          {/* Greek Life Collage, Running Out of Time */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img
+              src={uaGreekLifeCollage}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(uaGreekLifeCollage, 14)}
+              alt="Greek Life collage illustration"
+            />
+            <img
+              src={runningOutOfTime}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(runningOutOfTime, 15)}
+              alt="Running out of time illustration"
+            />
+          </div>
+
+          {/* Cedar Point Collage, Iowa Football Stadium */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img
+              src={cedarPointCollage}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(cedarPointCollage, 16)}
+              alt="Cedar Point collage illustration"
+            />
+            <img
+              src={iowaFootballStadium}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(iowaFootballStadium, 17)}
+              alt="Iowa football stadium illustration"
+            />
+          </div>
+
+          {/* House Sticker, House Drawing */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img
+              src={houseSticker}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(houseSticker, 18)}
+              alt="House sticker illustration"
+            />
+            <img
+              src={houseDrawing}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(houseDrawing, 19)}
+              alt="House drawing illustration"
+            />
+          </div>
+
+          {/* Illustrated Collage, Fall House Sticker */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img
+              src={illustratedCollage}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(illustratedCollage, 20)}
+              alt="Illustrated collage"
+            />
+            <img
+              src={fallHouseSticker}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(fallHouseSticker, 21)}
+              alt="Fall house sticker"
+            />
+          </div>
+
+          {/* Pumpkin Illustration, Gamma Phi Watercolor */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img
+              src={pumpkinIllustration}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(pumpkinIllustration, 22)}
+              alt="Pumpkin illustration"
+            />
+            <img
+              src={gammaPhiWatercolor}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(gammaPhiWatercolor, 23)}
+              alt="Gamma Phi watercolor illustration"
+            />
+          </div>
+
+          {/* Indy Bar Crawl, Sigma Kappa */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img
+              src={indyBarCrawl}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(indyBarCrawl, 24)}
+              alt="Indy bar crawl illustration"
+            />
+            <img
+              src={sigmaKappa}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(sigmaKappa, 25)}
+              alt="Sigma Kappa illustration"
+            />
+          </div>
         </div>
-
-        {/* Lovin Life Illustrations x2 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img src={lovinLifeFest} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="lovin life illustration" />
-          <img src={lovinLifeCollage} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="lovin life illustration" />
-        </div>
-
-        {/* Cleveland Baseball, Paramore Cleveland, Homecoming Football */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-          <img src={clevelandBaseball} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="cleveland baseball illustration" />
-          <img src={paramoreCleMockup} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="paramore cleveland illustration" />
-          <img src={homecomingFootball} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="homecoming football illustration" />
-        </div>
-
-        {/* Steel Vengeance Drawing */}
-        <img src={steelVengeance} className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 mt-4" style={{ maxWidth: '100%' }} alt="steel vengeance illustration" />
-
-        {/* Kent State and Akron */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-          <img src={kentStateBag} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="kent state bag illustration" />
-          <img src={akronBag} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="akron bag illustration" />
-          <img src={akronChineseNewYear} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="akron chinese new year illustration" />
-        </div>
-
-        {/* Paramore Detroit, Avocado Illustration */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img src={paramoreDetroit} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="paramore detroit poster" />
-          <img src={avocados} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="avocado illustration" />
-        </div>
-
-        {/* UA Greek Life Collage */}
-        <img src={uaGreekLifeCollage} className="mx-auto mb-4 max-w-full h-auto object-cover rounded shadow-md mt-4" alt="akron illustration for greek life" />
-
-        {/* Paramore Art, Cedar Point Collage */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img src={runningOutOfTime} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="running out of time paramore illustration" />
-          <img src={cedarPointCollage} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="cedar point photo illustrated collage" />
-        </div>
-
-        {/* Iowa Football Stadium, House Illustration, House Drawing */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-          <img src={iowaFootballStadium} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="iowa football stadium" />
-          <img src={houseSticker} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="house sticker illustration" />
-          <img src={houseDrawing} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="house drawing illustration" />
-        </div>
-
-        {/* Illustrated Collage, Fall House Sticker, Pumpkin Illustration */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-          <img src={illustratedCollage} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="illustrated collage" />
-          <img src={fallHouseSticker} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="fall house sticker" />
-          <img src={pumpkinIllustration} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="pumpkin illustration" />
-        </div>
-
-        {/* Gamma Phi Watercolor and Indy Bar Crawl */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <img src={gammaPhiWatercolor} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="gamma phi watercolor illustration" />
-          <img src={indyBarCrawl} className="mx-auto max-w-full h-full object-cover rounded shadow-md" style={{ maxWidth: '100%' }} alt="indy bar crawl poster" />
-        </div>
-
-        {/* Sigma Kappa Illustration */}
-        <img src={sigmaKappa} className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 mt-4" style={{ maxWidth: '100%' }} alt="sigma kappa illustration" />
       </div>
-      </div>
 
-      {/* Footer Component */}
+      {fullScreenImage && (
+        <FullScreenImage
+          src={fullScreenImage}
+          onClose={handleCloseFullScreen}
+          prevImage={handlePrevImage}
+          nextImage={handleNextImage}
+        />
+      )}
+
       <Footer />
     </>
   );
