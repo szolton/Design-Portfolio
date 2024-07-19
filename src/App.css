@@ -66,3 +66,17 @@
     padding: 5px !important;
   }
 }
+
+/* Custom styles for the header */
+.custom-header {
+  padding-top: 24px; /* Default padding for larger screens */
+  padding-bottom: 24px; /* Default padding for larger screens */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .custom-header {
+    padding-top: 8px; /* Reduced padding for mobile screens */
+    padding-bottom: 8px; /* Reduced padding for mobile screens */
+  }
+}
