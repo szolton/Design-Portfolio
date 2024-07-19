@@ -35,19 +35,18 @@ const RoziBrandIdentity = () => {
       </div>
 
       {/* Logo Video Presentation */}
-      <div className="max-w-4xl mx-auto h-auto overflow-hidden rounded shadow-md">
+      <div className="mx-auto h-auto overflow-hidden rounded shadow-md p-5 md:p-10 max-w-full md:max-w-6xl"> {/* Adjust max width for desktop */}
         <div className="aspect-w-16 aspect-h-9">
           <iframe 
             title="vimeo-player" 
             src="https://player.vimeo.com/video/839750448?h=8ee1d8682d" 
-            width="100%" 
-            height="auto" 
+            className="w-full h-full" 
             frameBorder="0" 
             allowFullScreen
           ></iframe>
         </div>
+        <p className="mb-3 text-center text-gray-600 mb-5 md:mb-10">A quick video of Rozi's new logo design presented in different shades and colors of the brand guide.</p>
       </div>
-      <p className="mb-3 text-center text-gray-600 mb-5 md:mb-10">A quick video of Rozi's new logo design presented in different shades and colors of the brand guide.</p>
 
       {/* Logo Presentation */}
       <div className="columns-1 p-5 md:p-10 m-5 md:m-10"> {/* Adjust padding for desktop and mobile */}
@@ -72,19 +71,15 @@ const RoziBrandIdentity = () => {
         <p className="mb-3 text-center text-gray-600 mt-2">Here, is the landing page where you can scroll through the main highlights of the brand.</p>
 
         <div className="grid grid-cols-1 gap-4 mt-4">
-        
-          
           <img src={websiteMockupsC} className="w-150 h-100 object-cover rounded shadow-md mb-3 md:mb-10" alt="website design mockup" />
           <p className="mb-3 text-center text-gray-600">Here, is where you can see how it would look when you hover over the navigation bar and when you click on the about page.</p>
 
           <img src={websiteMockupsD} className="w-150 h-100 object-cover rounded shadow-md mb-3 md:mb-10" alt="website design mockup" />
-       
         </div>
        
         {/* Social Media Ads */}
         <div className="grid grid-cols-1 gap-4 mt-4">
-        <p className="mb-3 text-center text-gray-600 mt-2">Here, are some examples of social media instagram campaign ads I mocked up for them.</p>
-     
+          <p className="mb-3 text-center text-gray-600 mt-2">Here, are some examples of social media instagram campaign ads I mocked up for them.</p>
           <img src={socialMediaAd1} className="w-150 h-100 object-cover rounded shadow-md mb-3 md:mb-10" alt="social media instagram ads" />
           <img src={socialMediaAd2} className="w-150 h-100 object-cover rounded shadow-md mb-3 md:mb-10" alt="social media instagram ads" />
           <img src={socialMediaAd3} className="w-150 h-100 object-cover rounded shadow-md mb-3 md:mb-10" alt="social media instagram ads" />

@@ -20,8 +20,8 @@ function WebPlanner() {
             </h4>
 
             <section className="container mx-auto">
-                <div className="title-headers text-center mt-10">
-                    <h2 className="mt-2 pt-5 text-center" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
+                <div className="title-headers text-center mt-1">
+                    <h2 className="-mt-2 text-center" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
                         Planisphere: An Interactive Event Planner
                     </h2>
                 </div>

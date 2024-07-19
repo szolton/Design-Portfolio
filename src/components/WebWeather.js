@@ -17,7 +17,7 @@ const WebWeather = () => {
             </h4>
 
             <main className="container mx-auto p-5">
-                <h2 className="text-center text-6xl text-teal-500 mb-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
+                <h2 className="text-center text-6xl text-teal-500 mb-8 -mt-3" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
                     Weather 5-Day Forecast
                 </h2>
                 <p className="text-gray-600 text-center mb-10">

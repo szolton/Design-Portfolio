@@ -53,7 +53,7 @@ function WebPlanner() {
                     <div className="flex justify-center">
                         <ul className="list-disc list-inside text-gray-600 text-left">
                             <li>The user can open the planner, and see the current date and time that's displayed at the top of the page.</li>
-                            <li>Yyou can scroll down, and see time blocks for that day during the business hours of 9-5.</li>
+                            <li>You can scroll down, and see time blocks for that day during the business hours of 9-5.</li>
                             <li>The time blocks are color-coded for past, present, and future events.</li>
                             <li>When you click on a time block, you can add text that saves straight to the page, as well as the save button.</li>
                             <li>The cool feature I added is editable text and being able to keep it on the page without having to press save.</li>

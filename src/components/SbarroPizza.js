@@ -17,12 +17,12 @@ const SbarroPizza = () => {
   return (
     <div>
       {/* Navigation header info bar */}
-      <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
-        Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
-      </h4>
+      <h4 className="text-left p-5 pl-7 pt-6 mobile-padding" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
+      Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
+    </h4>
 
       <div className="columns-1 p-3 md:p-10 m-5 md:m-10">
-        <h1 className="-mt-10" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px', textAlign: 'center' }}>
+        <h1 className="-mt-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px', textAlign: 'center' }}>
           Sbarro Rebranding Design
         </h1>
         <p className="mb-3 text-center text-gray-600 mb-10">
