@@ -15,21 +15,16 @@ import dateChange from '../assets/images/WEB DESIGN/daily-planner/date-change.pn
 function WebPlanner() {
     return (
         <div className="bg-gray-100">
-            
             <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
                 Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
             </h4>
 
-            <div className="title-headers text-center -mt-7">
-                <h2 className="mt-2 pt-5 text-center" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
-                        A Workday Calendar
-                    </h2>
-              
-                </div>
-
             <section className="container mx-auto">
-          
-        
+                <div className="title-headers text-center mt-1">
+                    <h2 className="-mt-2 text-center" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
+                        Planisphere: An Interactive Event Planner
+                    </h2>
+                </div>
                 <p className="mb-3 text-center text-gray-600 px-10 -mb-24">
                     The purpose of this project was to work in a group setting and apply everything learned in class over the past six weeks to create a real-world front-end application for portfolios. We integrated interactive daily tasks with weather and news updates using APIs. The project features a cool-toned color palette, utilizes Bulma styling, and updates the date daily.
                     <br /><br />

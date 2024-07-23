@@ -1,3 +1,4 @@
+// App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './assets/style.css'; // Import your custom styles
@@ -10,21 +11,23 @@ import Footer from './components/Footer';
 import Miley from './components/Miley';
 import Rozi from './components/RoziBrandIdentity';
 import PosterDesign from './components/PosterDesign';
-import WebPlanner from './components/WebPlanner';
-import WebScheduler from './components/WebScheduler';
+
 import Home from './components/Home';
 import PrintMedia from './components/PrintMedia';
 import Illustrations from './components/Illustrations';
 import SbarroPizza from './components/SbarroPizza';
 import Magazine from './components/magazine';
 import Laguna from './components/Laguna';
-import WebHome from './components/WebDesign';
-import WebWeather from './components/WebWeather';
-import WebCodingQuiz from './components/WebCodingQuiz';
+
 import About from './components/About';
 
+import WebHome from './components/WebDesign';
 import PasswordGenerator from './components/PasswordGenerator';
 import Planisphere from './components/Planisphere';
+import WebPlanner from './components/WebPlanner';
+import WorkdayCalendar from './components/WorkdayCalendar';
+import WebWeather from './components/WebWeather';
+import WebCodingQuiz from './components/WebCodingQuiz';
 
 
 function App() {
@@ -43,14 +46,15 @@ function App() {
           <Route path="/RoziBrandIdentity" element={<Rozi />} />
           <Route path="/PosterDesign" element={<PosterDesign />} />
           <Route path="/WebDesign" element={<WebHome />} />
+          <Route path="/PasswordGenerator" element={<PasswordGenerator />} />
+          <Route path="/Planisphere" element={<Planisphere />} />
           <Route path="/WebPlanner" element={<WebPlanner />} />
-          <Route path="/WebScheduler" element={<WebScheduler />} />
+          <Route path="/WorkdayCalendar" element={<WorkdayCalendar />} />
           <Route path="/WebWeather" element={<WebWeather />} />
           <Route path="/WebCodingQuiz" element={<WebCodingQuiz />} />
           <Route path="/" element={<Home />} />
-          <Route path="/PasswordGenerator" element={<PasswordGenerator />} />
-          <Route path="/Planisphere" element={<Planisphere />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

@@ -45,9 +45,9 @@ function WebHome() {
           title="Coding JavaScript Quiz"
         />
         <PortfolioItem
-          link="/WebScheduler"
+          link="/WorkdayCalendar"
           image={schedulerImage}
-          title="Workday Scheduler"
+          title="Workday Calendar"
         />
 
         <PortfolioItem
