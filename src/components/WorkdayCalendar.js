@@ -42,13 +42,15 @@ const WorkdayCalendar = () => {
                     <a href="https://www.youtube.com/watch?v=m9OSBJaQTlM" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Plain JavaScript Calendar</a>,
                     <a href="https://momentjs.com/docs/#/displaying/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 hover:underline ml-2">Moment.js</a>
                 </p>
-                <p className="text-gray-600 text-center">
+              
+                <img src={colorsImage} className="w-full max-w-full mx-auto my-8" alt="color-palette" />
+
+                <p className="text-gray-600 text-center mb-3">
                     I followed the videos to create the JavaScript, HTML, and CSS. Here are some screenshots of how my process worked.
                     First, I grabbed colors I liked more and messed around with them for the past/present/future tabs.
                     These were adjusted slightly as I went along to make something that was more clearly a past/future color, but still kept the colors pastel-themed.
                 </p>
 
-                <img src={colorsImage} className="w-full max-w-full mx-auto my-8" alt="color-palette" />
 
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
                     <img src={workDay} className="object-cover rounded shadow-md" alt="workday calendar" />

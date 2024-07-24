@@ -1,14 +1,13 @@
 import React from 'react';
-import Footer from './Footer';
 
-import wireframeImage from '../assets/images/WEB DESIGN/daily-planner/wireframe.png';
-import colorPaletteImage from '../assets/images/WEB DESIGN/daily-planner/color2.png';
-import taskList from '../assets/images/WEB DESIGN/daily-planner/working-process.png';
-import workingProcess2 from '../assets/images/WEB DESIGN/daily-planner/working-process-2.png';
+import wireframeImage from '../assets/images/WEB DESIGN/planisphere/wireframe.png';
+import colorPaletteImage from '../assets/images/WEB DESIGN/planisphere/color-palette.png';
+import processImage1 from '../assets/images/WEB DESIGN/planisphere/process.png';
+import processImage2 from '../assets/images/WEB DESIGN/planisphere/process-2.png';
 import workingProcess3 from '../assets/images/WEB DESIGN/daily-planner/working-process-3.png';
-import workingFinal from '../assets/images/WEB DESIGN/daily-planner/final.png';
-import popUpModal from '../assets/images/WEB DESIGN/daily-planner/pop-up-modal.png';
-import mobile1 from '../assets/images/WEB DESIGN/daily-planner/mobile.png';
+import planisphereLogo from '../assets/images/WEB DESIGN/planisphere/planisphere_logo.png';
+import homePageFinal from '../assets/images/WEB DESIGN/planisphere/planisphere-thumbnail.png';
+import mobile1 from '../assets/images/WEB DESIGN/planisphere/mobile.png';
 import mobile2 from '../assets/images/WEB DESIGN/daily-planner/mobile-2.png';
 import dateChange from '../assets/images/WEB DESIGN/daily-planner/date-change.png';
 
@@ -44,22 +43,126 @@ function WebPlanner() {
 
             <main className="container mx-auto mt-0">
                 <div className="md:p-20 md:m-20 p-5">
-                    <Section title="Proposal" text="Here is a link to our project proposal: https://docs.google.com/document/d/1Nmnr4t2qOZ9Cw_5P_Igc0qXeRajCBWISYu6bSHtewF8/edit" className="mt-5" />
-                    <Section title="Description" text="Our purpose of this project was to create a webpage that uses interactive daily tasks in conjunction with the weather and news updates accordingly." />
-                    <Section title="User Story" text="As a user, I want to see the upcoming weather and current news so that I can create a personalized, relevant and informational task list for the day. We began by doing research and finding sources -- these videos were equally helpful in various parts of the assignment." />
-                    <Section title="Responsibilities" text="I did the styling, modal pop up, bulma integration, and the ReadMe, while others did the task list, weather and news APIs, and merge conflicts." />
+                    <Section title="Description" text="Planishpere is a comprehensive event planning application designed to help users organize and manage events seamlessley. Whethere it's a birthday party, wedding, graduation, or any other special occasionan, Planisphere offers an intuitve platform to organize venues, budget, and track tasks for your events." />
+                    <Section title="User Story" text="
+
+As a user, I need to plan an event.
+
+I want a single place to organize my event,
+
+so that I can organize my thoughts and keep track of venue, budget, and tasks.
+
+Given an event planner site, when I log into the site, then I am shown my home page w/ my events.
+
+When I click to add an event, then I am presented with a page to get started.
+
+When I go to organize my tasks, then I am apple to go to a separate area for setting tasks.
+
+When I need to sort my budget, then I go to the budget section to set and manage my expenses or tasks.
+
+When I need to find a venue, then I can look at multiple venues to choose from.
+
+" />
+                    <Section title="Responsibilities" text="We worked collaboratively and touched just about every part of the project. My contributions were primarily to the front-end development using React and Chakra for the website application." />
                     <Section title="Process" text="Here are the wireframe we used to start with, and our inspiration to the colors of the project we wanted to use." />
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
-                        <Image src={wireframeImage} alt="Wireframe" />
-                        <Image src={colorPaletteImage} alt="Color Palette" />
-                    </div>
+            
+                    <div className="grid grid-cols-2 gap-4 mt-4">
+                        <div className="flex justify-center">
+                            <Image 
+                            src={wireframeImage} 
+                            alt="wireframe" 
+                            className="w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 h-[500px] object-contain" // Fixed height for both images
+                            />
+                            </div>
+                            <div className="flex justify-center">
+                                <Image 
+                                src={colorPaletteImage} 
+                                alt="colors" 
+                                className="w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 h-[500px] object-contain" // Fixed height for both images
+                                />
+                                </div>
+                                </div>
 
-                    <WorkingProcessSection src={taskList} text="Here's a screenshot of our working process with the task list as we built the page:" className="full-page-image rounded-lg" />
-                    <WorkingProcessSection src={workingProcess2} text="Here's more of our working process:" />
-                    <WorkingProcessSection src={workingProcess3} text="Here, you can see how we incorporated the Bulma styling:" />
-                    <WorkingProcessSection src={workingFinal} text="Here's a screenshot of our final deployed app in process, where you can search the city weather, add to your task list that saves to local storage, and search for trendy topics:" />
-                    <WorkingProcessSection src={popUpModal} text="Here, you can interact with the pop up modal where you can clear the list out, or keep it as-is:" />
+                                <p className="text-gray-600 text-center mt-3">
+                                   Here is our wireframe that I built up in Illustrator, and a glimpse of the color palette inspiration we liked.
+                                </p>
+
+                                <div className="grid grid-cols-3 gap-4 mt-4">
+  <div className="flex justify-center">
+    <Image 
+      src={processImage1} 
+      alt="process" 
+      className="w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 h-[500px] object-contain" // Fixed height for both images
+    />
+  </div>
+
+
+
+  <div className="flex justify-center">
+    <Image 
+      src={planisphereLogo} 
+      alt="planisphere logo" 
+      className="w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 h-[500px] object-contain" // Fixed height for all images
+    />
+  </div>
+
+  <div className="flex justify-center">
+    <Image 
+      src={processImage2} 
+      alt="process" 
+      className="w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 h-[500px] object-contain" // Fixed height for both images
+    />
+  </div>
+</div>
+
+<p className="text-gray-600 text-center mt-3">
+  Here, is where you can see a glimpse of our process. The beginning of our homepage, as well as how we started styling images to fit in the box and be responsive.
+  The last image on the right is an insprational logo our group had fun making.
+</p>
+
+<p className="text-gray-600 text-center mt-3">
+  Here is our final home page, complete with working links to a budget, tasks, venues, and the links to other pages as well.
+</p>
+
+
+                       
+
+                            <div className="grid grid-cols-1 gap-4 mt-4">
+                            <div className="flex justify-center">
+                            <Image 
+                            src={homePageFinal} 
+                            alt="wireframe" 
+                            className="w-2/3 md:w-4/5 lg:w-3/4 xl:w-2/3 h-[500px] object-contain" // Fixed height for both images
+                            />
+                            </div>
+                            </div>
+
+                            <p className="text-gray-600 text-center mt-3">
+                                Here's our application functioning well on mobile device screens.
+                            </p>
+
+                            <div className="grid grid-cols-1 gap-4 mt-4">
+                            <div className="flex justify-center">
+                            <Image 
+                            src={mobile1} 
+                            alt="wireframe" 
+                            className="w-2/3 md:w-4/5 lg:w-3/4 xl:w-2/3 h-[500px] object-contain" // Fixed height for both images
+                            />
+                            </div>
+                            </div>
+                            
+
+                    
+
+                            
+
+
+                                 
+                                
+                                 <WorkingProcessSection src={workingProcess3} text="Here, you can see how we incorporated the Bulma styling:" />
+                    <WorkingProcessSection src={planisphereLogo} text="Here's a screenshot of our final deployed app in process, where you can search the city weather, add to your task list that saves to local storage, and search for trendy topics:" />
+                    {/* <WorkingProcessSection src={popUpModal} text="Here, you can interact with the pop up modal where you can clear the list out, or keep it as-is:" /> */}
 
                     <p className="mb-3 text-center text-gray-600 mt-2">Their old brochure design that we referenced to update their artwork.</p>
 

@@ -77,7 +77,7 @@ Search by city. </p>
                     In Conclusion
                 </h2>
                 <p className="text-gray-600 text-center">
-                    In conclusion, I set up the quiz to meet the challenge requirements and improved it. I:
+                    In conclusion, I set up the project to meet the challenge requirements and improved it. I:
                 </p>
                 <br></br>
                 <div className="flex justify-center">
