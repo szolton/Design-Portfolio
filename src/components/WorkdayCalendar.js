@@ -3,9 +3,7 @@ import Footer from './Footer'; // Importing the Footer component
 
 // Import images
 import colorsImage from '../assets/images/WEB DESIGN/workday/palette.png';
-import workDay1 from '../assets/images/WEB DESIGN/workday/workday-1.png';
-import workDay2 from '../assets/images/WEB DESIGN/workday/workday-2.png';
-import workDay3 from '../assets/images/WEB DESIGN/workday/workday-3.png';
+import workDay from '../assets/images/WEB DESIGN/workday/workday.png';
 import workDay4 from '../assets/images/WEB DESIGN/workday/workday-4.png';
 import mobile from '../assets/images/WEB DESIGN/workday/mobile.png';
 import mobile2 from '../assets/images/WEB DESIGN/workday/mobile2.png';
@@ -53,44 +51,56 @@ const WorkdayCalendar = () => {
 
                 <img src={colorsImage} className="w-full max-w-full mx-auto my-8" alt="color-palette" />
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <img src={workDay1} className="object-cover rounded shadow-md" alt="workday calendar" />
-                    <img src={workDay2} className="object-cover rounded shadow-md" alt="workday calendar" />
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+                    <img src={workDay} className="object-cover rounded shadow-md" alt="workday calendar" />
                 </div>
 
                 <p className="text-gray-600 text-center mt-8">
-                    When the page first loads, the user's location automatically pops up as seen in the left screenshot.
-                    We used localStorage to save recent searches and make them linkable.
+                Next, I updated it to go include half-hour marks too, just to make for the most efficient schedule in case there were ever meetings scheduled on the half-hour mark.
+                This move helps with accuracy during the work day.
+                I also added a fature that added a clock to the page, and an element that shows the day of the week and date.
+                Then, I updated the colors and got them to show past/present/future and update automatically as the day went on.
+                I also added a cool feature where it automatically saves what you type out on the schedule, so you don't need to click the save button (though it still works, per the assignment requirements); this helps with efficiency and saving your progress as you go, in case the user accidentally closes out of the program before saving.
+                <br></br>
+                <br></br>
+                Here is a cool feature of the colors changing times as the day goes on -- see how the 4:30PM time block is now light purple, and the 5:00PM time block is the darker purple, signaling for the future times.
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <img src={workDay3} className="object-cover rounded shadow-md" alt="workday calendar" />
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
                     <img src={workDay4} className="object-cover rounded shadow-md" alt="workday calendar" />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 h-64">
-                    <img src={mobile} className="object-cover rounded shadow-md h-full" alt="mobile-screenshot-1" />
-                    <img src={mobile2} className="object-cover rounded shadow-md h-full" alt="mobile-screenshot-2" />
+                <p className="text-gray-600 text-center mt-8">
+                    Here is the app functioning on mobile for a seamless user experience.
+                </p>
+
+                <div className="grid grid-cols-1 mt-4 md:grid-cols-1 gap-8">
+                    <img src={mobile} className="object-cover rounded shadow-md mx-auto" alt="mobile workday calendar" />
+                    </div>
+
+                    <h2 className="text-center text-6xl text-teal-500 my-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
+                    In Conclusion
+                </h2>
+                <p className="text-gray-600 text-center">
+                    In conclusion, I set up the calnendar to meet the challenge requirements and improved it. I:
+                </p>
+                <br></br>
+                <div className="flex justify-center">
+                    <ul className="list-disc list-inside text-gray-600 text-left">
+                        <li>When the user opens the planner, the current date and time is displayed at the top of the page.</li>
+                        <li>The user can scroll down, and see time blocks for that day during the business hours of 9-5.</li>
+                        <li>The time blocks are color-coded for past, present, and future events.</li>
+                        <li>When you click on a time block, you can add text that saves straight to the page (as well as the save button).</li>
+                        <li>The time blocks are color-coded for past, present, and future events.</li>
+                        <li>The cool feature I added is editable text and being able to keep it on the page without having to press save.</li>
+                        <li>Text is then saved in local storage, where when you refresh the page, it shows up and providing a seamless user experience.</li>
+                        <li>The user can also edit it and remove text as well.</li>
+               
+
+                    </ul>
                 </div>
 
-                <div className="text-center mt-8">
-                    <h2 className="text-center text-6xl text-teal-500 my-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
-                        In Conclusion
-                    </h2>
-                    <p className="text-gray-600">
-                        In conclusion, I set up the quiz to meet the challenge requirements and improved it. I:
-                    </p>
-                    <div className="flex justify-center mt-4">
-                        <ul className="list-disc list-inside text-gray-600 text-left">
-                            <li>Provided a weather dashboard with form inputs where the user can search by city, state, or zip code.</li>
-                            <li>Displayed current and future weather conditions including weather icons, temperature, wind, and humidity.</li>
-                            <li>Implemented localStorage to save recent searches and make them accessible.</li>
-                            <li>Ensured responsiveness across different devices.</li>
-                        </ul>
-                    </div>
-                </div>
             </main>
-            <Footer />
         </div>
     );
 }
