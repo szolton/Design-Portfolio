@@ -50,7 +50,6 @@ const Magazine = () => {
         </div>
         <p className="mb-3 text-center text-gray-600 mt-2">Cleveland Metropolitan Bar Association's Legal Directory Design</p>
       </div>
-      <Footer />
     </div>
   );
 };

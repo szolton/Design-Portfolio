@@ -1,12 +1,11 @@
 import React from 'react';
-import Footer from './Footer'; // Importing the Footer component
 
 // Import images
 import colorsImage from '../assets/images/WEB DESIGN/workday/palette.png';
 import workDay from '../assets/images/WEB DESIGN/workday/workday.png';
 import workDay4 from '../assets/images/WEB DESIGN/workday/workday-4.png';
 import mobile from '../assets/images/WEB DESIGN/workday/mobile.png';
-import mobile2 from '../assets/images/WEB DESIGN/workday/mobile2.png';
+// import mobile2 from '../assets/images/WEB DESIGN/workday/mobile2.png';
 
 const WorkdayCalendar = () => {
     return (
@@ -76,9 +75,9 @@ const WorkdayCalendar = () => {
 
                 <div className="grid grid-cols-1 mt-4 md:grid-cols-1 gap-8">
                     <img src={mobile} className="object-cover rounded shadow-md mx-auto" alt="mobile workday calendar" />
-                    </div>
+                </div>
 
-                    <h2 className="text-center text-6xl text-teal-500 my-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
+                <h2 className="text-center text-6xl text-teal-500 my-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
                     In Conclusion
                 </h2>
                 <p className="text-gray-600 text-center">
@@ -95,12 +94,10 @@ const WorkdayCalendar = () => {
                         <li>The cool feature I added is editable text and being able to keep it on the page without having to press save.</li>
                         <li>Text is then saved in local storage, where when you refresh the page, it shows up and providing a seamless user experience.</li>
                         <li>The user can also edit it and remove text as well.</li>
-               
-
                     </ul>
                 </div>
-
             </main>
+
         </div>
     );
 }

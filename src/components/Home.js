@@ -66,8 +66,6 @@ function HomePage() {
                     title="Book Publishing"
                 />
             </div>
-
-            <Footer /> {/* Add the Footer component here */}
         </div>
     );
 }

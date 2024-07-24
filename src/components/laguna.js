@@ -117,9 +117,6 @@ const Laguna = () => {
           nextImage={handleNextImage}
         />
       )}
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 };

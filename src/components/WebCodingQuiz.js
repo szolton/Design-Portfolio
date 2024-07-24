@@ -52,7 +52,7 @@ We were to build a timed coding quiz with multiple choice questions, that will r
                 </div>
                 </div>
             </main>
-            <Footer />
+ 
         </div>
     );
 }

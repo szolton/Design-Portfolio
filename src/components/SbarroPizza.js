@@ -137,7 +137,7 @@ const SbarroPizza = () => {
         />
       )}
 
-      <Footer />
+
     </div>
   );
 };

@@ -81,7 +81,6 @@ const PosterDesign = () => {
         />
       )}
 
-      <Footer />
     </div>
   );
 }

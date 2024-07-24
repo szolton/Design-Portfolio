@@ -32,8 +32,6 @@ function Miley() {
           <VideoEmbed src="https://player.vimeo.com/video/838391436?h=1e1a2f9369" />
         </div>
       </div>
-      
-      <Footer />
     </div>
   );
 }

@@ -89,7 +89,7 @@ Search by city. </p>
                     </ul>
                 </div>
        </main>
-            <Footer />
+  
         </div>
     );
 }

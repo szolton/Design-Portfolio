@@ -93,7 +93,6 @@ const PasswordGenerator = () => {
                     </ul>
                 </div>
             </main>
-            <Footer />
         </div>
     );
 }

@@ -96,8 +96,7 @@ const PrintMedia = () => {
           </div>
         ))}
 
-        {/* Footer */}
-        <Footer />
+ 
       </div>
 
       {fullScreenImage && (

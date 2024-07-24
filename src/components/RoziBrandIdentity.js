@@ -196,9 +196,6 @@ const RoziBrandIdentity = () => {
           nextImage={handleNextMedia}
         />
       )}
-
-      {/* Footer */}
-      <Footer /> {/* Render the Footer component */}
     </>
   );
 };

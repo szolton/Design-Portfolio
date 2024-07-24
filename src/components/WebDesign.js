@@ -63,8 +63,7 @@ function WebHome() {
         />
       </div>
 
-      {/* Footer component only once at the bottom */}
-      <Footer />
+
     </div>
   );
 }

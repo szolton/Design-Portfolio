@@ -86,7 +86,7 @@ function WebPlanner() {
                     </div>
                 
             </main>
-            <Footer />
+   
         </div>
     );
 }
