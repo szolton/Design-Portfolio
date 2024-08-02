@@ -83,7 +83,7 @@ const WorkdayCalendar = () => {
                     In Conclusion
                 </h2>
                 <p className="text-gray-600 text-center">
-                    In conclusion, I set up the calnendar to meet the challenge requirements and improved it. I:
+                    In conclusion, I set up the calendar to meet the challenge requirements and improved it. I:
                 </p>
                 <br></br>
                 <div className="flex justify-center">
