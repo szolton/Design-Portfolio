@@ -24,7 +24,7 @@ function HomePage() {
                         Welcome to my Portfolio
                     </h2>
                     <p className="mb-3">
-                        Take a look around -- my design style focuses on a loose, fun, and efficient illustration process.
+                        Take a look around -- my design style focuses on a loose, fun, and efficient creative illustration process.
                     </p>
                 </div>
             </section>
