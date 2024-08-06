@@ -12,7 +12,7 @@ import mobile3Image from '../assets/images/WEB DESIGN/weather-planner/mobile-3.p
 const WebWeather = () => {
     return (
         <div>
-            <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
+            <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'Alte Haas Grotesk, sans-serif', color: '#6ac9cb', fontSize: '18px' }}>
                 Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
             </h4>
 

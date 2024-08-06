@@ -6,7 +6,7 @@ import Footer from './Footer'; // Importing the Footer component
 const PasswordGenerator = () => {
     return (
         <div>
-            <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'FranklinGothic URW', color: '#6ac9cb', fontSize: '18px' }}>
+            <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'Alte Haas Grotesk, sans-serif', color: '#6ac9cb', fontSize: '18px' }}>
                 Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
             </h4>
 
