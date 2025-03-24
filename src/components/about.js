@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/style.css';
 import aboutMeImage from '../assets/images/about-me.jpeg';
-import Footer from '../components/Footer';
+import Footer from './Footer';
 
 const About = () => (
   <div>

@@ -32,6 +32,10 @@ import pumpkinIllustration from '../assets/images/APPAREL/pumpkin-halloween.png'
 import gammaPhiWatercolor from '../assets/images/APPAREL/gamma phi watercolor copy.png';
 import indyBarCrawl from '../assets/images/APPAREL/indy bar crawl.png';
 import sigmaKappa from '../assets/images/APPAREL/sigma kappa.png';
+import blackParade from '../assets/images/APPAREL/black-parade.png';
+import mcrYoung from '../assets/images/APPAREL/mcr when we were young.png';
+import whatsernameGreenDay from '../assets/images/APPAREL/whatsername.png';
+import panicYoung from '../assets/images/APPAREL/panic when we were young_final.png';
 
 // FullScreenImage component
 const FullScreenImage = ({ src, onClose, prevImage, nextImage }) => {
@@ -117,7 +121,11 @@ const Illustrations = () => {
     pumpkinIllustration,
     gammaPhiWatercolor,
     indyBarCrawl,
-    sigmaKappa
+    sigmaKappa,
+    mcrYoung,
+    whatsernameGreenDay,
+    blackParade,
+    panicYoung
   ];
 
   const handleImageClick = (src, index) => {
@@ -159,6 +167,14 @@ const Illustrations = () => {
             Designs and illustrations created using Adobe Illustrator, InDesign, Photoshop, and Fresco. Composition, typography, and creative illustration were key components in creating these designs.
           </p>
 
+              {/* MCR Black Parade illustration */}
+              <img
+            src={blackParade}
+            className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+            onClick={() => handleImageClick(blackParade, 0)}
+            alt="Black Parade skeleton illustration"
+          />
+
           {/* Paramore Illustrated Collage */}
           <img
             src={paramoreBag}
@@ -166,6 +182,30 @@ const Illustrations = () => {
             onClick={() => handleImageClick(paramoreBag, 0)}
             alt="Paramore bag mockup"
           />
+
+          {/* Panic at the Disco When We Were Young 2025 */}
+          <img
+            src={panicYoung}
+            className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+            onClick={() => handleImageClick(panicYoung, 0)}
+            alt="Panic! At the Disco When We Were Young Illustration"
+          />
+
+               {/* When We Were Young 2024 and Whatsername illustration */}
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img
+              src={mcrYoung}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(mcrYoung, 1)}
+              alt="My Chemical Romance When We Were Young illustration"
+            />
+            <img
+              src={whatsernameGreenDay}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(whatsernameGreenDay, 2)}
+              alt="Whatsername Green Day American Idiot themed llustration"
+            />
+          </div>
 
           {/* Fall Out Boy and Pumpkin/Puppy Illustration */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
@@ -182,6 +222,8 @@ const Illustrations = () => {
               alt="Pumpkin puppy illustration"
             />
           </div>
+
+       
 
           {/* Lovin Life Illustrations x2 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
