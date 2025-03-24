@@ -21,8 +21,61 @@ const Magazine = () => {
           Magazine Spreads
         </h1>
         <p className="mb-3 text-center text-gray-600 mb-10">
-          For the Cleveland Metropolitan Bar Association, I created several designs that included badges, a monthly Bar Journal magazine, advertisements and flyers, and the legal directory for committees within the association. I carefully followed their brand guidelines and enjoyed adding touches of creativity to the work.
+          Magazines and print materials created for the Cleveland Institute of Art and Cleveland Metropolitan Bar Association. For the Cleveland Metropolitan Bar Association, I created several designs that included badges, a monthly Bar Journal magazine, advertisements and flyers, and the legal directory for committees within the association. I carefully followed their brand guidelines and enjoyed adding touches of creativity to the work.
         </p>
+
+{/* CIA Community Impact Report */}
+        <div className="max-w-full mx-auto h-auto overflow-hidden rounded shadow-md pt-10">
+          <div className="aspect-w-16 aspect-h-9">
+          <iframe 
+          title="Community Impact Report 2023-24"
+          src="https://e.issuu.com/embed.html?d=24-25_ia_community_impact_report_issue&u=ciacollege" 
+          width="1100" 
+          height="625" 
+          frameBorder="0" 
+          allowFullScreen
+          ></iframe>
+
+          </div>
+          <p className="text-center text-gray-600 mt-3 mb-10">
+            Cleveland Institute of Art's Community Impact Report 2023-24.
+          </p>
+        </div>
+
+        {/* CIA Winter Link 2025 */}
+        <div className="max-w-full mx-auto h-auto overflow-hidden rounded shadow-md">
+          <div className="aspect-w-16 aspect-h-9">
+          <iframe 
+          title="Community Impact Report 2023-24"
+          src="https://e.issuu.com/embed.html?d=24-25_ia_winter_link_magazine_final_2.0&u=ciacollege" 
+          width="1100" 
+          height="625" 
+          frameBorder="0" 
+          allowFullScreen
+          ></iframe>
+
+          </div>
+          <p className="text-center text-gray-600 mt-3 mb-10">
+            Cleveland Institute of Art's Winter Link 2025 including the annual report.
+          </p>
+        </div>
+
+{/* Summer Link 2024 */}
+        <div className="max-w-full mx-auto h-auto overflow-hidden rounded shadow-md">
+          <div className="aspect-w-16 aspect-h-9">
+          <iframe 
+            title="Issuu Magazine"
+            src="https://e.issuu.com/embed.html?d=23-24_ia_summer_link_magazine&u=ciacollege" 
+            width="1100" 
+            height="625" 
+            frameBorder="0" 
+            allowFullScreen
+            ></iframe>
+          </div>
+          <p className="text-center text-gray-600 mt-3 mb-10">
+            Cleveland Institute of Art Summer Link 2024.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="w-full p-1 md:px-0">
