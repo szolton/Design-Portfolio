@@ -6,6 +6,11 @@ import FullScreenImage from './FullScreenImage';
 // Import your images
 import paramoreBag from '../assets/images/APPAREL/paramore-bag.png';
 import paramoreProcess from '../assets/images/APPAREL/paramore-work.png';
+import paramoreWork from '../assets/images/APPAREL/paramore-collage-work.jpg';
+import paramoreWork2 from '../assets/images/APPAREL/paramore-collage-work2.jpg';
+import paramoreShirtPrint from '../assets/images/APPAREL/paramore-collage-shirt.jpg';
+import paramoreShirt from '../assets/images/APPAREL/paramore-in-action.png';
+import paramoreCollageFinal from '../assets/images/APPAREL/paramore-collage-final.png';
 
 const ParamoreCollage = () => {
   const [fullScreenImage, setFullScreenImage] = useState(null);
@@ -19,7 +24,7 @@ const ParamoreCollage = () => {
   };
 
   // Store images in an array
-  const images = [paramoreBag, paramoreProcess];
+  const images = [paramoreBag, paramoreProcess, paramoreShirtPrint, paramoreShirt, paramoreCollageFinal];
 
   const handlePrevImage = () => {
     if (!fullScreenImage) return;
@@ -52,18 +57,65 @@ const ParamoreCollage = () => {
           Together, I worked with Sbarro to create a...
         </p>
 
-        {/* Paramore Image Display in a single column */}
-        <div className="flex flex-col items-center"> {/* Added flex-col for vertical stacking */}
-          {images.map((image, index) => (
+        {/* Paramore Image Display */}
+        <img
+            src={paramoreBag}
+            className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+            onClick={() => handleImageClick(paramoreBag, 0)}
+            alt="Paramore bag mockup"
+          />
+
+<img
+            src={paramoreProcess}
+            className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+            onClick={() => handleImageClick(paramoreProcess, 0)}
+            alt="Paramore bag mockup"
+          />
+
+
+
+
+        <div className="flex flex-col items-center md:flex-row md:justify-center md:gap-4"> 
+        
+
+          {/* Second Column (paramoreWork and paramoreWork2 side by side) */}
+          <div className="flex flex-row justify-center gap-4 mb-8 md:w-1/2"> 
             <img
-              key={index}
-              src={image}
-              alt={`Paramore Image ${index + 1}`}
-              className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer transition-transform transform"
-              onClick={() => handleImageClick(image)}
+              src={paramoreWork}
+              alt="Paramore Work"
+              className="max-w-[48%] h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+              onClick={() => handleImageClick(paramoreWork)}
             />
-          ))}
+            <img
+              src={paramoreWork2}
+              alt="Paramore Work 2"
+              className="max-w-[48%] h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+              onClick={() => handleImageClick(paramoreWork2)}
+            />
+               <img
+              src={paramoreShirtPrint}
+              alt="Paramore Work 2"
+              className="max-w-[48%] h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+              onClick={() => handleImageClick(paramoreWork2)}
+            />
+                 <img
+              src={paramoreShirt}
+              alt="Paramore Work 2"
+              className="max-w-[48%] h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+              onClick={() => handleImageClick(paramoreWork2)}
+            />
+
+
+          </div>
+         
         </div>
+        <img
+            src={paramoreCollageFinal}
+            className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+            onClick={() => handleImageClick(paramoreCollageFinal, 0)}
+            alt="Paramore bag mockup"
+          />
+     
       </div>
 
       {/* Full-screen image modal */}
