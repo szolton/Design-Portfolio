@@ -21,7 +21,7 @@ import akronChineseNewYear from '../assets/images/APPAREL/uakronshirts.png';
 import paramoreDetroit from '../assets/images/APPAREL/paramore detroit 2-01.png';
 import avocados from '../assets/images/APPAREL/avocados.png';
 import uaGreekLifeCollage from '../assets/images/APPAREL/UA Greek Life Collage Shirts 2023 VC-02.png';
-import runningOutOfTime from '../assets/images/APPAREL/running out of time-01.png';
+import runningOutOfTime from '../assets/images/APPAREL/running out of time-01.jpg';
 import cedarPointCollage from '../assets/images/APPAREL/cp poster 2 copy.png';
 import iowaFootballStadium from '../assets/images/APPAREL/iowa.jpg';
 import houseSticker from '../assets/images/APPAREL/house-sticker.png';
@@ -163,7 +163,7 @@ const Illustrations = () => {
           <h1 className="text-center mb-8" style={{ fontFamily: 'Bebas Neue, sans-serif', color: '#6ac9cb', fontSize: '48px' }}>
             Illustrations
           </h1>
-          <p className="text-center text-gray-600 mb-10">
+          <p className="text-center text-gray-600 mb-10 -mt-7">
             Designs and illustrations created using Adobe Illustrator, InDesign, Photoshop, and Fresco. Composition, typography, and creative illustration were key components in creating these designs.
           </p>
 
@@ -191,8 +191,31 @@ const Illustrations = () => {
             alt="Panic! At the Disco When We Were Young Illustration"
           />
 
+            {/* Lovin Life Fest Illustrations 2024 */}
+            <img src={lovinLifeFest}
+            className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+            onClick={() => handleImageClick(lovinLifeFest, 0)}
+            alt="2024 Lovin Life fest illustration"
+          />
+
+            <img src={lovinLifeCollage}
+            className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+            onClick={() => handleImageClick(lovinLifeCollage, 0)}
+            alt="2024 Lovin Life fest illustration"
+          />
+
+
+
+                  {/* MCR When We Were Young illustration */}
+                  <img
+            src={mcrYoung}
+            className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+            onClick={() => handleImageClick(mcrYoung, 0)}
+            alt="My Chemical Romance When We Were Young 2024 skeleton illustration"
+          />
+
                        {/* Lovin Life Illustrations x2 */}
-                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                       {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             <img
               src={lovinLifeFest}
               className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
@@ -205,28 +228,40 @@ const Illustrations = () => {
               onClick={() => handleImageClick(lovinLifeCollage, 4)}
               alt="Lovin life collage illustration"
             />
-          </div>
+          </div> */}
 
-  
+ 
+            {/* Green Day Whatsername American Idiot illustration */}
+            <img
+            src={whatsernameGreenDay}
+            className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+            onClick={() => handleImageClick(whatsernameGreenDay, 0)}
+            alt="My Chemical Romance When We Were Young 2024 skeleton illustration"
+          />
 
-               {/* When We Were Young 2024 and Whatsername illustration */}
-               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            {/* Fall Out Boy illustration */}
             <img
-              src={mcrYoung}
-              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
-              onClick={() => handleImageClick(mcrYoung, 1)}
-              alt="My Chemical Romance When We Were Young illustration"
-            />
-            <img
-              src={whatsernameGreenDay}
-              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
-              onClick={() => handleImageClick(whatsernameGreenDay, 2)}
-              alt="Whatsername Green Day American Idiot themed llustration"
-            />
-          </div>
+            src={mockup}
+            className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+            onClick={() => handleImageClick(mockup, 0)}
+            alt="Fall Out Boy So Much for Stardust illustration"
+          />
+
+                {/* Pumpkin Puppy illustration */}
+                <img
+            src={puppiesMixer}
+            className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+            onClick={() => handleImageClick(puppiesMixer, 0)}
+            alt="Pumpkin Puppy mixer illustration"
+          />
+
+
+
+
+
 
           {/* Fall Out Boy and Pumpkin/Puppy Illustration */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             <img
               src={mockup}
               className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
@@ -239,7 +274,7 @@ const Illustrations = () => {
               onClick={() => handleImageClick(puppiesMixer, 2)}
               alt="Pumpkin puppy illustration"
             />
-          </div>
+          </div> */}
 
        
 
