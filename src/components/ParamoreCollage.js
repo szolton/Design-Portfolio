@@ -54,7 +54,14 @@ const ParamoreCollage = () => {
           Paramore Illustration Process
         </h1>
         <p className="mb-3 text-center text-gray-600 mb-10">
-          Together, I worked with Sbarro to create a...
+          For this project, I wanted to create a collage that honored the history of Paramore over the years. I was inspired because I didn't like any of the official merch on their website or elsewhere, so I decided that I had the power to make my own, so I did. 
+
+          I had already made other bags in this design style and felt like I was on a roll, so I kept the same kind of vector style as the others in my portfolio. 
+         
+      <br></br>
+         <br></br>
+          I started by sketching and brainstorming different elements to include, and settled on a color palette that was inspired by After Laughter. From there, I drew out different elements on an iPad and created the composition and typography in Illustrator.
+         I wanted an illustration that was bright, energetic, professional and unique. Bringing together all the different pieces from different eras and making it cohesive was a real challenge, and I had a lot of fun creating the art and rising to the occasion. 
         </p>
 
         {/* Paramore Image Display */}
@@ -64,57 +71,70 @@ const ParamoreCollage = () => {
             onClick={() => handleImageClick(paramoreBag, 0)}
             alt="Paramore bag mockup"
           />
+             <p className="mb-3 text-center text-gray-600 mb-10">
+        My final version of the artwork mocked up on a bag. It includes concept elements from the albums All We Know is Falling, Riot!, Brand New Eyes, self-titled, After Laughter, This is Why, as well as some of their most famous singles such as Decode and vampire fangs.  </p>
+
+
+        <p className="-mb-8 pt-10 text-center text-gray-600">
+        Here's some of my work process. It includes design research such as sketching, the final color palette, different iterations, close-ups of different collage pieces as I built the piece, as well as the final shirt that was worn to the Paramore concert in Columbus. </p>
+
+
+
+
 
 <img
             src={paramoreProcess}
             className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
             onClick={() => handleImageClick(paramoreProcess, 0)}
-            alt="Paramore bag mockup"
+            alt="Paramore bag work process with swatches, sketches and iterations"
           />
-
-
-
 
         <div className="flex flex-col items-center md:flex-row md:justify-center md:gap-4"> 
         
 
           {/* Second Column (paramoreWork and paramoreWork2 side by side) */}
-          <div className="flex flex-row justify-center gap-4 mb-8 md:w-1/2"> 
-            <img
-              src={paramoreWork}
-              alt="Paramore Work"
-              className="max-w-[48%] h-auto object-cover rounded shadow-md p-8 cursor-pointer"
-              onClick={() => handleImageClick(paramoreWork)}
-            />
-            <img
-              src={paramoreWork2}
-              alt="Paramore Work 2"
-              className="max-w-[48%] h-auto object-cover rounded shadow-md p-8 cursor-pointer"
-              onClick={() => handleImageClick(paramoreWork2)}
-            />
-               <img
-              src={paramoreShirtPrint}
-              alt="Paramore Work 2"
-              className="max-w-[48%] h-auto object-cover rounded shadow-md p-8 cursor-pointer"
-              onClick={() => handleImageClick(paramoreWork2)}
-            />
-                 <img
-              src={paramoreShirt}
-              alt="Paramore Work 2"
-              className="max-w-[48%] h-auto object-cover rounded shadow-md p-8 cursor-pointer"
-              onClick={() => handleImageClick(paramoreWork2)}
-            />
+{/* Second Column (paramoreWork, paramoreWork2, paramoreShirtPrint, paramoreShirt) */}
+<div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 md:w-1/2">
+  <img
+    src={paramoreWork}
+    alt="Paramore Work"
+    className="max-w-full sm:max-w-[48%] h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+    onClick={() => handleImageClick(paramoreWork)}
+  />
+  <img
+    src={paramoreWork2}
+    alt="Paramore Work 2"
+    className="max-w-full sm:max-w-[48%] h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+    onClick={() => handleImageClick(paramoreWork2)}
+  />
+  <img
+    src={paramoreShirtPrint}
+    alt="Paramore Shirt Print"
+    className="max-w-full sm:max-w-[48%] h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+    onClick={() => handleImageClick(paramoreShirtPrint)}
+  />
+  <img
+    src={paramoreShirt}
+    alt="Paramore Shirt"
+    className="max-w-full sm:max-w-[48%] h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+    onClick={() => handleImageClick(paramoreShirt)}
+  />
+</div>
 
-
-          </div>
          
         </div>
+
+        <p className="mb-3 text-center text-gray-600 mb-10">
+This is the final artwork that went to print.
+</p>
         <img
             src={paramoreCollageFinal}
             className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
             onClick={() => handleImageClick(paramoreCollageFinal, 0)}
             alt="Paramore bag mockup"
           />
+
+
      
       </div>
 
