@@ -4,6 +4,7 @@ import 'tailwindcss/tailwind.css';
 import Footer from './Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 // Importing images
 import paramoreBag from '../assets/images/APPAREL/paramore-bag.png';
@@ -182,6 +183,13 @@ const Illustrations = () => {
             onClick={() => handleImageClick(paramoreBag, 0)}
             alt="Paramore bag mockup"
           />
+
+      {/* Process Link */}
+      <p className="text-blue-500 underline cursor-pointer mt-2">
+        <Link to="/ParamoreCollage">Process</Link>
+      </p>
+    </div>
+          
 
           {/* Panic at the Disco When We Were Young 2025 */}
           <img
@@ -446,7 +454,7 @@ const Illustrations = () => {
             />
           </div>
         </div>
-      </div>
+   
 
       {fullScreenImage && (
         <FullScreenImage

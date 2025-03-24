@@ -23,6 +23,7 @@ import WebPlanner from './components/WebPlanner';
 import WorkdayCalendar from './components/WorkdayCalendar';
 import WebWeather from './components/WebWeather';
 import WebCodingQuiz from './components/WebCodingQuiz';
+import ParamoreCollage from './components/ParamoreCollage';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
           <Route path="/WebWeather" element={<WebWeather />} />
           <Route path="/WebCodingQuiz" element={<WebCodingQuiz />} />
           <Route path="/" element={<Home />} />
+          <Route path="/ParamoreCollage" element={<ParamoreCollage />} />
         </Routes>
       </Layout>
     </Router>
