@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import '../assets/style.css';
 import 'tailwindcss/tailwind.css';
-import Footer from './Footer';
 import FullScreenImage from './FullScreenImage';
 
 // Import your images
 import paramoreBag from '../assets/images/APPAREL/paramore-bag.png';
+import paramoreProcess from '../assets/images/APPAREL/paramore-work.png';
 
 const ParamoreCollage = () => {
   const [fullScreenImage, setFullScreenImage] = useState(null);
@@ -19,7 +19,7 @@ const ParamoreCollage = () => {
   };
 
   // Store images in an array
-  const images = [paramoreBag];
+  const images = [paramoreBag, paramoreProcess];
 
   const handlePrevImage = () => {
     if (!fullScreenImage) return;
@@ -52,14 +52,14 @@ const ParamoreCollage = () => {
           Together, I worked with Sbarro to create a...
         </p>
 
-        {/* Display images */}
-        <div className="flex justify-center">
+        {/* Paramore Image Display in a single column */}
+        <div className="flex flex-col items-center"> {/* Added flex-col for vertical stacking */}
           {images.map((image, index) => (
             <img
               key={index}
               src={image}
               alt={`Paramore Image ${index + 1}`}
-              className="cursor-pointer w-64 h-auto m-2 transition-transform transform hover:scale-105"
+              className="mx-auto mb-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer transition-transform transform"
               onClick={() => handleImageClick(image)}
             />
           ))}
@@ -75,8 +75,6 @@ const ParamoreCollage = () => {
           onNext={handleNextImage}
         />
       )}
-
-      <Footer />
     </div>
   );
 };
