@@ -12,7 +12,16 @@ import sketchesGif from '../assets/images/SBARRO/sbarro-sketches.gif';
 import backgrounds from '../assets/images/SBARRO/logos on different backgrounds-28.png';
 import pizzaBoxMockup from '../assets/images/SBARRO/sbarro packaging-02.png';
 import socialMediaMockups from '../assets/images/SBARRO/ig ad 2-02.png';
+import brandGuideCover from '../assets/images/SBARRO/brand-guide/cover page.png';
+import brandGuidePg3 from '../assets/images/SBARRO/brand-guide/page 3,4.png';
+import brandGuidePg5 from '../assets/images/SBARRO/brand-guide/page 5,6.png';
+import brandGuidePg7 from '../assets/images/SBARRO/brand-guide/page 7,8.png';
+import brandGuidePg9 from '../assets/images/SBARRO/brand-guide/page 9,10.png';
+import brandGuidePg11 from '../assets/images/SBARRO/brand-guide/page 11,12.png';
+import brandGuidePg13 from '../assets/images/SBARRO/brand-guide/page 13,14.png';
+import brandGuidePg15 from '../assets/images/SBARRO/brand-guide/page 15,16.png';
 import appMockup from '../assets/images/SBARRO/more ig ads.png';
+
 
 const SbarroPizza = () => {
   const [fullScreenImage, setFullScreenImage] = useState(null);
@@ -34,6 +43,15 @@ const SbarroPizza = () => {
     pizzaBoxMockup,
     socialMediaMockups,
     appMockup,
+    brandGuideCover,
+    brandGuidePg3,
+    brandGuidePg5,
+    brandGuidePg7,
+    brandGuidePg9,
+    brandGuidePg11,
+    brandGuidePg13,
+    brandGuidePg15,
+    
   ];
 
   const handlePrevImage = () => {
@@ -59,6 +77,8 @@ const SbarroPizza = () => {
         <h1 className="-mt-8" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px', textAlign: 'center' }}>
           Sbarro Rebranding Design
         </h1>
+
+        {/* Project Description and introduction */}
         <p className="mb-3 text-center text-gray-600 mb-10">
           Together, I worked with Sbarro to create a new brand identity that captured their Italian roots with a modern, refreshed look that's fun and engaging. Using Adobe InDesign, Illustrator, Photoshop and AfterEffects, we created a brand identity with a clean, organic logo that's reflective of "A taste of Italy on the go." In this brand identity exploration, you will find the new logo for the company, some process sketches, a brand guide, a mobile app design, pizza box packaging, and social media campaign ads.
         </p>
@@ -67,6 +87,7 @@ const SbarroPizza = () => {
           <img src={logoPortfolio} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="final logo design" onClick={() => handleImageClick(logoPortfolio)} />
         </div>
 
+{/* original logos, sketches and references */}
         <div className="columns-3 p-1 md:p-4 m-1 md:m-4 flex flex-row gap-4">
           <div className="aspect-w-3 aspect-h-2 flex-grow">
             <img src={logoRefA} className="w-full h-full object-cover rounded shadow-md cursor-pointer" alt="old sbarro logo reference" onClick={() => handleImageClick(logoRefA)} />
@@ -90,6 +111,7 @@ const SbarroPizza = () => {
           </p>
         </div>
 
+{/* logo video animation */}
         <div className="max-w-full mx-auto h-auto overflow-hidden rounded shadow-md">
           <div className="aspect-w-16 aspect-h-9">
             <iframe 
@@ -105,7 +127,74 @@ const SbarroPizza = () => {
             A quick video animation of how the logo might look at the end of an advertisement.
           </p>
         </div>
+{/* Brand Guide */}
 
+<div className="columns-1 p-1 md:p-10 m-1 md:m-10">
+          <img src={brandGuideCover} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="Brand Guide Cover page" onClick={() => handleImageClick(brandGuideCover)} />
+          <p className="mb-3 text-center text-gray-600 mt-2">
+            Here is the completed Brand Guide for Sbarro where I worked closely to incorporate the updated brand with company values.
+          </p>
+        </div>
+
+        <div className="columns-1 pt-0 px-1 md:px-10 m-1 md:m-10">
+
+
+          <img src={brandGuidePg3} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="Brand Guide Page 3, Mission statement" onClick={() => handleImageClick(brandGuidePg3)} />
+          <p className="mb-3 text-center text-gray-600 mt-2">
+           
+          </p>
+        </div>
+
+        <div className="columns-1 p-1 md:p-10 m-1 md:m-10">
+          <img src={brandGuidePg5} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="Brand Guide Page 5, Tone and Message w Logo" onClick={() => handleImageClick(brandGuidePg5)} />
+          <p className="mb-3 text-center text-gray-600 mt-2">
+           
+          </p>
+        </div>
+
+        <div className="columns-1 pt-0 px-1 md:px-10 m-1 md:m-10">
+          <img src={brandGuidePg7} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="Brand Guide Page 7, Clear Space and Inccorect uses" onClick={() => handleImageClick(brandGuidePg7)} />
+          <p className="mb-3 text-center text-gray-600 mt-2">
+           
+          </p>
+        </div>
+
+        <div className="columns-1 p-1 md:p-10 m-1 md:m-10">
+          <img src={brandGuidePg9} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="Brand Guide Page 9, Tagline and Pattern illustrations" onClick={() => handleImageClick(brandGuidePg9)} />
+          <p className="mb-3 text-center text-gray-600 mt-2">
+           
+          </p>
+        </div>
+
+        <div className="columns-1 pt-0 px-1 md:px-10 m-1 md:m-10">
+          <img src={brandGuidePg11} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="Brand Guide Page 11, Typography" onClick={() => handleImageClick(brandGuidePg11)} />
+          <p className="mb-3 text-center text-gray-600 mt-2">
+           
+          </p>
+        </div>
+
+        <div className="columns-1 p-1 md:p-10 m-1 md:m-10">
+          <img src={brandGuidePg13} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="Brand Guide Page 13, Color Palette" onClick={() => handleImageClick(brandGuidePg13)} />
+          <p className="mb-3 text-center text-gray-600 mt-2">
+           
+          </p>
+        </div>
+
+        <div className="columns-1 pt-0 px-1 md:px-10 m-1 md:m-10">
+          <img src={brandGuidePg15} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="Brand Guide Page 15, Photography" onClick={() => handleImageClick(brandGuidePg15)} />
+          <p className="mb-3 text-center text-gray-600 mt-2">
+           
+          </p>
+        </div>
+
+
+
+
+
+
+
+
+{/* Packaging */}
         <div className="columns-1 p-1 md:p-10 m-1 md:m-10">
           <img src={pizzaBoxMockup} className="w-300 h-200 object-cover rounded shadow-md cursor-pointer" alt="pizza box mockup" onClick={() => handleImageClick(pizzaBoxMockup)} />
           <p className="mb-3 text-center text-gray-600 mt-2">

@@ -191,6 +191,24 @@ const Illustrations = () => {
             alt="Panic! At the Disco When We Were Young Illustration"
           />
 
+                       {/* Lovin Life Illustrations x2 */}
+                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img
+              src={lovinLifeFest}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(lovinLifeFest, 3)}
+              alt="Lovin life illustration"
+            />
+            <img
+              src={lovinLifeCollage}
+              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
+              onClick={() => handleImageClick(lovinLifeCollage, 4)}
+              alt="Lovin life collage illustration"
+            />
+          </div>
+
+  
+
                {/* When We Were Young 2024 and Whatsername illustration */}
                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             <img
@@ -225,21 +243,7 @@ const Illustrations = () => {
 
        
 
-          {/* Lovin Life Illustrations x2 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <img
-              src={lovinLifeFest}
-              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
-              onClick={() => handleImageClick(lovinLifeFest, 3)}
-              alt="Lovin life illustration"
-            />
-            <img
-              src={lovinLifeCollage}
-              className="mx-auto max-w-full h-full object-cover rounded shadow-md cursor-pointer"
-              onClick={() => handleImageClick(lovinLifeCollage, 4)}
-              alt="Lovin life collage illustration"
-            />
-          </div>
+     
 
           {/* Cleveland Baseball, Paramore Cleveland, Homecoming Football */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
