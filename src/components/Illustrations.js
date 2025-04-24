@@ -186,7 +186,7 @@ const Illustrations = () => {
 
       {/* Process Link */}
       <p className="text-blue-500 underline cursor-pointer mt-2">
-        <Link to="/ParamoreCollage">Process</Link>
+        <Link to="/ParamoreCollage">Check out my process!</Link>
       </p>
     </div>
           

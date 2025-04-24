@@ -51,7 +51,7 @@ const ParamoreCollage = () => {
 
       <div className="columns-1 p-3 md:p-10 m-5 md:m-10">
         <h1 className="-mt-8 text-center" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
-          Paramore Illustration Process
+          Paramore Collage Process
         </h1>
         <p className="mb-3 text-center text-gray-600 mb-10">
           For this project, I wanted to create a collage that honored the history of Paramore over the years. I was inspired because I didn't like any of the official merch on their website or elsewhere, so I decided that I had the power to make my own, so I did. 
