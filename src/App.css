@@ -80,3 +80,7 @@
     padding-bottom: 8px; /* Reduced padding for mobile screens */
   }
 }
+
+.bg-custom-turquoise {
+  background-color: rgba(0, 204, 204, 0.7); /* Apply 70% opacity */
+}

@@ -21,9 +21,9 @@ body {
 
 p {
   font-family: "FranklinGothic URW", Arial, sans-serif;
-  font-size: 18px;
   padding-left: 10px;
   padding-right: 10px;
+  color: darkslategray;
 }
 
 .underline-on-hover:hover {
