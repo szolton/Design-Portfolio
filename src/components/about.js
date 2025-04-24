@@ -50,7 +50,7 @@ const About = () => (
             be contacted by email at 
             <a href="mailto:szolton.designs@gmail.com" className="underline-on-hover"> szolton.designs@gmail.com</a>, 
             and my resume is available 
-            <a href="https://drive.google.com/file/d/1Q2sl7K5knj9QGR4KME2dnDOkw_HXcoxr/view?usp=sharing" target="_blank" className="underline-on-hover"> here</a> 
+            <a href="https://drive.google.com/file/d/1Q2sl7K5knj9QGR4KME2dnDOkw_HXcoxr/view?usp=sharing" target="_blank" className="underline-on-hover"> here </a> 
             to see my full range of experiences and qualifications. Thank you!
           </p>
         </div>

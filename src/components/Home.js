@@ -12,6 +12,7 @@ import PosterThumbnail from '../assets/images/POSTERS/paramore-columbus-poster.p
 import LagunaThumbnail from '../assets/images/LAGUNA/laguna-thumbnail.png';
 import MileyThumbnail from '../assets/images/MILEY/miley-cyrus-thumbnail.png';
 import selfiePhoto from '../assets/images/IMG_9186.png';
+import dailyPlannerImage from '../assets/images/WEB DESIGN/daily-planner/Screen Shot 2024-04-09 at 6.21.28 PM.png';
 
 function HomePage() {
     return (
@@ -98,20 +99,24 @@ function HomePage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 pt-4 px-4 sm:px-8 md:p-12 m-4">
                 
                 {/* Portfolio items */}
-                <PortfolioItem
-                    link="/PrintMedia"
-                    image={AMBHHBrochureImage}
-                    title="Print Media: Brochures & Advertising"
-                />
+
                 <PortfolioItem
                     link="/SbarroPizza"
                     image={SbarroImage}
                     title="Sbarro Rebranding Design"
                 />
+
+                
+                <PortfolioItem
+                    link="/PrintMedia"
+                    image={AMBHHBrochureImage}
+                    title="CIA: Community Impact Report"
+                />
+                
                 <PortfolioItem
                     link="/magazine"
                     image={MagCoverSpread}
-                    title="Magazine Spreads"
+                    title="LINK Magazine"
                 />
                 <PortfolioItem
                     link="/RoziBrandIdentity"
@@ -121,12 +126,12 @@ function HomePage() {
                 <PortfolioItem
                     link="/posterdesign"
                     image={PosterThumbnail}
-                    title="Poster Designs"
+                    title="Paramore Band Poster"
                 />
                 <PortfolioItem
                     link="/laguna"
-                    image={LagunaThumbnail}
-                    title="'Laguna' Typeface Design"
+                    image={dailyPlannerImage}
+                    title="Interactive Daily Planner"
                 />
                 <PortfolioItem
                     link="/miley"
