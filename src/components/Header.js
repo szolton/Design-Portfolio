@@ -22,7 +22,7 @@ const Header = () => (
           {/* Mobile logo text: visible only on small screens */}
           <span
             className="block md:hidden"
-            style={{ color: 'white', fontSize: '32px' }} // Smaller font for mobile
+            style={{ color: 'white', fontSize: '48px' }} // Smaller font for mobile
           >
             Zolton Design
           </span>
