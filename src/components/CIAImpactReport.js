@@ -23,7 +23,7 @@ import VillageFinal2 from '../assets/images/AGPRINT/Village of HH Brochure/Villa
 import Stickers from '../assets/images/AGPRINT/stickers-01.png';
 import ODOTMockup from '../assets/images/AGPRINT/ODOT Banner Stands.png';
 
-const PrintMedia = () => {
+const CIAImpactReport = () => {
   const [fullScreenImage, setFullScreenImage] = useState(null);
   const [imageList, setImageList] = useState([
     AMBMockup,
@@ -111,4 +111,4 @@ const PrintMedia = () => {
   );
 };
 
-export default PrintMedia;
+export default CIAImpactReport;

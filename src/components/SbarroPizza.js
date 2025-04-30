@@ -75,9 +75,34 @@ const SbarroPizza = () => {
 
 
 <div className="p-3 md:p-10 m-5 md:m-10">
-  <h1 className="-mt-8 text-center" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '3rem', textAlign: 'center' }}>
-    Sbarro Rebranding Design
-  </h1>
+
+<main className="container mx-auto mt-0">
+{/* // Outer container div with responsive padding and margin settings for different screen sizes */}
+<div className="md:p-20 sm:mx-8 md:mx-16 md:m-20 lg:mx-52">
+  {/* 
+    md:p-20    => Adds padding of 5rem (80px) on all sides for medium screens and larger
+    sm:mx-8    => Adds horizontal margin of 2rem (32px) for small screens and larger
+    md:mx-16   => Increases horizontal margin to 4rem (64px) for medium screens and larger
+    md:m-20    => Applies margin of 5rem (80px) on all sides for medium screens and larger (overrides previous mx)
+    lg:mx-52   => Increases horizontal margin to 13rem (208px) for large screens and larger
+  */}
+
+
+ 
+<h1
+  // Significantly move the heading up on medium+ screens
+  className="mt-0 md:-mt-48 text-center"
+  style={{
+    fontFamily: 'Bebas Neue',
+    color: '#6ac9cb',
+    fontSize: '3rem',
+    textAlign: 'center'
+  }}
+>
+  Sbarro Rebranding Design
+</h1>
+
+
 
   {/* Project Description and Introduction */}
   <p className="text-left            // Aligns text to the left
@@ -85,7 +110,7 @@ const SbarroPizza = () => {
             mx-2                  // Mobile: Small horizontal margin
             sm:mx-4               // Small screens: Slightly larger margin
             md:mx-8               // Medium screens: Moderate margin
-            lg:mx-80              // Large screens: Wider horizontal margin
+            lg:mx-84              // Large screens: Wider horizontal margin
             mb-6                 // Adds bottom margin for spacing below
             leading-relaxed       // Sets relaxed line-height for readability
 ">
@@ -102,7 +127,7 @@ const SbarroPizza = () => {
     alt="final logo design"
     onClick={() => handleImageClick(logoPortfolio)}
   />
-  <p className="text-center text-gray-600 mt-4 max-w-3xl px-4 leading-relaxed">
+  <p className="text-left text-gray-600 mt-4 max-w-3xl px-4 leading-relaxed">
     The final logo deliverable. I wanted a design that was bright, fun, and engaging with the audience, all while honoring the Italian history of the company
     and the influence it has on the brand.
   </p>
@@ -137,13 +162,11 @@ const SbarroPizza = () => {
     onClick={() => handleImageClick(sketchesGif)} 
   />
 <p className="mb-3                  // Bottom margin for spacing below the paragraph
-            text-center             // Center-aligns the text
+            text-left             // Center-aligns the text
             text-gray-600           // Sets the text color to a medium gray
             mt-2                    // Top margin for spacing above the paragraph
             mx-4                    // Mobile: Small horizontal margins
-            sm:mx-8                 // Small screens: Medium horizontal margins
-            md:mx-16                // Medium screens: Larger horizontal margins
-            lg:mx-60                // Large screens: Even larger horizontal margins
+       
 ">
   This is a gif I created that summarized my preliminary sketches and first draft ideas. There were dozens of iterations, a final handful of logos that were vectorized, and
   one that was selected by the client.
@@ -158,7 +181,7 @@ const SbarroPizza = () => {
     alt="logo on diff backgrounds" 
     onClick={() => handleImageClick(backgrounds)} 
   />
-  <p className="mb-3 text-center text-gray-600 mt-2">
+  <p className="mb-3 text-left text-gray-600 mt-2">
     Here, I explored how the logo would look against different backgrounds. This helped to ensure it would be flexible with multiple purposes.
   </p>
 </div>
@@ -174,13 +197,11 @@ const SbarroPizza = () => {
     onClick={() => handleImageClick(brandGuideCover)} 
   />
 <p className="mb-3                  // Bottom margin for spacing below the paragraph
-            text-center             // Center-aligns the text
+            text-left             // Center-aligns the text
             text-gray-600           // Sets the text color to a medium gray
             mt-2                    // Top margin for spacing above the paragraph
             mx-4                    // Mobile: Small horizontal margins
-            sm:mx-8                 // Small screens: Medium horizontal margins
-            md:mx-16                // Medium screens: Larger horizontal margins
-            lg:mx-60                // Large screens: Even larger horizontal margins
+  
 ">
   Here is the completed Brand Guide for Sbarro where I worked closely to incorporate the updated brand with company values. I focused on bright, fun and cohesive messaging
   that explained the function and purpose of the brand behind the design. I addressed the mission statement, tone, logo usage, taglines, illustration patterns, fonts,
@@ -273,16 +294,14 @@ const SbarroPizza = () => {
       allowFullScreen
     ></iframe>
   </div>
-  <p className="text-center            // Center-aligns the text
+  <p className="text-left            // Center-aligns the text
             text-gray-600            // Sets text color to medium gray
             mt-3                     // Adds top margin
             mb-6                     // Adds bottom margin
             px-4                     // Adds horizontal padding (left & right) on all screen sizes
             sm:px-6                  // Slightly more padding on small screens and up
             mx-4                     // Mobile: Adds small horizontal margins
-            sm:mx-8                  // Small screens: Medium horizontal margins
-            md:mx-16                 // Medium screens: Larger horizontal margins
-            lg:mx-60                 // Large screens: Even larger horizontal margins
+        
 ">
   A quick video animation of how the app design functions and walks the user through how we worked together to create something refreshed that functions well for the user to order food.
   The video walks the user through an advertisement, the landing page, menu and sidebar.
@@ -302,13 +321,11 @@ const SbarroPizza = () => {
     onClick={() => handleImageClick(pizzaBoxMockup)} 
   />
  <p className="mb-3                  // Bottom margin for spacing below the paragraph
-            text-center             // Center-aligns the text
+            text-left             // Center-aligns the text
             text-gray-600           // Sets the text color to a medium gray
             mt-2                    // Top margin for spacing above the paragraph
             mx-4                    // Mobile: Small horizontal margins
-            sm:mx-8                 // Small screens: Medium horizontal margins
-            md:mx-16                // Medium screens: Larger horizontal margins
-            lg:mx-60                // Large screens: Even larger horizontal margins
+         
 ">
   Above, I explored how the logo might look printed on the pizza box packaging. It's quirky and uses the pizza illustrations in a way that isn't used anywhere else in the branding.
   The white backing helps everything pop against the recycled packaging, and stay consistent with the rest of the brand.
@@ -330,13 +347,11 @@ const SbarroPizza = () => {
     onClick={() => handleImageClick(socialMediaMockups)} 
   />
 <p className="mb-3                  // Bottom margin for spacing below the paragraph
-            text-center             // Center-aligns the text
+            text-left             // Center-aligns the text
             text-gray-600           // Sets the text color to a medium gray
             mt-2                    // Top margin for spacing above the paragraph
             mx-4                    // Mobile: Small horizontal margins
-            sm:mx-8                 // Small screens: Medium horizontal margins
-            md:mx-16                // Medium screens: Larger horizontal margins
-            lg:mx-60                // Large screens: Even larger horizontal margins
+     
 ">
   Here are some mockups of how the new brand identity might look on social media advertisements. This ad leans heavily into illustration and combines it with imagery
   that shows off a buyer enjoying the food.
@@ -351,10 +366,12 @@ const SbarroPizza = () => {
     alt="mobile app mockup" 
     onClick={() => handleImageClick(appMockup)} 
   />
-  <p className="mb-3 text-center text-gray-600 mt-2">
+  <p className="mb-3 text-left text-gray-600 mt-2">
     Here is another example of a social media post that uses photography and leans into some fun language.
   </p>
 </div>
+</div>
+</main>
 
 
       </div>

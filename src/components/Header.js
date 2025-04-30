@@ -45,9 +45,6 @@ const Header = () => (
             <Link to="/Illustrations" className="hover:text-gray-600">ILLUSTRATIONS</Link>
           </li>
           <li className="col-span-1 flex-1 md:flex-none text-center text-xl">
-            <Link to="/WebDesign" className="hover:text-gray-600">WEB DESIGN</Link>
-          </li>
-          <li className="col-span-1 flex-1 md:flex-none text-center text-xl">
             <Link to="/About" className="hover:text-gray-600">ABOUT</Link>
           </li>
           <li className="col-span-1 flex-1 md:flex-none text-center text-xl pr-4">

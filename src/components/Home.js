@@ -94,24 +94,30 @@ function HomePage() {
             </section>
 
             {/* Section title for the projects */}
-            <h1 className="text-center mb-8 pt-10 text-4xl sm:text-5xl" style={{ fontFamily: 'Bebas Neue, sans-serif', color: '#6ac9cb' }}>
-                Projects
-            </h1>
+            <h1 className="text-center             // Center-aligns the text
+            mb-8                     // Bottom margin for spacing below the heading
+            pt-10                    // Top padding for spacing above the heading
+            text-5xl                  // Larger font size on all screen sizes
+            sm:text-6xl               // Small screens and up: Even larger font size
+            lg:text-7xl               // Large screens: Even larger font size
+" style={{ fontFamily: 'Bebas Neue, sans-serif', color: '#6ac9cb' }}>
+  Projects
+</h1>
+
 
             {/* Grid container for portfolio items */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 pt-4 px-4 sm:px-8 md:p-12 m-4">
                 
                 {/* Portfolio items */}
-
+            
                 <PortfolioItem
                     link="/SbarroPizza"
                     image={SbarroImage}
                     title="Sbarro Rebranding Design"
                 />
-
                 
                 <PortfolioItem
-                    link="/PrintMedia"
+                    link="/CIAImpactReport"
                     image={AMBHHBrochureImage}
                     title="CIA: Community Impact Report"
                 />
@@ -132,7 +138,7 @@ function HomePage() {
                     title="Paramore Band Poster"
                 />
                 <PortfolioItem
-                    link="/laguna"
+                    link="/InteractiveDailyPlanner"
                     image={dailyPlannerImage}
                     title="Interactive Daily Planner"
                 />
@@ -142,6 +148,8 @@ function HomePage() {
                     title="Book Publishing"
                 />
             </div>
+            
+            
 
         </div>
     );
@@ -162,7 +170,7 @@ function PortfolioItem({ link, image, title }) {
                     </div>
 
                     {/* Portfolio item title */}
-                    <h2 className="mt-2 pt-1 text-center pb-4" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '28px' }}>
+                    <h2 className="mt-2 pt-1 text-center pb-4" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '40px' }}>
                         {title}
                     </h2>
                 </div>
