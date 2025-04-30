@@ -62,25 +62,28 @@ function HomePage() {
 <p className="text-left 
             md:text-left   // Desktop: Keeps the text left-aligned
             text-gray-300 
-            pl-4             // Mobile: Adds left padding
-            md:pl-32        // Desktop: Adds a large left padding (adjust as needed)
+            pl-4           // Mobile: Adds left padding
+            md:pl-18       // Desktop: Adds a large left padding (adjust as needed)
             -mt-1 
-            md:-mt-1        // Mobile and Desktop: Maintains the margin-top, no difference
+            md:-mt-1       // Mobile and Desktop: Maintains the margin-top, no difference
             mb-2 
-            md:mb-1         // Mobile: More margin at the bottom, Desktop: Less margin
+            md:mb-1        // Mobile: More margin at the bottom, Desktop: Less margin
             font-bold 
             text-lg 
-            md:text-xl      // Mobile: Smaller font size, Desktop: Larger font size
+            md:text-xl     // Mobile: Smaller font size, Desktop: Larger font size
+            tracking-widest // Adds extra letter spacing
 ">
-    Graphic Designer • Illustrator • Publication Specialist
+    GRAPHIC DESIGNER • ILLUSTRATOR • PUBLICATION SPECIALIST
 </p>
+
+
 
 
 
                             {/* Introductory paragraph about the portfolio owner */}
                             <p className="text-left text-gray-200 mt-4 text-base md:text-xl">
                                 Welcome to my portfolio. I'm a graphic designer and illustrator with a style that focuses on a loose, fun, and efficient creative design and illustration process. 
-                                With a keen eye for detail and love for art, I specialize in crafting visual stories that captivate and inspire users. I have a detailed working experience that focuses on
+                                With a keen eye for detail and love for art, I specialize in crafting visual stories that captivate and inspire users. Based in Cleveland, Ohio, I have a detailed working experience that focuses on
                                 print production, apparel design/illustration, and brand identity as well as an ability to build and retain client relationships.
                                 <br /><br />
                                 Explore my projects to see how I've helped companies, especially higher education, stay relevant and inspire others through graphic design.
