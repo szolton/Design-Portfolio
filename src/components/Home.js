@@ -4,15 +4,45 @@ import '../assets/style.css'; // Importing custom styles from the CSS file
 import Footer from './Footer'; // Importing the Footer component
 
 // Importing images for the portfolio items
-import AMBHHBrochureImage from '../assets/images/AGPRINT/AMB HH Brochures/AMB-HH-Brochure-Mockups.png';
-import SbarroImage from '../assets/images/SBARRO/SBARRO-01.png';
+import SbarroImage from '../assets/images/SBARRO/SBARRO-01.webp';
 import MagCoverSpread from '../assets/images/MAGAZINES/magazine-cover-spread.png';
-import RoziThumbnail from '../assets/images/ROZIS/menu-mockup.png';
-import PosterThumbnail from '../assets/images/POSTERS/paramore-columbus-poster.png';
-import LagunaThumbnail from '../assets/images/LAGUNA/laguna-thumbnail.png';
-import MileyThumbnail from '../assets/images/MILEY/miley-cyrus-thumbnail.png';
+import RoziThumbnail from '../assets/images/ROZIS/menu-mockup.webp';
+import PosterThumbnail from '../assets/images/POSTERS/paramore-columbus-poster.webp';
+import MileyThumbnail from '../assets/images/miley-cyrus-thumbnail.webp';
 import selfiePhoto from '../assets/images/IMG_9186.png';
-import dailyPlannerImage from '../assets/images/WEB DESIGN/daily-planner/Screen Shot 2024-04-09 at 6.21.28 PM.png';
+import dailyPlannerImage from '../assets/images/daily-planner-thumbnail.webp'
+import ciaImpactReport from '../assets/images/cia-impact-report.webp';
+import ciaLinkWinter2024 from '../assets/images/cia-link.webp';
+import ciaAlumniThumbnail from '../assets/images/alumni-exhibitionthumbnail.png';
+
+// Portfolio item component
+function PortfolioItem({ link, image, title }) {
+    return (
+        <div className="w-full max-w-[400]"> {/* Consistent size for the items */}
+            <Link to={link} className="block group">
+                <div className="relative">
+                    <div className="w-full aspect-square bg-white rounded overflow-hidden transition duration-300 ease-in-out transform group-hover:opacity-50">
+                        <img
+                            src={image}
+                            className="w-full h-full object-cover rounded"
+                            alt={title}
+                        />
+                    </div>
+                    <h2
+                        className="mt-2 text-center"
+                        style={{
+                            fontFamily: 'Bebas Neue',
+                            color: '#6ac9cb',
+                            fontSize: '40px',
+                        }}
+                    >
+                        {title}
+                    </h2>
+                </div>
+            </Link>
+        </div>
+    );
+}
 
 function HomePage() {
     return (
@@ -20,8 +50,7 @@ function HomePage() {
             {/* Section for the intro content */}
             <section>
                 <div className="bg-custom-turquoise w-full">
-                    <div className="flex flex-col md:flex-row justify-center items-stretch gap-4 px-4 md:px-8"> {/* Adjusted padding for mobile */}
-                        
+                    <div className="flex flex-col md:flex-row justify-center items-stretch gap-4 px-4 md:px-8"> {/* Padding added here for mobile and medium+ screens */}
                         {/* Selfie image of the portfolio owner */}
                         <img
                             src={selfiePhoto}
@@ -31,60 +60,36 @@ function HomePage() {
 
                         {/* Section for the introduction text */}
                         <div className="bg-blue-600 text-white p-4 rounded-b-md md:rounded-r-md md:rounded-b-none flex flex-col justify-start">
-                            
-                            {/* Name heading with large font for the portfolio owner */}
                             <h2
-    className="text-left pl-2 leading-none"
-    style={{
-        fontFamily: 'Bebas Neue',
-        fontSize: '130px', // Main font size for mobile (default)
-        color: 'white',
-    }}
->
-    {/* Mobile: This will display for small screens (mobile) */}
-    <span
-        className="block md:hidden"
-        style={{ color: 'white', fontSize: '74px' }} // Slightly smaller font for mobile
-    >
-        Stephanie Zolton
-    </span>
+                                className="text-left pl-2 leading-none"
+                                style={{
+                                    fontFamily: 'Bebas Neue',
+                                    fontSize: '130px',
+                                    color: 'white',
+                                }}
+                            >
+                                <span
+                                    className="block md:hidden"
+                                    style={{ color: 'white', fontSize: '74px' }}
+                                >
+                                    Stephanie Zolton
+                                </span>
+                                <span
+                                    className="hidden md:block"
+                                    style={{ color: 'white' }}
+                                >
+                                    Stephanie Zolton
+                                </span>
+                            </h2>
 
-    {/* Tablet/desktop: This will display for medium and larger screens */}
-    <span
-        className="hidden md:block"
-        style={{ color: 'white' }} // Standard font size for tablet and desktop
-    >
-        Stephanie Zolton
-    </span>
-</h2>
+                            <p className="text-left md:text-left text-gray-300 pl-4 md:pl-18 -mt-1 md:-mt-1 mb-2 md:mb-1 font-bold text-lg md:text-xl tracking-widest">
+                                GRAPHIC DESIGNER • ILLUSTRATOR • PUBLICATION SPECIALIST
+                            </p>
 
-
-<p className="text-left 
-            md:text-left   // Desktop: Keeps the text left-aligned
-            text-gray-300 
-            pl-4           // Mobile: Adds left padding
-            md:pl-18       // Desktop: Adds a large left padding (adjust as needed)
-            -mt-1 
-            md:-mt-1       // Mobile and Desktop: Maintains the margin-top, no difference
-            mb-2 
-            md:mb-1        // Mobile: More margin at the bottom, Desktop: Less margin
-            font-bold 
-            text-lg 
-            md:text-xl     // Mobile: Smaller font size, Desktop: Larger font size
-            tracking-widest // Adds extra letter spacing
-">
-    GRAPHIC DESIGNER • ILLUSTRATOR • PUBLICATION SPECIALIST
-</p>
-
-
-
-
-
-                            {/* Introductory paragraph about the portfolio owner */}
                             <p className="text-left text-gray-200 mt-4 text-base md:text-xl">
-                                Welcome to my portfolio. I'm a graphic designer and illustrator with a style that focuses on a loose, fun, and efficient creative design and illustration process. 
-                                With a keen eye for detail and love for art, I specialize in crafting visual stories that captivate and inspire users. Based in Cleveland, Ohio, I have a detailed working experience that focuses on
-                                print production, apparel design/illustration, and brand identity as well as an ability to build and retain client relationships.
+                                Welcome to my portfolio. I'm a graphic designer and illustrator with a style that focuses on a loose, fun, and efficient creative design and illustration process.
+                                With a B.A. in Visual Communication Design from Kent State University, I have a detailed working experience that focuses on
+                                print media and production, apparel design/illustration, and visual, brand identity as well as an ability to build and retain client relationships.
                                 <br /><br />
                                 Explore my projects to see how I've helped companies, especially higher education, stay relevant and inspire others through graphic design.
                             </p>
@@ -94,39 +99,41 @@ function HomePage() {
             </section>
 
             {/* Section title for the projects */}
-            <h1 className="text-center             // Center-aligns the text
-            mb-8                     // Bottom margin for spacing below the heading
-            pt-10                    // Top padding for spacing above the heading
-            text-5xl                  // Larger font size on all screen sizes
-            sm:text-6xl               // Small screens and up: Even larger font size
-            lg:text-7xl               // Large screens: Even larger font size
-" style={{ fontFamily: 'Bebas Neue, sans-serif', color: '#6ac9cb' }}>
-  Projects
-</h1>
-
+            <h1 className="text-center mb-8 pt-10 text-5xl sm:text-6xl lg:text-7xl" style={{ fontFamily: 'Bebas Neue, sans-serif', color: '#6ac9cb' }}>
+                Projects
+            </h1>
 
             {/* Grid container for portfolio items */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 pt-4 px-4 sm:px-8 md:p-12 m-4">
-                
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-4 sm:px-4 sm:py-4 md:mx-6 lg:mx-48">
                 {/* Portfolio items */}
-            
+                <PortfolioItem
+                    link="/CIAImpactReport"
+                    image={ciaImpactReport}
+                    title="CIA: Community Impact Report"
+                />
+                <PortfolioItem
+                    link="/WinterLinkMagazine"
+                    image={ciaLinkWinter2024}
+                    title="Winter 2024 Link Magazine"
+                />
+
+<PortfolioItem
+                    link="/AlumniExhibition2023"
+                    image={ciaAlumniThumbnail}
+                    title="2023-24 Alumni Exhibition"
+                />
                 <PortfolioItem
                     link="/SbarroPizza"
                     image={SbarroImage}
                     title="Sbarro Rebranding Design"
+                    />
+
+                    <PortfolioItem
+                    link="/InteractiveDailyPlanner"
+                    image={dailyPlannerImage}
+                    title="Interactive Daily Planner"
                 />
-                
-                <PortfolioItem
-                    link="/CIAImpactReport"
-                    image={AMBHHBrochureImage}
-                    title="CIA: Community Impact Report"
-                />
-                
-                <PortfolioItem
-                    link="/magazine"
-                    image={MagCoverSpread}
-                    title="LINK Magazine"
-                />
+              
                 <PortfolioItem
                     link="/RoziBrandIdentity"
                     image={RoziThumbnail}
@@ -137,44 +144,13 @@ function HomePage() {
                     image={PosterThumbnail}
                     title="Paramore Band Poster"
                 />
-                <PortfolioItem
-                    link="/InteractiveDailyPlanner"
-                    image={dailyPlannerImage}
-                    title="Interactive Daily Planner"
-                />
+             
                 <PortfolioItem
                     link="/miley"
                     image={MileyThumbnail}
-                    title="Book Publishing"
+                    title="Miley Cyrus Book Design"
                 />
             </div>
-            
-            
-
-        </div>
-    );
-}
-
-// Portfolio item component
-// This component represents a single portfolio item with a link, image, and title.
-function PortfolioItem({ link, image, title }) {
-    return (
-        <div className="bg-transparent rounded overflow-hidden flex justify-center">
-            {/* Link wrapping the portfolio item */}
-            <Link to={link} className="block group w-full max-w-[800px]">
-                <div className="relative">
-                    
-                    {/* Portfolio item image with hover effect */}
-                    <div className="w-full h-[300px] sm:h-[350px] md:h-[400px] bg-white rounded overflow-hidden transition duration-300 ease-in-out transform group-hover:opacity-50">
-                        <img src={image} className="w-full h-full object-cover rounded" alt={title} />
-                    </div>
-
-                    {/* Portfolio item title */}
-                    <h2 className="mt-2 pt-1 text-center pb-4" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '40px' }}>
-                        {title}
-                    </h2>
-                </div>
-            </Link>
         </div>
     );
 }

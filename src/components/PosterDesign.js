@@ -5,24 +5,12 @@ import Footer from './Footer';
 import FullScreenImage from './FullScreenImage'; // Ensure correct import path
 
 // Importing images
-import halloweenSign from '../assets/images/POSTERS/halloween sign.png';
-import yardSigns from '../assets/images/POSTERS/EH Lebanon Yard Signs 2022 EDIT.png';
-import paramorePoster from '../assets/images/POSTERS/paramore-columbus-poster.png';
-import cedarPoster from '../assets/images/POSTERS/cp poster.jpg';
-import agoraMockup from '../assets/images/POSTERS/AGORA MOCKUP.png';
-import screenprintMockup from '../assets/images/POSTERS/banner copy.jpg';
+import paramorePoster from '../assets/images/POSTERS/paramore-columbus-poster.webp';
 
 const PosterDesign = () => {
   const [fullScreenMedia, setFullScreenMedia] = useState(null);
 
-  const mediaItems = [
-    halloweenSign,
-    yardSigns,
-    paramorePoster,
-    cedarPoster,
-    agoraMockup,
-    screenprintMockup
-  ];
+  const mediaItems = [paramorePoster]; // Only keeping the paramorePoster image
 
   const handleMediaClick = (src) => setFullScreenMedia(src);
   const handleCloseFullScreen = () => setFullScreenMedia(null);
@@ -41,46 +29,58 @@ const PosterDesign = () => {
 
   return (
     <div>
-      {/* Navigation header info bar */}
-      <h4 className="text-left p-5 pl-7" style={{ fontFamily: 'Alte Haas Grotesk, sans-serif', color: '#6ac9cb', fontSize: '18px' }}>
-        Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
-      </h4>
-
       {/* Poster designs */}
       <div className="columns-1 p-5 md:p-10 m-5 md:m-10">
-        {/* Poster title and description */}
-        <h1 className="-mt-10" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px', textAlign: 'center' }}>
-          Poster Designs
-        </h1>
-        <p className="mb-3 text-center text-gray-600 mb-10">
-          High quality artwork illustration designs created using Adobe Illustrator, Photoshop, InDesign, Fresco, and mixed media.
-        </p>
+        <div className="md:p-20 sm:mx-8 md:mx-16 md:m-20 lg:mx-52">
+        <h1
+  className="mt-0 md:-mt-48 text-center leading-tight md:leading-normal"
+  style={{
+    fontFamily: 'Bebas Neue',
+    color: '#6ac9cb',
+    fontSize: '3rem',
+    textAlign: 'center'
+  }}
+>
+  Paramore 'This is Why' Tour Poster
+</h1>
 
-        {/* Poster images */}
-        {mediaItems.map((item, index) => (
-          <div key={index}>
-            <img
-              src={item}
-              className="w-300 h-200 object-cover rounded shadow-md mt-5 md:mt-0 cursor-pointer"
-              alt={`Poster ${index + 1}`}
-              onClick={() => handleMediaClick(item)}
-            />
-            <p className="text-center text-gray-600 mt-2 mb-4">
-              {/* Add descriptive text for each image if needed */}
-            </p>
-          </div>
-        ))}
+
+          {/* Project Description and Introduction */}
+          <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-84 mb-6 leading-relaxed">
+            This tour poster was designed in Adobe Photoshop and Illustrator and was a very fun self-oriented project to work on. I saw the need for a separate tour poster series
+            because I saw someone on Instagram make a whole series of posters for another tour, and thought it would be a cool thing to do myself. I also didn't like the actual tour posters
+            very much, so I designed my own.
+          </p>
+
+          {/* Poster image */}
+          {mediaItems.map((item, index) => (
+            <div key={index}>
+              <div className="flex justify-center">
+  <img
+    src={item}
+    className="w-[700px] h-auto object-cover rounded shadow-md mt-5 md:mt-0 cursor-pointer"
+    alt={`Poster ${index + 1}`}
+    onClick={() => handleMediaClick(item)}
+  />
+</div>
+
+
+              <p className="text-center text-gray-600 mt-2 mb-4">
+                {/* Add descriptive text for the image if needed */}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {fullScreenMedia && (
+          <FullScreenImage
+            src={fullScreenMedia}
+            onClose={handleCloseFullScreen}
+            prevImage={handlePrevMedia}
+            nextImage={handleNextMedia}
+          />
+        )}
       </div>
-
-      {fullScreenMedia && (
-        <FullScreenImage
-          src={fullScreenMedia}
-          onClose={handleCloseFullScreen}
-          prevImage={handlePrevMedia}
-          nextImage={handleNextMedia}
-        />
-      )}
-
     </div>
   );
 }

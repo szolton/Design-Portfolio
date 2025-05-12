@@ -6,9 +6,7 @@ import Footer from './Footer';
 const About = () => (
   <div>
     <main className="about-container p-4">
-      <h4 className="text-left p-5 pl-3 pt-1" style={{ fontFamily: 'Alte Haas Grotesk, sans-serif', color: '#6ac9cb', fontSize: '18px' }}>
-        Graphic Designer, Illustrator, and Web Designer based in Cleveland, OH.
-      </h4>
+     
       <h2 className="mt-2 pt-5 text-center" style={{ fontFamily: 'Bebas Neue', color: '#6ac9cb', fontSize: '48px' }}>
         Meet the Designer
       </h2>

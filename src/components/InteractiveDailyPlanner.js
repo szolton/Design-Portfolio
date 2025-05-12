@@ -1,17 +1,17 @@
 import React from 'react';
 import Footer from './Footer';
 
-import wireframeImage from '../assets/images/WEB DESIGN/daily-planner/wireframe.png';
-import projectProposal from '../assets/images/WEB DESIGN/daily-planner/project-proposal.png';
-import colorPaletteImage from '../assets/images/WEB DESIGN/daily-planner/color2.png';
-import workingProcess from '../assets/images/WEB DESIGN/daily-planner/working-process.png';
-import workingProcess2 from '../assets/images/WEB DESIGN/daily-planner/working-process-2.png';
-import workingProcess3 from '../assets/images/WEB DESIGN/daily-planner/working-process-3.png';
-import workingFinal from '../assets/images/WEB DESIGN/daily-planner/final.png';
-import popUpModal from '../assets/images/WEB DESIGN/daily-planner/pop-up-modal.png';
-import mobile1 from '../assets/images/WEB DESIGN/daily-planner/mobile.png';
-import mobile2 from '../assets/images/WEB DESIGN/daily-planner/mobile-2.png';
-import dateChange from '../assets/images/WEB DESIGN/daily-planner/date-change.png';
+import wireframeImage from '../assets/images/WEB DESIGN/daily-planner/wireframe.webp';
+import projectProposal from '../assets/images/WEB DESIGN/daily-planner/project-proposal.webp';
+import colorPaletteImage from '../assets/images/WEB DESIGN/daily-planner/color2.webp';
+import workingProcess from '../assets/images/WEB DESIGN/daily-planner/working-process.webp';
+import workingProcess2 from '../assets/images/WEB DESIGN/daily-planner/working-process-2.webp';
+import workingProcess3 from '../assets/images/WEB DESIGN/daily-planner/working-process-3.webp';
+import workingFinal from '../assets/images/WEB DESIGN/daily-planner/final.webp';
+import popUpModal from '../assets/images/WEB DESIGN/daily-planner/pop-up-modal.webp';
+import mobile1 from '../assets/images/WEB DESIGN/daily-planner/mobile.webp';
+import mobile2 from '../assets/images/WEB DESIGN/daily-planner/mobile-2.webp';
+import dateChange from '../assets/images/WEB DESIGN/daily-planner/date-change.webp';
 
 function WebPlanner() {
     return (

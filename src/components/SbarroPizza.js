@@ -5,22 +5,22 @@ import Footer from './Footer';
 import FullScreenImage from './FullScreenImage'; // Import the FullScreenImage component
 
 // Import your images
-import logoPortfolio from '../assets/images/SBARRO/logo for portfolio.png';
-import logoRefA from '../assets/images/SBARRO/logos-15-a.png';
-import logoRefB from '../assets/images/SBARRO/logos-15-b.png';
+import logoPortfolio from '../assets/images/SBARRO/logo for portfolio.webp';
+import logoRefA from '../assets/images/SBARRO/logos-15-a.webp';
+import logoRefB from '../assets/images/SBARRO/logos-15-b.webp';
 import sketchesGif from '../assets/images/SBARRO/sbarro-sketches.gif';
-import backgrounds from '../assets/images/SBARRO/logos on different backgrounds-28.png';
-import pizzaBoxMockup from '../assets/images/SBARRO/sbarro packaging-02.png';
-import socialMediaMockups from '../assets/images/SBARRO/ig ad 2-02.png';
-import brandGuideCover from '../assets/images/SBARRO/brand-guide/cover page.png';
-import brandGuidePg3 from '../assets/images/SBARRO/brand-guide/page 3,4.png';
-import brandGuidePg5 from '../assets/images/SBARRO/brand-guide/page 5,6.png';
-import brandGuidePg7 from '../assets/images/SBARRO/brand-guide/page 7,8.png';
-import brandGuidePg9 from '../assets/images/SBARRO/brand-guide/page 9,10.png';
-import brandGuidePg11 from '../assets/images/SBARRO/brand-guide/page 11,12.png';
-import brandGuidePg13 from '../assets/images/SBARRO/brand-guide/page 13,14.png';
-import brandGuidePg15 from '../assets/images/SBARRO/brand-guide/page 15,16.png';
-import appMockup from '../assets/images/SBARRO/more ig ads.png';
+import backgrounds from '../assets/images/SBARRO/logos on different backgrounds-28.webp';
+import pizzaBoxMockup from '../assets/images/SBARRO/sbarro packaging-02 copy.webp';
+import socialMediaMockups from '../assets/images/SBARRO/ig ad 2-02.webp';
+import brandGuideCover from '../assets/images/SBARRO/brand-guide/cover page.webp';
+import brandGuidePg3 from '../assets/images/SBARRO/brand-guide/page 3,4.webp';
+import brandGuidePg5 from '../assets/images/SBARRO/brand-guide/page 5,6.webp';
+import brandGuidePg7 from '../assets/images/SBARRO/brand-guide/page 7,8.webp';
+import brandGuidePg9 from '../assets/images/SBARRO/brand-guide/page 9,10.webp';
+import brandGuidePg11 from '../assets/images/SBARRO/brand-guide/page 11,12.webp';
+import brandGuidePg13 from '../assets/images/SBARRO/brand-guide/page 13,14.webp';
+import brandGuidePg15 from '../assets/images/SBARRO/brand-guide/page 15,16.webp';
+import appMockup from '../assets/images/SBARRO/more ig ads.webp';
 
 
 const SbarroPizza = () => {
@@ -284,16 +284,21 @@ const SbarroPizza = () => {
 
 
 {/* logo video animation */}
-<div className="max-w-full mx-auto h-auto overflow-hidden  shadow-md">
-  <div className="w-full sm:w-[640px] md:w-[720px] lg:w-[900px] mx-auto">
-    <iframe
-      title="vimeo-player"
-      src="https://player.vimeo.com/video/743827620?h=af27440a45"
-      className="w-full h-[360px] sm:h-[400px] md:h-[450px] lg:h-[500px]"
-      frameBorder="0"
-      allowFullScreen
-    ></iframe>
+<div className="w-full px-4 sm:px-6 lg:px-10 py-4">
+  <div className="max-w-screen-lg mx-auto">
+    <div className="aspect-video rounded-md overflow-hidden shadow-lg">
+      <iframe
+        title="vimeo-player"
+        src="https://player.vimeo.com/video/743827620?h=af27440a45"
+        className="w-full h-full"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+    </div>
   </div>
+
+
+
   <p className="text-left            // Center-aligns the text
             text-gray-600            // Sets text color to medium gray
             mt-3                     // Adds top margin
@@ -314,12 +319,13 @@ const SbarroPizza = () => {
 
 {/* Packaging */}
 <div className="flex flex-col items-center p-1 md:p-10 m-1 md:m-10">
-  <img 
-    src={pizzaBoxMockup} 
-    className="w-[900px] h-auto object-cover rounded shadow-md cursor-pointer" 
-    alt="pizza box mockup" 
-    onClick={() => handleImageClick(pizzaBoxMockup)} 
-  />
+<img
+  src={pizzaBoxMockup}
+  className="w-[900px] h-auto object-cover rounded shadow-md mb-3 md:mb-10 cursor-pointer"
+  alt="wine menu mockup"
+  // onClick={() => handleMediaClick(pizzaBoxMockup)}
+/>
+
  <p className="mb-3                  // Bottom margin for spacing below the paragraph
             text-left             // Center-aligns the text
             text-gray-600           // Sets the text color to a medium gray

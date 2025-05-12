@@ -13,9 +13,10 @@ import Home from './components/Home';
 import CIAImpactReport from './components/CIAImpactReport';
 import Illustrations from './components/Illustrations';
 import SbarroPizza from './components/SbarroPizza';
-import Magazine from './components/magazine';
+import WinterLinkMagazine from './components/WinterLinkMagazine';
 import InteractiveDailyPlanner from './components/InteractiveDailyPlanner';
 import About from './components/About';
+import AlumniExhibition2023 from './components/AlumniExhibition2023';
 // import WebHome from './components/WebDesign';
 // import PasswordGenerator from './components/PasswordGenerator';
 // import Planisphere from './components/Planisphere';
@@ -34,7 +35,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Illustrations" element={<Illustrations />} />
           <Route path="/SbarroPizza" element={<SbarroPizza />} />
-          <Route path="/magazine" element={<Magazine />} />
+          <Route path="/WinterLinkMagazine" element={<WinterLinkMagazine />} />
           <Route path="/InteractiveDailyPlanner" element={<InteractiveDailyPlanner />} />
           <Route path="/Miley" element={<Miley />} />
           <Route path="/RoziBrandIdentity" element={<Rozi />} />
@@ -48,6 +49,7 @@ function App() {
           {/* <Route path="/WebCodingQuiz" element={<WebCodingQuiz />} /> */}
           <Route path="/" element={<Home />} />
           <Route path="/ParamoreCollage" element={<ParamoreCollage />} />
+          <Route path="/AlumniExhibition2023" element={<AlumniExhibition2023 />} />
         </Routes>
       </Layout>
     </Router>
