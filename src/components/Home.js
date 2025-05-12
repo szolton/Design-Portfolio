@@ -5,7 +5,7 @@ import Footer from './Footer'; // Importing the Footer component
 
 // Importing images for the portfolio items
 import SbarroImage from '../assets/images/SBARRO/SBARRO-01.webp';
-import MagCoverSpread from '../assets/images/MAGAZINES/magazine-cover-spread.png';
+
 import RoziThumbnail from '../assets/images/ROZIS/menu-mockup.webp';
 import PosterThumbnail from '../assets/images/POSTERS/paramore-columbus-poster.webp';
 import MileyThumbnail from '../assets/images/miley-cyrus-thumbnail.webp';

@@ -247,27 +247,31 @@ const Illustrations = () => {
   sm:mb-0             // Reset bottom margin from small screens up
   
   sm:ml-4
-  sm:pr-8
-  sm:pl-8
+  sm:pr-10
+  sm:pl-10
   sm:mr-4
   sm:-mt-8
   sm:pt-0             // Remove top padding on small screens
+
   md:-mt-8
   md:mr-6
   md:ml-6
   md:pl-10
   md:pr-10
-  lg:-mt-2
+
+  lg:-mt-3
   lg:pr-0
   lg:pl-5
   lg:mr-0
   lg:ml-11
+
   xl:-mt-9
   xl:pt-5
-  xl:mr-4
-  xl:pt-2
+  xl:mr-9
+
   xl:ml-20
-  xl:pr-2
+  xl:pr-0
+
   2xl:-mt-11
   2xl:mr-0
   2xl:pr-0
@@ -291,39 +295,48 @@ const Illustrations = () => {
   <img
   src={mcrYoung}
   className="
-    w-full
-    max-w-[68]
-    h-auto
-    p-4
-    sm:ml-4
-    sm:pr-8
-    sm:pl-8
-    sm:mr-4
-    sm:-mt-8
-    sm:pt-0                // Remove top padding on mobile
-    md:-mt-4
-    lg:-mt-36
-    lg:pr-2
-    lg:pl-2
-    lg:mr-4
-    xl:-mt-52
-    xl:pt-5
-    xl:mr-8
-    xl:pt-2
-    xl:ml-12
-    xl:pr-5
-    2xl:-mt-64
-    2xl:mr-8
-    2xl:pr-2
-    2xl:ml-8
-    object-cover
-    rounded
-    mt-8
-    cursor-pointer
-    transition
-    duration-300
-    hover:opacity-50
-  "
+
+  w-full
+  max-w-[68]
+  h-auto
+  p-6
+  sm:ml-4
+  sm:pr-10
+  sm:pl-10
+  sm:mr-4
+  sm:-mt-6                // Small mobile margin-top
+  sm:pt-2                 // Reduced padding-top on small mobile screens
+
+  md:-mt-6
+  md:pr-10
+  md:pl-10
+
+  lg:-mt-40
+  lg:pt-3
+  lg:pr-2
+  lg:pl-2
+  lg:mr-4
+
+  xl:-mt-52
+  xl:pt-4
+  xl:mr-12
+  xl:ml-12
+  xl:pr-2
+
+  2xl:-mt-64
+  2xl:pt-5
+  2xl:mr-8
+  2xl:pr-2
+  2xl:ml-8
+  object-cover
+  rounded
+  mt-8
+  cursor-pointer
+  transition
+  duration-300
+  hover:opacity-50
+"
+
   onClick={() => handleImageClick(mcrYoung, 0)}
   alt="When We Were Young 2024 My Chemical Romance skeleton illustration"
 />
@@ -333,7 +346,63 @@ const Illustrations = () => {
   {/* Lovin Life Fest Illustrations 2024 */}
   <img
     src={lovinLifeFest}
-    className="w-full max-w-[68] h-auto p-4 sm:p-0 sm:mt-4 sm:mr-4 sm:ml-4 lg:mt-2 lg:mr-20 lg:pt-2 lg:ml-12 lg:pr-5 object-cover rounded mt-8 cursor-pointer transition duration-300 hover:opacity-50"
+    className="
+    w-full 
+    max-w-[68] 
+    h-auto 
+
+
+    -mt-0
+    pr-6
+    pl-6
+               // Default top margin on mobile
+                // Default padding on mobile
+
+    sm:p-0 
+    sm:-mt-10 
+    sm:mr-4 
+    sm:ml-4 
+    sm:pr-10
+    sm:pl-10
+  
+    md:-mt-12 
+    md:ml-8 
+    md:mr-8 
+    md:pt-2 
+    md:pr-10 
+    md:pl-10
+  
+    lg:mt-2 
+    lg:mr-20 
+    lg:pt-2 
+    lg:ml-8
+    lg:pr-4
+    lg:pl-0
+  
+    xl:mt-1
+    xl:ml-13 
+    xl:mr-24 
+    xl:pt-3 
+    xl:pr-2
+    xl:pl-2
+  
+    2xl:mt-4 
+    2xl:ml-20 
+    2xl:mr-32 
+    2xl:pt-0 
+    2xl:pr-4
+    2xl:pl-0
+  
+  
+    object-cover 
+    rounded 
+    mt-8 
+    cursor-pointer 
+    transition 
+    duration-300 
+    hover:opacity-50
+  "
+  
     onClick={() => handleImageClick(lovinLifeFest, 0)}
     alt="Loving Life music fest collage"
   />
@@ -356,26 +425,34 @@ const Illustrations = () => {
             h-auto
             max-w-full
           
-            -mt-8            // Default top margin on mobile
-            p-4              // Default padding on mobile
+            mt-2           // Default top margin on mobile
+            pr-6            // Default padding on mobile
+            pl-6
           
-            sm:-mt-8
-            sm:p-6
+            sm:-mt-2
+            sm:pr-10
+            sm:pl-10
+            s
           
-            md:-mt-4
+            md:-mt-2
             md:p-4
+            md:pr-16
+            md:ml-6
           
-            lg:-mt-32
+            lg:-mt-36
             lg:pt-4
-            lg:ml-5
+            lg:ml-6
+            lg:pr-3 
             
           
-            xl:-mt-40
+            xl:-mt-44
           
             xl:ml-6
+            xl:pr-3
           
-            2xl:-mt-48
-            2xl:ml-5
+            2xl:-mt-56
+            2xl:pt-7
+            2xl:ml-6
             2xl:
           
             object-cover
@@ -392,36 +469,45 @@ const Illustrations = () => {
 <img
     src={whatsernameGreenDay}
     className="
-    w-78
-    h-auto
-    object-cover
-    rounded
-    cursor-pointer
+
+  w-78
+  h-auto
+  object-cover
+  rounded
+  cursor-pointer
   
-    -mt-32     // Default for mobile
-    pr-4
-    pl-4
+  mt-0              // Adjust the margin-top for mobile only
+  -mt-32            // Default for mobile
+  pr-6
+  pl-6
   
-    sm:-mt-28
-    sm:px-6
+  sm:-mt-0        // Smaller negative margin on sm+
+  sm:pr-10
+  sm:pl-10
   
-    md:mt-0
-    md:px-8
+  md:-mt-4
+  md:pr-10
+  md:pl-10
+
   
-    lg:-mt-20
-    lg:pt-5
-    lg:p-3
+  lg:-mt-24
+  lg:pt-6
+  lg:pr-3
+  lg:pl-3
   
-    xl:-mt-32
-    xl:pt-8
-    xl:p-5
-    xl:ml-1
+  xl:-mt-32
+  xl:pt-9
+  xl:pr-3
+  xl:pl-3
   
-    2xl:-mt-28
-    2xl:pt-2
-    2xl:p-3
-    transition duration-300 hover:opacity-50
-  "
+  2xl:-mt-32
+  2xl:pt-4
+  2xl:pr-4
+  2xl:pl-3
+  
+  transition duration-300 hover:opacity-50
+"
+
   
     onClick={() => handleImageClick(whatsernameGreenDay, 0)}
     alt="Whatsername Green Day American Idiot skeleton illustration"
@@ -432,19 +518,82 @@ const Illustrations = () => {
           {/* Pumpkin Puppy illustration */}
           <img
             src={puppiesMixer}
-            className="mx-auto mb-8 -mt-8 max-w-full h-auto object-cover rounded shadow-md p-8 cursor-pointer"
+            className="
+  mx-auto
+  mb-8
+  -mt-8
+  max-w-full
+  h-auto
+  object-cover
+  rounded
+ 
+  p-8
+  cursor-pointer
+
+  sm:-mt-8
+  sm:py-6
+
+  md:-mt-6
+  md:px-10
+  md:py-6
+
+  lg:-mt-4
+  lg:pl-0
+  lg:pr-7
+  lg:-ml-3
+
+  xl:-mt-4
+  xl:pr-7
+  xl:pl-0
+  xl:-ml-3
+
+  2xl:-mt-8
+  2xl:pr-5
+  2xl:pl-2
+  2xl:-ml-5
+"
+
             onClick={() => handleImageClick(puppiesMixer, 0)}
             alt="Pumpkin Puppy mixer illustration"
           />
 
           </div>
 
+
+
+
+
          {/* Row 4: Cedar Point, Paramore Running out of Time, UAkron design */}
-          <div className="grid grid-cols-3 gap-2 justify-items-center items-start">
+          <div className="grid
+    grid-cols-1
+    md:grid-cols-1
+    lg:grid-cols-3 gap-2 justify-items-center items-start">
                        
                  {/* Cedar Point Photo collage */}
             <img src={cedarPointCollage}
-            className="mx-auto -mt-32 max-w-full h-auto object-cover rounded shadow-md cursor-pointer"
+            className="
+            mx-auto
+            -mt-32              // Default margin-top for mobile
+            sm:-mt-16           // Smaller negative margin for sm screens
+            md:-mt-8            // Smaller negative margin for md screens
+            lg:-mt-4            // Smaller negative margin for lg screens
+            xl:-mt-16            // Larger negative margin for xl screens
+            xl:pr-1
+            xl:pl-10
+            xl:ml-3
+            2xl:-mt-24          // Adjusted negative margin for 2xl screens
+            2xl:pr-4
+            2xl:pl-10
+            2xl:ml-2
+            w-68
+            h-auto
+            object-cover
+            rounded
+     
+            cursor-pointer
+            transition duration-300 hover:opacity-50
+          "
+      
             onClick={() => handleImageClick(cedarPointCollage, 0)}
             alt="Cedar Point photo collage"
           />
