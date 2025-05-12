@@ -1,17 +1,17 @@
 import React from 'react';
 import Footer from './Footer';
 
-import wireframeImage from '../assets/images/WEB DESIGN/daily-planner/wireframe.webp';
-import projectProposal from '../assets/images/WEB DESIGN/daily-planner/project-proposal.webp';
-import colorPaletteImage from '../assets/images/WEB DESIGN/daily-planner/color2.webp';
-import workingProcess from '../assets/images/WEB DESIGN/daily-planner/working-process.webp';
-import workingProcess2 from '../assets/images/WEB DESIGN/daily-planner/working-process-2.webp';
-import workingProcess3 from '../assets/images/WEB DESIGN/daily-planner/working-process-3.webp';
-import workingFinal from '../assets/images/WEB DESIGN/daily-planner/final.webp';
-import popUpModal from '../assets/images/WEB DESIGN/daily-planner/pop-up-modal.webp';
-import mobile1 from '../assets/images/WEB DESIGN/daily-planner/mobile.webp';
-import mobile2 from '../assets/images/WEB DESIGN/daily-planner/mobile-2.webp';
-import dateChange from '../assets/images/WEB DESIGN/daily-planner/date-change.webp';
+import wireframeImage from '../assets/images/daily-planner/wireframe.webp';
+import projectProposal from '../assets/images/daily-planner/project-proposal.webp';
+import colorPaletteImage from '../assets/images//daily-planner/color2.webp';
+import workingProcess from '../assets/images/daily-planner/working-process.webp';
+import workingProcess2 from '../assets/images/daily-planner/working-process-2.webp';
+import workingProcess3 from '../assets/images/daily-planner/working-process-3.webp';
+import workingFinal from '../assets/images/daily-planner/final.webp';
+import popUpModal from '../assets/images/daily-planner/pop-up-modal.webp';
+import mobile1 from '../assets/images/daily-planner/mobile.webp';
+import mobile2 from '../assets/images/daily-planner/mobile-2.webp';
+import dateChange from '../assets/images/daily-planner/date-change.webp';
 
 function WebPlanner() {
     return (
