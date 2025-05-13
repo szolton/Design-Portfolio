@@ -521,13 +521,13 @@ const Illustrations = () => {
             className="
   mx-auto
   mb-8
-  -mt-8
+  -mt-6
   max-w-full
   h-auto
   object-cover
   rounded
  
-  p-8
+  p-6
   cursor-pointer
 
   sm:-mt-8
@@ -572,20 +572,42 @@ const Illustrations = () => {
                  {/* Cedar Point Photo collage */}
             <img src={cedarPointCollage}
             className="
-            mx-auto
-            -mt-32              // Default margin-top for mobile
-            sm:-mt-16           // Smaller negative margin for sm screens
-            md:-mt-8            // Smaller negative margin for md screens
-            lg:-mt-4            // Smaller negative margin for lg screens
-            xl:-mt-16            // Larger negative margin for xl screens
-            xl:pr-1
-            xl:pl-10
-            xl:ml-3
-            2xl:-mt-24          // Adjusted negative margin for 2xl screens
-            2xl:pr-4
-            2xl:pl-10
-            2xl:ml-2
             w-68
+            mx-auto
+            -mt-12              // Default margin-top for mobile
+            pr-6
+            pl-6
+           
+            sm:-mt-12           // Smaller negative margin for sm screens
+            sm:pr-8
+            sm:pl-8
+
+            md:-mt-12            // Smaller negative margin for md screens
+            md:w-[1000px]
+            md:pl-10
+        
+            md:pr-10
+
+            lg:-mt-32            // Smaller negative margin for lg screens
+            lg:pt-2
+            lg:pl-7
+            lg:ml-3
+            
+
+
+            xl:-mt-36            // Larger negative margin for xl screens
+            xl:pt-3
+            xl:pr-1
+            xl:pl-6
+            xl:ml-4
+
+            2xl:-mt-36          // Adjusted negative margin for 2xl screens
+            2xl:pt-2
+            2xl:pr-0
+            2xl:pl-7
+            2xl:ml-3
+
+           
             h-auto
             object-cover
             rounded
