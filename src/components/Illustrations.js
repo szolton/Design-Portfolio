@@ -637,7 +637,7 @@ const Illustrations = () => {
   duration-300
   hover:opacity-50
 
-  sm:-mt-0
+  sm:mt-0
   sm:px-6
   sm:mr-4
 
@@ -649,16 +649,19 @@ const Illustrations = () => {
   lg:pt-5
   lg:pr-3
   lg:pl-3
+  lg:ml-4
 
   xl:-mt-20
   xl:pt-9
   xl:pr-3
   xl:pl-3
+  xl:ml-4
 
   2xl:-mt-16
   2xl:pt-8
-  2xl:pr-4
-  2xl:pl-3
+  2xl:pr-3
+  2xl:pl-4
+  2xl:ml-2
 "
 
     onClick={() => handleImageClick(runningOutOfTime, 0)}
@@ -670,7 +673,55 @@ const Illustrations = () => {
           {/* UAkron collage illustration */}
           <img
             src={uaGreekLifeCollage}
-            className="mx-auto -mt-4 max-w-full h-auto object-cover rounded shadow-md cursor-pointer"
+            className="
+  mx-auto
+  h-auto
+  max-w-full
+  object-cover
+  rounded
+  cursor-pointer
+  transition
+  duration-300
+  hover:opacity-50
+
+  mt-0            /* Default for smallest screens */
+  pr-6
+  pl-6
+
+
+  sm:-mt-4
+  sm:px-6
+  sm:mr-4
+  sm:pr-8
+
+  md:-mt-0
+  md:px-8
+  md:ml-0
+  md:mr-4
+
+  lg:-mt-12
+  lg:pr-4
+  lg:pl-3
+  lg:ml-0
+  lg:mr-12
+
+  xl:-mt-20
+  xl:pt-8
+  xl:pr-4
+  xl:pl-3
+  xl:ml-0
+  xl:mr-12
+
+  2xl:mt-[-5rem]     /* cleaner way to express -mt-20 */
+  2xl:pt-8
+  2xl:pl-0
+  2xl:pr-7
+  2xl:ml-0
+  2xl:mr-6
+  2xl:w-[1500px]
+  
+"
+
             onClick={() => handleImageClick(uaGreekLifeCollage, 0)}
             alt="University of Akron collage illustration"
           />
