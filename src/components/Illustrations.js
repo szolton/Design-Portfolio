@@ -730,11 +730,56 @@ const Illustrations = () => {
 
 
 {/* Row 5: Fall Out Boy, Paramore Detroit, Homecoming football stadium */}
-          <div className="grid grid-cols-3 gap-2 justify-items-center items-start">
+          <div className="grid
+    grid-cols-1
+    md:grid-cols-1
+    lg:grid-cols-3 gap-2 justify-items-center items-start">
                        
                  {/*Fall Out Boy */}
             <img src={fobMockup}
-            className="mx-auto -mt-24 max-w-full h-auto object-cover rounded shadow-md cursor-pointer"
+            className="
+            mx-auto 
+            max-w-full 
+            h-auto 
+            object-cover 
+            rounded 
+         
+            cursor-pointer
+          
+            mt-2           /* Default for mobile */
+            pr-6
+            pl-6
+          
+            sm:mt-2
+            sm:px-6
+            sm:mr-4
+            sm:pr-8
+          
+            md:mt-2
+            md:pr-10
+          
+            lg:mt-[-7rem]
+            lg:pt-1
+            lg:pr-4
+            lg:pl-3
+            lg:ml-14
+            lg:mr-0
+          
+            xl:mt-[-9rem]
+            xl:pt-4
+            xl:pr-4
+            xl:pl-3
+            xl:ml-13
+            
+          
+            2xl:mt-[-10rem]
+             
+            2xl:pl-0 
+            2xl:pr-7 
+            2xl:ml-20 
+            2xl:w-[1500px]
+          "
+          
             onClick={() => handleImageClick(fobMockup, 0)}
             alt="Fall Out Boy concept art"
           />
