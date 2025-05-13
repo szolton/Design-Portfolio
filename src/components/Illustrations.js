@@ -786,8 +786,45 @@ const Illustrations = () => {
        {/* Paramore Detroit Tour 2023 Photo illustration */}
 <img
     src={paramoreDetroit}
-    className="w-70 h-auto object-cover mt-4 pr-4 pl-4 rounded shadow-md cursor-pointer"
-    onClick={() => handleImageClick(runningOutOfTime, 0)}
+    className="
+  w-70 
+  h-auto 
+  object-cover 
+  mt-0 
+  pr-6 
+  pl-6
+ 
+  rounded 
+
+  cursor-pointer
+
+  sm:mt-0 
+  sm:px-6
+  sm:mr-4
+
+  md:mt-0 
+  md:px-8
+  md:mr-4
+
+  lg:mt-2 
+  lg:pr-3
+  lg:pl-3
+  lg:ml-4
+
+  xl:mt-2 
+  xl:pr-3
+  xl:pl-3
+  xl:ml-4
+
+  2xl:mt-[-1rem]
+  2xl:pt-6 
+  2xl:pl-0 
+  2xl:pr-7 
+  2xl:ml-10 
+  2xl:w-[1500px]
+"
+
+    onClick={() => handleImageClick(paramoreDetroit, 0)}
     alt="Paramore Detroit Tour 2023 Photo illustration"
   />
  
@@ -796,7 +833,55 @@ const Illustrations = () => {
           {/* Homecoming football stadium illustration */}
           <img
             src={homecomingFootball}
-            className="mx-auto max-w-full -mt-24 h-auto object-cover rounded shadow-md cursor-pointer"
+            className="
+            mx-auto
+            h-auto
+            max-w-full
+            object-cover
+            rounded
+            cursor-pointer
+            transition
+            duration-300
+            hover:opacity-50
+          
+            mt-0            /* Default for smallest screens */
+            pr-6
+            pl-6
+          
+          
+            sm:-mt-0
+            sm:px-6
+            sm:mr-4
+            sm:pr-8
+          
+            md:-mt-0
+            md:px-8
+            md:ml-0
+            md:mr-4
+          
+            lg:mt-[-7rem]
+            lg:pt-3
+            lg:pr-4
+            lg:pl-3
+            lg:ml-0
+            lg:mr-12
+          
+            xl:mt-[-10rem]
+            xl:pt-8
+            xl:pr-4
+            xl:pl-3
+            xl:ml-0
+            xl:mr-12
+          
+            2xl:mt-[-12rem]     /* cleaner way to express -mt-20 */
+            2xl:pt-8
+            2xl:pl-0
+            2xl:pr-7
+            2xl:ml-0
+            2xl:mr-6
+            2xl:w-[1500px]
+            
+          "
             onClick={() => handleImageClick(homecomingFootball, 0)}
             alt="Homecoming football stadium illustration"
           />
