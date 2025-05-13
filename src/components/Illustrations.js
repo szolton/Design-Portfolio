@@ -591,6 +591,7 @@ const Illustrations = () => {
             lg:-mt-32            // Smaller negative margin for lg screens
             lg:pt-2
             lg:pl-7
+            lg:pr-0
             lg:ml-3
             
 
@@ -622,7 +623,44 @@ const Illustrations = () => {
        {/* Paramore Running out of Time concept art illustration */}
 <img
     src={runningOutOfTime}
-    className="w-70 h-auto object-cover -mt-6 pr-4 pl-4 rounded shadow-md cursor-pointer"
+    className="
+  w-70
+  h-auto
+  object-cover
+  -mt-0       /* Default for small mobile */
+  pr-6
+  pl-6
+  rounded
+
+  cursor-pointer
+  transition
+  duration-300
+  hover:opacity-50
+
+  sm:-mt-0
+  sm:px-6
+  sm:mr-4
+
+  md:mt-0
+  md:px-8
+  md:mr-4
+
+  lg:-mt-16
+  lg:pt-5
+  lg:pr-3
+  lg:pl-3
+
+  xl:-mt-20
+  xl:pt-9
+  xl:pr-3
+  xl:pl-3
+
+  2xl:-mt-16
+  2xl:pt-8
+  2xl:pr-4
+  2xl:pl-3
+"
+
     onClick={() => handleImageClick(runningOutOfTime, 0)}
     alt="Paramore Running out of Time concept art illustration"
   />
