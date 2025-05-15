@@ -240,9 +240,11 @@ const Illustrations = () => {
   w-full
   max-w-[68]
   h-auto
-  pr-6
-  pl-6
+  pr-5
+  pl-5
   
+  
+
   -mb-16              // Apply negative bottom margin on mobile
   sm:mb-0             // Reset bottom margin from small screens up
   
@@ -275,7 +277,7 @@ const Illustrations = () => {
   2xl:-mt-11
   2xl:mr-0
   2xl:pr-0
-  2xl:ml-10
+  2xl:ml-11
   object-cover
   rounded
   mt-8
@@ -299,7 +301,10 @@ const Illustrations = () => {
   w-full
   max-w-[68]
   h-auto
-  p-6
+  p-5
+  
+
+
   sm:ml-4
   sm:pr-10
   sm:pl-10
@@ -352,20 +357,20 @@ const Illustrations = () => {
     h-auto 
 
 
-    -mt-0
-    pr-6
-    pl-6
+    -mt-[4rem]
+    pt-7
+    p-5
                // Default top margin on mobile
                 // Default padding on mobile
 
     sm:p-0 
-    sm:-mt-10 
+    sm:-mt-9 
     sm:mr-4 
     sm:ml-4 
     sm:pr-10
     sm:pl-10
   
-    md:-mt-12 
+    md:-mt-11 
     md:ml-8 
     md:mr-8 
     md:pt-2 
@@ -425,9 +430,8 @@ const Illustrations = () => {
             h-auto
             max-w-full
           
-            mt-2           // Default top margin on mobile
-            pr-6            // Default padding on mobile
-            pl-6
+            -mt-[2rem]           // Default top margin on mobile
+            p-5
           
             sm:-mt-2
             sm:pr-10
@@ -476,18 +480,17 @@ const Illustrations = () => {
   rounded
   cursor-pointer
   
-  mt-0              // Adjust the margin-top for mobile only
-  -mt-32            // Default for mobile
-  pr-6
-  pl-6
+  mt-[-3rem]              // Adjust the margin-top for mobile only
+     pt-7         // Default for mobile
+  p-5
   
   sm:-mt-0        // Smaller negative margin on sm+
   sm:pr-10
   sm:pl-10
   
-  md:-mt-4
-  md:pr-10
-  md:pl-10
+  md:mt-[-3em]
+  md:pt-8
+  md:p-10
 
   
   lg:-mt-24
@@ -502,7 +505,7 @@ const Illustrations = () => {
   
   2xl:-mt-32
   2xl:pt-4
-  2xl:pr-4
+  2xl:pr-3
   2xl:pl-3
   
   transition duration-300 hover:opacity-50
@@ -521,19 +524,19 @@ const Illustrations = () => {
             className="
   mx-auto
   mb-8
-  -mt-6
+  -mt-10
   max-w-full
   h-auto
   object-cover
   rounded
  
-  p-6
+  p-5
   cursor-pointer
 
   sm:-mt-8
   sm:py-6
 
-  md:-mt-6
+  md:mt-[-4rem]
   md:px-10
   md:py-6
 
@@ -547,7 +550,7 @@ const Illustrations = () => {
   xl:pl-0
   xl:-ml-3
 
-  2xl:-mt-8
+  2xl:-mt-4
   2xl:pr-5
   2xl:pl-2
   2xl:-ml-5
@@ -574,15 +577,14 @@ const Illustrations = () => {
             className="
             w-68
             mx-auto
-            -mt-12              // Default margin-top for mobile
-            pr-6
-            pl-6
+            mt-[-4rem]              // Default margin-top for mobile
+            p-5
            
             sm:-mt-12           // Smaller negative margin for sm screens
             sm:pr-8
             sm:pl-8
 
-            md:-mt-12            // Smaller negative margin for md screens
+            md:mt-[-4em]            // Smaller negative margin for md screens
             md:w-[1000px]
             md:pl-10
         
@@ -602,7 +604,7 @@ const Illustrations = () => {
             xl:pl-6
             xl:ml-4
 
-            2xl:-mt-36          // Adjusted negative margin for 2xl screens
+            2xl:-mt-40          // Adjusted negative margin for 2xl screens
             2xl:pt-2
             2xl:pr-0
             2xl:pl-7
@@ -627,9 +629,9 @@ const Illustrations = () => {
   w-70
   h-auto
   object-cover
-  -mt-0       /* Default for small mobile */
-  pr-6
-  pl-6
+  mt-[-3rem]       /* Default for small mobile */
+  pt-7
+  p-5
   rounded
 
   cursor-pointer
@@ -641,7 +643,7 @@ const Illustrations = () => {
   sm:px-6
   sm:mr-4
 
-  md:mt-0
+  md:mt-[-3rem]
   md:px-8
   md:mr-4
 
@@ -657,8 +659,8 @@ const Illustrations = () => {
   xl:pl-3
   xl:ml-4
 
-  2xl:-mt-16
-  2xl:pt-8
+  2xl:-mt-20
+  2xl:pt-10
   2xl:pr-3
   2xl:pl-4
   2xl:ml-2
@@ -684,9 +686,9 @@ const Illustrations = () => {
   duration-300
   hover:opacity-50
 
-  mt-0            /* Default for smallest screens */
-  pr-6
-  pl-6
+  mt-[-3rem]            /* Default for smallest screens */
+  pt-7
+  p-5
 
 
   sm:-mt-4
@@ -694,12 +696,13 @@ const Illustrations = () => {
   sm:mr-4
   sm:pr-8
 
-  md:-mt-0
+  md:mt-[-3rem]
   md:px-8
   md:ml-0
   md:mr-4
 
-  lg:-mt-12
+  lg:mt-[-5rem]
+  lg:pt-8
   lg:pr-4
   lg:pl-3
   lg:ml-0
@@ -746,34 +749,33 @@ const Illustrations = () => {
          
             cursor-pointer
           
-            mt-2           /* Default for mobile */
-            pr-6
-            pl-6
+            mt-[-2rem]           /* Default for mobile */
+            p-5
           
             sm:mt-2
             sm:px-6
             sm:mr-4
             sm:pr-8
           
-            md:mt-2
+            md:mt-[-2rem]
             md:pr-10
           
-            lg:mt-[-7rem]
+            lg:mt-[-8rem]
             lg:pt-1
             lg:pr-4
             lg:pl-3
             lg:ml-14
             lg:mr-0
           
-            xl:mt-[-9rem]
+            xl:mt-[-10rem]
             xl:pt-4
             xl:pr-4
             xl:pl-3
             xl:ml-13
             
           
-            2xl:mt-[-10rem]
-             
+            2xl:mt-[-12rem]
+             2xl:pt-5
             2xl:pl-0 
             2xl:pr-7 
             2xl:ml-20 
@@ -790,9 +792,9 @@ const Illustrations = () => {
   w-70 
   h-auto 
   object-cover 
-  mt-0 
-  pr-6 
-  pl-6
+  mt-[-3rem]
+  pt-7 
+  p-5
  
   rounded 
 
@@ -802,22 +804,23 @@ const Illustrations = () => {
   sm:px-6
   sm:mr-4
 
-  md:mt-0 
+  md:mt-[-3rem] 
   md:px-8
   md:mr-4
 
-  lg:mt-2 
+  lg:mt-[-3rem]
+  lg:pt-9 
   lg:pr-3
   lg:pl-3
   lg:ml-4
 
-  xl:mt-2 
+  xl:mt-[-3rem] 
   xl:pr-3
   xl:pl-3
   xl:ml-4
 
-  2xl:mt-[-1rem]
-  2xl:pt-6 
+  2xl:mt-[-2rem]
+  2xl:pt-5 
   2xl:pl-0 
   2xl:pr-7 
   2xl:ml-10 
@@ -844,9 +847,9 @@ const Illustrations = () => {
             duration-300
             hover:opacity-50
           
-            mt-0            /* Default for smallest screens */
-            pr-6
-            pl-6
+            mt-[-3rem]            /* Default for smallest screens */
+            p-5
+            pt-7
           
           
             sm:-mt-0
@@ -854,12 +857,12 @@ const Illustrations = () => {
             sm:mr-4
             sm:pr-8
           
-            md:-mt-0
+            md:mt-[-3rem]
             md:px-8
             md:ml-0
             md:mr-4
           
-            lg:mt-[-7rem]
+            lg:mt-[-8rem]
             lg:pt-3
             lg:pr-4
             lg:pl-3
@@ -867,14 +870,14 @@ const Illustrations = () => {
             lg:mr-12
           
             xl:mt-[-10rem]
-            xl:pt-8
+            xl:pt-4
             xl:pr-4
             xl:pl-3
             xl:ml-0
             xl:mr-12
           
             2xl:mt-[-12rem]     /* cleaner way to express -mt-20 */
-            2xl:pt-8
+            2xl:pt-6
             2xl:pl-0
             2xl:pr-7
             2xl:ml-0
@@ -904,34 +907,33 @@ const Illustrations = () => {
          
             cursor-pointer
           
-            mt-2           /* Default for mobile */
-            pr-6
-            pl-6
+            mt-[-2rem]           /* Default for mobile */
+            p-5
           
             sm:mt-2
             sm:px-6
             sm:mr-4
             sm:pr-8
           
-            md:mt-2
+            md:mt-[-2rem]
             md:pr-10
           
-            lg:mt-[-16rem]
-            lg:pt-1
+            lg:mt-[-17rem]
+            lg:pt-2
             lg:pr-4
             lg:pl-3
             lg:ml-14
             lg:mr-0
           
             xl:mt-[-21rem]
-            xl:pt-7
+            xl:pt-3
             xl:pr-4
             xl:pl-3
             xl:ml-13
             
           
             2xl:mt-[-24rem]
-             2xl:pt-7
+             2xl:pt-0
             2xl:pl-0 
             2xl:pr-7 
             2xl:ml-20 
@@ -946,9 +948,9 @@ const Illustrations = () => {
     className=" w-70 
     h-auto 
     object-cover 
-    mt-0 
-    pr-6 
-    pl-6
+    mt-[-2rem]
+    pt-3 
+    p-5
    
     rounded 
   
@@ -960,22 +962,23 @@ const Illustrations = () => {
     sm:pr-6
     sm:pl-8
   
-    md:mt-0 
+    md:mt-[-2rem] 
     md:px-8
     md:mr-4
   
-    lg:mt-2 
+    lg:mt-[-2rem]
+    lg:pt-5 
     lg:pr-3
     lg:pl-3
     lg:ml-4
   
-    xl:mt-2 
+    xl:mt-[-2rem] 
     xl:pr-3
     xl:pl-3
     xl:ml-4
   
     2xl:mt-[-1rem]
-    2xl:pt-6 
+    2xl:pt-1 
     2xl:pl-0 
     2xl:pr-7 
     2xl:ml-10 
@@ -997,9 +1000,9 @@ const Illustrations = () => {
             duration-300
             hover:opacity-50
           
-            mt-0            /* Default for smallest screens */
-            pr-6
-            pl-6
+            mt-[-3rem]            /* Default for smallest screens */
+            p-5
+            pt-7
           
           
             sm:-mt-0
@@ -1007,27 +1010,27 @@ const Illustrations = () => {
             sm:mr-4
             sm:pr-8
           
-            md:-mt-0
+            md:mt-[-3rem]
             md:px-8
             md:ml-0
             md:mr-4
           
             lg:mt-[-11rem]
-            lg:pt-3
+            lg:pt-0
             lg:pr-4
             lg:pl-3
             lg:ml-0
             lg:mr-12
           
             xl:mt-[-15rem]
-            xl:pt-8
+            xl:pt-5
             xl:pr-4
             xl:pl-3
             xl:ml-0
             xl:mr-12
           
             2xl:mt-[-18rem]     /* cleaner way to express -mt-20 */
-            2xl:pt-10
+            2xl:pt-8
             2xl:pl-0
             2xl:pr-7
             2xl:ml-0
@@ -1056,34 +1059,33 @@ const Illustrations = () => {
          
             cursor-pointer
           
-            mt-2           /* Default for mobile */
-            pr-6
-            pl-6
+            mt-[-2rem]           /* Default for mobile */
+            p-5
           
             sm:mt-2
             sm:px-6
             sm:mr-4
             sm:pr-8
           
-            md:mt-2
+            md:mt-[-2rem]
             md:pr-10
           
             lg:mt-[-13rem]
-            lg:pt-4
+            lg:pt-2
             lg:pr-4
             lg:pl-3
             lg:ml-14
             lg:mr-0
           
             xl:mt-[-16rem]
-            xl:pt-7
+            xl:pt-3
             xl:pr-4
             xl:pl-3
             xl:ml-13
             
           
             2xl:mt-[-18rem]
-             2xl:pt-8
+             2xl:pt-2
             2xl:pl-0 
             2xl:pr-7 
             2xl:ml-20 
@@ -1104,9 +1106,9 @@ const Illustrations = () => {
     duration-300
     hover:opacity-50
   
-    mt-0            /* Default for smallest screens */
-    pr-6
-    pl-6
+    mt-[-3rem]            /* Default for smallest screens */
+    p-5
+    pt-7
   
   
     sm:-mt-0
@@ -1114,27 +1116,27 @@ const Illustrations = () => {
     sm:mr-4
     sm:pr-8
   
-    md:-mt-0
+    md:mt-[-3rem]
     md:px-8
     md:ml-0
     md:mr-4
   
     lg:mt-[-1rem]
-    lg:pt-6
+    lg:pt-1
     lg:pr-3
     lg:pl-3
     lg:ml-0
     lg:mr-0
   
     xl:mt-[-2rem]
-    xl:pt-10
+    xl:pt-5
     xl:pr-3
     xl:pl-3
     xl:ml-0
     xl:mr-0
   
     2xl:mt-[-2rem]     /* cleaner way to express -mt-20 */
-    2xl:pt-10
+    2xl:pt-5
     2xl:pl-0
     2xl:pr-7
     2xl:ml-6
@@ -1159,9 +1161,9 @@ const Illustrations = () => {
             duration-300
             hover:opacity-50
           
-            mt-0            /* Default for smallest screens */
-            pr-6
-            pl-6
+            mt-[-3rem]            /* Default for smallest screens */
+            p-5
+            pt-7
           
           
             sm:-mt-0
@@ -1169,27 +1171,28 @@ const Illustrations = () => {
             sm:mr-4
             sm:pr-8
           
-            md:-mt-0
+             
+    md:mt-[-3rem]
             md:px-8
             md:ml-0
             md:mr-4
           
             lg:mt-[-13rem]
-            lg:pt-5
+            lg:pt-3
             lg:pr-4
             lg:pl-3
             lg:ml-0
             lg:mr-12
           
             xl:mt-[-16rem]
-            xl:pt-5
+            xl:pt-3
             xl:pr-4
             xl:pl-3
             xl:ml-0
             xl:mr-12
           
             2xl:mt-[-20rem]     /* cleaner way to express -mt-20 */
-            2xl:pt-11
+            2xl:pt-9
             2xl:pl-0
             2xl:pr-7
             2xl:ml-0
@@ -1217,34 +1220,34 @@ const Illustrations = () => {
                     
                        cursor-pointer
                      
-                       mt-2           /* Default for mobile */
-                       pr-6
-                       pl-6
+                       mt-[-2rem]           /* Default for mobile */
+                       p-5
                      
                        sm:mt-2
                        sm:px-6
                        sm:mr-4
                        sm:pr-8
                      
-                       md:mt-2
+                        
+    md:mt-[-3rem]
                        md:pr-10
                      
                        lg:mt-[-4rem]
-                       lg:pt-4
+                       lg:pt-3
                        lg:pr-4
                        lg:pl-3
                        lg:ml-14
                        lg:mr-0
                      
                        xl:mt-[-4rem]
-                       xl:pt-6
+                       xl:pt-3
                        xl:pr-4
                        xl:pl-3
                        xl:ml-13
                        
                      
-                       2xl:mt-[-2rem]
-                        2xl:pt-2
+                       2xl:mt-[-3rem]
+                        2xl:pt-0
                        2xl:pl-0 
                        2xl:pr-7 
                        2xl:ml-20 
@@ -1266,9 +1269,9 @@ const Illustrations = () => {
     duration-300
     hover:opacity-50
   
-    mt-0            /* Default for smallest screens */
-    pr-6
-    pl-6
+    mt-[-3rem]            /* Default for smallest screens */
+    p-5
+    pt-7
   
   
     sm:-mt-0
@@ -1276,27 +1279,28 @@ const Illustrations = () => {
     sm:mr-4
     sm:pr-8
   
-    md:-mt-0
+     
+    md:mt-[-3rem]
     md:px-8
     md:ml-0
     md:mr-4
   
-    lg:mt-[-1rem]
-    lg:pt-6
+    lg:mt-[-2rem]
+    lg:pt-5
     lg:pr-3
     lg:pl-3
     lg:ml-0
     lg:mr-0
   
     xl:mt-[-2rem]
-    xl:pt-10
+    xl:pt-5
     xl:pr-3
     xl:pl-3
     xl:ml-0
     xl:mr-0
   
     2xl:mt-[-2rem]     /* cleaner way to express -mt-20 */
-    2xl:pt-10
+    2xl:pt-5
     2xl:pl-0
     2xl:pr-7
     2xl:ml-6
@@ -1321,12 +1325,13 @@ const Illustrations = () => {
                        duration-300
                        hover:opacity-50
                      
-                       mt-0            /* Default for smallest screens */
-                       pr-6
-                       pl-6
+                       mt-[-3rem]            /* Default for smallest screens */
+                       p-5
+                       pt-7
                      
                      
-                       sm:-mt-0
+                        
+    md:mt-[-3rem]
                        sm:px-6
                        sm:mr-4
                        sm:pr-8
@@ -1337,21 +1342,21 @@ const Illustrations = () => {
                        md:mr-4
                      
                        lg:mt-[-7rem]
-                       lg:pt-3
+                       lg:pt-1
                        lg:pr-4
                        lg:pl-3
                        lg:ml-0
                        lg:mr-12
                      
                        xl:mt-[-9rem]
-                       xl:pt-5
+                       xl:pt-4
                        xl:pr-4
                        xl:pl-3
                        xl:ml-0
                        xl:mr-12
                      
                        2xl:mt-[-10rem]     /* cleaner way to express -mt-20 */
-                       2xl:pt-7
+                       2xl:pt-5
                        2xl:pl-0
                        2xl:pr-7
                        2xl:ml-0
@@ -1382,34 +1387,34 @@ const Illustrations = () => {
                     
                        cursor-pointer
                      
-                       mt-2           /* Default for mobile */
-                       pr-6
-                       pl-6
+                       mt-[-2rem]           /* Default for mobile */
+                       p-5
                      
                        sm:mt-2
                        sm:px-6
                        sm:mr-4
                        sm:pr-8
                      
-                       md:mt-2
+                        
+    md:mt-[-2rem]
                        md:pr-10
                      
-                       lg:mt-[-10rem]
-                       lg:pt-2
+                       lg:mt-[-11rem]
+                       lg:pt-5
                        lg:pr-4
                        lg:pl-3
                        lg:ml-14
                        lg:mr-0
                      
-                       xl:mt-[-11rem]
-                       xl:pt-0
+                       xl:mt-[-12rem]
+                       xl:pt-3
                        xl:pr-4
                        xl:pl-3
                        xl:ml-13
                        
                      
-                       2xl:mt-[-11rem]
-                        2xl:pt-0
+                       2xl:mt-[-13rem]
+                        2xl:pt-2
                        2xl:pl-0 
                        2xl:pr-7 
                        2xl:ml-20 
@@ -1430,9 +1435,9 @@ const Illustrations = () => {
                duration-300
                hover:opacity-50
              
-               mt-0            /* Default for smallest screens */
-               pr-6
-               pl-6
+               mt-[-3rem]            /* Default for smallest screens */
+               p-5
+               pt-7
              
              
                sm:-mt-0
@@ -1440,26 +1445,27 @@ const Illustrations = () => {
                sm:mr-4
                sm:pr-8
              
-               md:-mt-0
+               
+    md:mt-[-3rem]
                md:px-8
                md:ml-0
                md:mr-4
              
-               lg:mt-[-1rem]
-               lg:pt-6
+               lg:mt-[-2rem]
+               lg:pt-5
                lg:pr-3
                lg:pl-3
                lg:ml-0
                lg:mr-0
              
                xl:mt-[-2rem]
-               xl:pt-10
+               xl:pt-5
                xl:pr-3
                xl:pl-3
                xl:ml-0
                xl:mr-0
              
-               2xl:mt-[-2rem]     /* cleaner way to express -mt-20 */
+               2xl:mt-[-3rem]     /* cleaner way to express -mt-20 */
                2xl:pt-10
                2xl:pl-0
                2xl:pr-7
@@ -1485,9 +1491,9 @@ const Illustrations = () => {
                        duration-300
                        hover:opacity-50
                      
-                       mt-0            /* Default for smallest screens */
-                       pr-6
-                       pl-6
+                       mt-[-3rem]            /* Default for smallest screens */
+                       p-5
+                       pt-7
                      
                      
                        sm:-mt-0
@@ -1495,13 +1501,14 @@ const Illustrations = () => {
                        sm:mr-4
                        sm:pr-8
                      
-                       md:-mt-0
+                        
+    md:mt-[-3rem]
                        md:px-8
                        md:ml-0
                        md:mr-4
                      
                        lg:mt-[-11rem]
-                       lg:pt-3
+                       lg:pt-1
                        lg:pr-4
                        lg:pl-3
                        lg:ml-0
@@ -1514,8 +1521,8 @@ const Illustrations = () => {
                        xl:ml-0
                        xl:mr-12
                      
-                       2xl:mt-[-14rem]     /* cleaner way to express -mt-20 */
-                       2xl:pt-1
+                       2xl:mt-[-15rem]     /* cleaner way to express -mt-20 */
+                       2xl:pt-3
                        2xl:pl-0
                        2xl:pr-7
                        2xl:ml-0
@@ -1543,34 +1550,34 @@ const Illustrations = () => {
                     
                        cursor-pointer
                      
-                       mt-2           /* Default for mobile */
-                       pr-6
-                       pl-6
+                       mt-[-2rem]           /* Default for mobile */
+                       p-5
                      
                        sm:mt-2
                        sm:px-6
                        sm:mr-4
                        sm:pr-8
                      
-                       md:mt-2
+                        
+    md:mt-[-2rem]
                        md:pr-10
                      
-                       lg:mt-[0rem]
-                       lg:pt-2
+                       lg:mt-[-1rem]
+                       lg:pt-1
                        lg:pr-4
                        lg:pl-3
                        lg:ml-14
                        lg:mr-0
                      
-                       xl:mt-[0rem]
-                       xl:pt-2
+                       xl:mt-[-1rem]
+                       xl:pt-1
                        xl:pr-4
                        xl:pl-3
                        xl:ml-13
                        
                      
-                       2xl:mt-[0rem]
-                        2xl:pt-2
+                       2xl:mt-[-1rem]
+                        2xl:pt-1
                        2xl:pl-0 
                        2xl:pr-7 
                        2xl:ml-20 
@@ -1591,9 +1598,9 @@ const Illustrations = () => {
                duration-300
                hover:opacity-50
              
-               mt-0            /* Default for smallest screens */
-               pr-6
-               pl-6
+               mt-[-3rem]            /* Default for smallest screens */
+               p-5
+               pt-7
              
              
                sm:-mt-0
@@ -1601,27 +1608,28 @@ const Illustrations = () => {
                sm:mr-4
                sm:pr-8
              
-               md:-mt-0
+                
+    md:mt-[-3rem]
                md:px-8
                md:ml-0
                md:mr-4
              
-               lg:mt-[-4rem]
-               lg:pt-1
+               lg:mt-[-6rem]
+               lg:pt-0
                lg:pr-3
                lg:pl-3
                lg:ml-0
                lg:mr-0
              
-               xl:mt-[-7rem]
-               xl:pt-3
+               xl:mt-[-9rem]
+               xl:pt-2
                xl:pr-3
                xl:pl-3
                xl:ml-0
                xl:mr-0
              
-               2xl:mt-[-11rem]     /* cleaner way to express -mt-20 */
-               2xl:pt-2
+               2xl:mt-[-12rem]     /* cleaner way to express -mt-20 */
+               2xl:pt-3
                2xl:pl-0
                2xl:pr-7
                2xl:ml-6
@@ -1646,9 +1654,9 @@ const Illustrations = () => {
                        duration-300
                        hover:opacity-50
                      
-                       mt-0            /* Default for smallest screens */
-                       pr-6
-                       pl-6
+                       mt-[-3rem]            /* Default for smallest screens */
+                       p-5
+                       pt-7
                      
                      
                        sm:-mt-0
@@ -1656,27 +1664,28 @@ const Illustrations = () => {
                        sm:mr-4
                        sm:pr-8
                      
-                       md:-mt-0
+                        
+    md:mt-[-3rem]
                        md:px-8
                        md:ml-0
                        md:mr-4
                      
-                       lg:mt-[-7rem]
-                       lg:pt-4
+                       lg:mt-[-8rem]
+                       lg:pt-2
                        lg:pr-4
                        lg:pl-3
                        lg:ml-0
                        lg:mr-12
                      
                        xl:mt-[-10rem]
-                       xl:pt-5
+                       xl:pt-2
                        xl:pr-4
                        xl:pl-3
                        xl:ml-0
                        xl:mr-12
                      
                        2xl:mt-[-12rem]     /* cleaner way to express -mt-20 */
-                       2xl:pt-3
+                       2xl:pt-2
                        2xl:pl-0
                        2xl:pr-7
                        2xl:ml-0
