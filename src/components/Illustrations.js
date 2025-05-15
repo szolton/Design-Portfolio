@@ -1174,15 +1174,15 @@ const Illustrations = () => {
             md:ml-0
             md:mr-4
           
-            lg:mt-[-11rem]
-            lg:pt-3
+            lg:mt-[-13rem]
+            lg:pt-5
             lg:pr-4
             lg:pl-3
             lg:ml-0
             lg:mr-12
           
-            xl:mt-[-15rem]
-            xl:pt-8
+            xl:mt-[-16rem]
+            xl:pt-5
             xl:pr-4
             xl:pl-3
             xl:ml-0
@@ -1202,18 +1202,106 @@ const Illustrations = () => {
           </div>
 
          {/* Row 8: CLE Baseball, Akron bag, Akron new year shirt */}
-          <div className="grid grid-cols-3 gap-2 justify-items-center items-start">
+          <div className="grid
+    grid-cols-1
+    md:grid-cols-1
+    lg:grid-cols-3 gap-2 justify-items-center items-start">
                        
                  {/* CLE baseball */}
                        <img src={clevelandBaseball}
-                       className="mx-auto max-w-full h-auto object-cover rounded shadow-md cursor-pointer"
+                       className="mx-auto 
+                       max-w-full 
+                       h-auto 
+                       object-cover 
+                       rounded 
+                    
+                       cursor-pointer
+                     
+                       mt-2           /* Default for mobile */
+                       pr-6
+                       pl-6
+                     
+                       sm:mt-2
+                       sm:px-6
+                       sm:mr-4
+                       sm:pr-8
+                     
+                       md:mt-2
+                       md:pr-10
+                     
+                       lg:mt-[-4rem]
+                       lg:pt-4
+                       lg:pr-4
+                       lg:pl-3
+                       lg:ml-14
+                       lg:mr-0
+                     
+                       xl:mt-[-4rem]
+                       xl:pt-6
+                       xl:pr-4
+                       xl:pl-3
+                       xl:ml-13
+                       
+                     
+                       2xl:mt-[-2rem]
+                        2xl:pt-2
+                       2xl:pl-0 
+                       2xl:pr-7 
+                       2xl:ml-20 
+                       2xl:w-[1500px]"
                        onClick={() => handleImageClick(clevelandBaseball, 0)}
                        alt="Cleveland baseball stadium illustration"
                      />
+
                   {/* UA bag illustration */}
            <img
                src={akronBag}
-               className="w-70 h-auto object-cover -mt-12 rounded shadow-md cursor-pointer"
+               className=" mx-auto
+    h-auto
+    max-w-full
+    object-cover
+    rounded
+    cursor-pointer
+    transition
+    duration-300
+    hover:opacity-50
+  
+    mt-0            /* Default for smallest screens */
+    pr-6
+    pl-6
+  
+  
+    sm:-mt-0
+    sm:px-6
+    sm:mr-4
+    sm:pr-8
+  
+    md:-mt-0
+    md:px-8
+    md:ml-0
+    md:mr-4
+  
+    lg:mt-[-1rem]
+    lg:pt-6
+    lg:pr-3
+    lg:pl-3
+    lg:ml-0
+    lg:mr-0
+  
+    xl:mt-[-2rem]
+    xl:pt-10
+    xl:pr-3
+    xl:pl-3
+    xl:ml-0
+    xl:mr-0
+  
+    2xl:mt-[-2rem]     /* cleaner way to express -mt-20 */
+    2xl:pt-10
+    2xl:pl-0
+    2xl:pr-7
+    2xl:ml-6
+    2xl:mr-0
+    2xl:w-[1500px]"
                onClick={() => handleImageClick(kentStateBag, 0)}
                alt="University of Akron collage bag illustration"
              />
@@ -1223,7 +1311,52 @@ const Illustrations = () => {
                      {/* UA New Years shirt illustration */}
                      <img
                        src={akronChineseNewYear}
-                       className="mx-auto max-w-full -mt-24 pt-1 h-auto object-cover rounded shadow-md cursor-pointer"
+                       className="  mx-auto
+                       h-auto
+                       max-w-full
+                       object-cover
+                       rounded
+                       cursor-pointer
+                       transition
+                       duration-300
+                       hover:opacity-50
+                     
+                       mt-0            /* Default for smallest screens */
+                       pr-6
+                       pl-6
+                     
+                     
+                       sm:-mt-0
+                       sm:px-6
+                       sm:mr-4
+                       sm:pr-8
+                     
+                       md:-mt-0
+                       md:px-8
+                       md:ml-0
+                       md:mr-4
+                     
+                       lg:mt-[-7rem]
+                       lg:pt-3
+                       lg:pr-4
+                       lg:pl-3
+                       lg:ml-0
+                       lg:mr-12
+                     
+                       xl:mt-[-9rem]
+                       xl:pt-5
+                       xl:pr-4
+                       xl:pl-3
+                       xl:ml-0
+                       xl:mr-12
+                     
+                       2xl:mt-[-10rem]     /* cleaner way to express -mt-20 */
+                       2xl:pt-7
+                       2xl:pl-0
+                       2xl:pr-7
+                       2xl:ml-0
+                       2xl:mr-6
+                       2xl:w-[1500px]"
                        onClick={() => handleImageClick(akronChineseNewYear, 0)}
                        alt="University of Akron Chinese New Year shirt illustration"
                      />
@@ -1234,18 +1367,105 @@ const Illustrations = () => {
 
            
                     {/* Row 9: Graffiti, house, pumpkins */}
-                     <div className="grid grid-cols-3 gap-2 justify-items-center items-start">
+                    <div className="grid
+    grid-cols-1
+    md:grid-cols-1
+    lg:grid-cols-3 gap-2 justify-items-center items-start">
                        
                  {/* SDT graffiti  */}
                        <img src={skBag}
-                       className="mx-auto max-w-full -mt-28 pt-2 h-auto object-cover rounded shadow-md cursor-pointer"
+                       className="mx-auto 
+                       max-w-full 
+                       h-auto 
+                       object-cover 
+                       rounded 
+                    
+                       cursor-pointer
+                     
+                       mt-2           /* Default for mobile */
+                       pr-6
+                       pl-6
+                     
+                       sm:mt-2
+                       sm:px-6
+                       sm:mr-4
+                       sm:pr-8
+                     
+                       md:mt-2
+                       md:pr-10
+                     
+                       lg:mt-[-10rem]
+                       lg:pt-2
+                       lg:pr-4
+                       lg:pl-3
+                       lg:ml-14
+                       lg:mr-0
+                     
+                       xl:mt-[-11rem]
+                       xl:pt-0
+                       xl:pr-4
+                       xl:pl-3
+                       xl:ml-13
+                       
+                     
+                       2xl:mt-[-11rem]
+                        2xl:pt-0
+                       2xl:pl-0 
+                       2xl:pr-7 
+                       2xl:ml-20 
+                       2xl:w-[1500px]"
                        onClick={() => handleImageClick(skBag, 0)}
                        alt="Sigma Delta Tau graffiti style text illustration"
                      />
                   {/* house collage drawing illustration */}
            <img
                src={illustratedCollage}
-               className="w-70 h-auto object-cover mt-3 rounded shadow-md cursor-pointer"
+               className=" mx-auto
+               h-auto
+               max-w-full
+               object-cover
+               rounded
+               cursor-pointer
+               transition
+               duration-300
+               hover:opacity-50
+             
+               mt-0            /* Default for smallest screens */
+               pr-6
+               pl-6
+             
+             
+               sm:-mt-0
+               sm:px-6
+               sm:mr-4
+               sm:pr-8
+             
+               md:-mt-0
+               md:px-8
+               md:ml-0
+               md:mr-4
+             
+               lg:mt-[-1rem]
+               lg:pt-6
+               lg:pr-3
+               lg:pl-3
+               lg:ml-0
+               lg:mr-0
+             
+               xl:mt-[-2rem]
+               xl:pt-10
+               xl:pr-3
+               xl:pl-3
+               xl:ml-0
+               xl:mr-0
+             
+               2xl:mt-[-2rem]     /* cleaner way to express -mt-20 */
+               2xl:pt-10
+               2xl:pl-0
+               2xl:pr-7
+               2xl:ml-6
+               2xl:mr-0
+               2xl:w-[1500px]"
                onClick={() => handleImageClick(illustratedCollage, 0)}
                alt="house drawing campus collage illustration"
              />
@@ -1255,7 +1475,52 @@ const Illustrations = () => {
                      {/* Pumpkin illustration */}
                      <img
                        src={pumpkinIllustration}
-                       className="mx-auto max-w-full -mt-36 pt-6 h-auto object-cover rounded shadow-md cursor-pointer"
+                       className="  mx-auto
+                       h-auto
+                       max-w-full
+                       object-cover
+                       rounded
+                       cursor-pointer
+                       transition
+                       duration-300
+                       hover:opacity-50
+                     
+                       mt-0            /* Default for smallest screens */
+                       pr-6
+                       pl-6
+                     
+                     
+                       sm:-mt-0
+                       sm:px-6
+                       sm:mr-4
+                       sm:pr-8
+                     
+                       md:-mt-0
+                       md:px-8
+                       md:ml-0
+                       md:mr-4
+                     
+                       lg:mt-[-11rem]
+                       lg:pt-3
+                       lg:pr-4
+                       lg:pl-3
+                       lg:ml-0
+                       lg:mr-12
+                     
+                       xl:mt-[-13rem]
+                       xl:pt-1
+                       xl:pr-4
+                       xl:pl-3
+                       xl:ml-0
+                       xl:mr-12
+                     
+                       2xl:mt-[-14rem]     /* cleaner way to express -mt-20 */
+                       2xl:pt-1
+                       2xl:pl-0
+                       2xl:pr-7
+                       2xl:ml-0
+                       2xl:mr-6
+                       2xl:w-[1500px]"
                        onClick={() => handleImageClick(pumpkinIllustration, 0)}
                        alt="Pumpkin/fall illustration"
                      />
@@ -1263,18 +1528,105 @@ const Illustrations = () => {
                      </div>
            
             {/* Row 10: Indy bar crawl, house, watercolor text */}
-                     <div className="grid grid-cols-3 gap-2 justify-items-center items-start">
+            <div className="grid
+    grid-cols-1
+    md:grid-cols-1
+    lg:grid-cols-3 gap-2 justify-items-center items-start">
                        
                  {/* Indy bar crawl collage */}
                        <img src={indyBarCrawl}
-                       className="mx-auto max-w-full mt-2 h-auto object-cover rounded shadow-md cursor-pointer"
+                       className="mx-auto 
+                       max-w-full 
+                       h-auto 
+                       object-cover 
+                       rounded 
+                    
+                       cursor-pointer
+                     
+                       mt-2           /* Default for mobile */
+                       pr-6
+                       pl-6
+                     
+                       sm:mt-2
+                       sm:px-6
+                       sm:mr-4
+                       sm:pr-8
+                     
+                       md:mt-2
+                       md:pr-10
+                     
+                       lg:mt-[0rem]
+                       lg:pt-2
+                       lg:pr-4
+                       lg:pl-3
+                       lg:ml-14
+                       lg:mr-0
+                     
+                       xl:mt-[0rem]
+                       xl:pt-2
+                       xl:pr-4
+                       xl:pl-3
+                       xl:ml-13
+                       
+                     
+                       2xl:mt-[0rem]
+                        2xl:pt-2
+                       2xl:pl-0 
+                       2xl:pr-7 
+                       2xl:ml-20 
+                       2xl:w-[1500px]"
                        onClick={() => handleImageClick(indyBarCrawl, 0)}
                        alt="Indiana bar crawl collage illustration"
                      />
                   {/* House illustration */}
            <img
                src={houseSticker}
-               className="w-70 h-auto object-cover -mt-64 pt-1 rounded shadow-md cursor-pointer"
+               className="mx-auto
+               h-auto
+               max-w-full
+               object-cover
+               rounded
+               cursor-pointer
+               transition
+               duration-300
+               hover:opacity-50
+             
+               mt-0            /* Default for smallest screens */
+               pr-6
+               pl-6
+             
+             
+               sm:-mt-0
+               sm:px-6
+               sm:mr-4
+               sm:pr-8
+             
+               md:-mt-0
+               md:px-8
+               md:ml-0
+               md:mr-4
+             
+               lg:mt-[-4rem]
+               lg:pt-1
+               lg:pr-3
+               lg:pl-3
+               lg:ml-0
+               lg:mr-0
+             
+               xl:mt-[-7rem]
+               xl:pt-3
+               xl:pr-3
+               xl:pl-3
+               xl:ml-0
+               xl:mr-0
+             
+               2xl:mt-[-11rem]     /* cleaner way to express -mt-20 */
+               2xl:pt-2
+               2xl:pl-0
+               2xl:pr-7
+               2xl:ml-6
+               2xl:mr-0
+               2xl:w-[1500px]"
                onClick={() => handleImageClick(houseSticker, 0)}
                alt="Cartoon style house illustration"
              />
@@ -1284,7 +1636,52 @@ const Illustrations = () => {
                      {/* Gamma Phi watercolor  */}
                      <img
                        src={gammaPhiWatercolor}
-                       className="mx-auto max-w-full -mt-40 pt-1 h-auto object-cover rounded shadow-md cursor-pointer"
+                       className="  mx-auto
+                       h-auto
+                       max-w-full
+                       object-cover
+                       rounded
+                       cursor-pointer
+                       transition
+                       duration-300
+                       hover:opacity-50
+                     
+                       mt-0            /* Default for smallest screens */
+                       pr-6
+                       pl-6
+                     
+                     
+                       sm:-mt-0
+                       sm:px-6
+                       sm:mr-4
+                       sm:pr-8
+                     
+                       md:-mt-0
+                       md:px-8
+                       md:ml-0
+                       md:mr-4
+                     
+                       lg:mt-[-7rem]
+                       lg:pt-4
+                       lg:pr-4
+                       lg:pl-3
+                       lg:ml-0
+                       lg:mr-12
+                     
+                       xl:mt-[-10rem]
+                       xl:pt-5
+                       xl:pr-4
+                       xl:pl-3
+                       xl:ml-0
+                       xl:mr-12
+                     
+                       2xl:mt-[-12rem]     /* cleaner way to express -mt-20 */
+                       2xl:pt-3
+                       2xl:pl-0
+                       2xl:pr-7
+                       2xl:ml-0
+                       2xl:mr-6
+                       2xl:w-[1500px]"
                        onClick={() => handleImageClick(gammaPhiWatercolor, 0)}
                        alt="Gamma Phi watercolor illustration"
                      />
