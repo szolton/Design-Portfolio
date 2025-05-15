@@ -1040,18 +1040,106 @@ const Illustrations = () => {
           </div>
 
          {/* Row 7: PIKE Halloween House, KSU Bag Collage, avocados */}
-          <div className="grid grid-cols-3 gap-2 justify-items-center items-start">
+         <div className="grid
+    grid-cols-1
+    md:grid-cols-1
+    lg:grid-cols-3 gap-2 justify-items-center items-start">
+                       
                        
                  {/* PIKE Halloween House */}
             <img src={pikeHalloweenHouse}
-            className="mx-auto -mt-44 pt-2 max-w-full h-auto object-cover rounded shadow-md cursor-pointer"
+            className=" mx-auto 
+            max-w-full 
+            h-auto 
+            object-cover 
+            rounded 
+         
+            cursor-pointer
+          
+            mt-2           /* Default for mobile */
+            pr-6
+            pl-6
+          
+            sm:mt-2
+            sm:px-6
+            sm:mr-4
+            sm:pr-8
+          
+            md:mt-2
+            md:pr-10
+          
+            lg:mt-[-13rem]
+            lg:pt-4
+            lg:pr-4
+            lg:pl-3
+            lg:ml-14
+            lg:mr-0
+          
+            xl:mt-[-16rem]
+            xl:pt-7
+            xl:pr-4
+            xl:pl-3
+            xl:ml-13
+            
+          
+            2xl:mt-[-18rem]
+             2xl:pt-8
+            2xl:pl-0 
+            2xl:pr-7 
+            2xl:ml-20 
+            2xl:w-[1500px]"
             onClick={() => handleImageClick(pikeHalloweenHouse, 0)}
             alt="Pi Kappa Alpha Halloween house illustration"
           />
        {/* KSU bag collage illustration */}
 <img
     src={kentStateBag}
-    className="w-70 h-auto object-cover mt-4 rounded shadow-md cursor-pointer"
+    className="  mx-auto
+    h-auto
+    max-w-full
+    object-cover
+    rounded
+    cursor-pointer
+    transition
+    duration-300
+    hover:opacity-50
+  
+    mt-0            /* Default for smallest screens */
+    pr-6
+    pl-6
+  
+  
+    sm:-mt-0
+    sm:px-6
+    sm:mr-4
+    sm:pr-8
+  
+    md:-mt-0
+    md:px-8
+    md:ml-0
+    md:mr-4
+  
+    lg:mt-[-1rem]
+    lg:pt-6
+    lg:pr-3
+    lg:pl-3
+    lg:ml-0
+    lg:mr-0
+  
+    xl:mt-[-2rem]
+    xl:pt-10
+    xl:pr-3
+    xl:pl-3
+    xl:ml-0
+    xl:mr-0
+  
+    2xl:mt-[-2rem]     /* cleaner way to express -mt-20 */
+    2xl:pt-10
+    2xl:pl-0
+    2xl:pr-7
+    2xl:ml-6
+    2xl:mr-0
+    2xl:w-[1500px]"
     onClick={() => handleImageClick(kentStateBag, 0)}
     alt="Kent State tote bag collage illustration"
   />
@@ -1061,7 +1149,52 @@ const Illustrations = () => {
           {/* Avocados illustration */}
           <img
             src={avocados}
-            className="mx-auto max-w-full -mt-44 h-auto object-cover rounded shadow-md cursor-pointer"
+            className="  mx-auto
+            h-auto
+            max-w-full
+            object-cover
+            rounded
+            cursor-pointer
+            transition
+            duration-300
+            hover:opacity-50
+          
+            mt-0            /* Default for smallest screens */
+            pr-6
+            pl-6
+          
+          
+            sm:-mt-0
+            sm:px-6
+            sm:mr-4
+            sm:pr-8
+          
+            md:-mt-0
+            md:px-8
+            md:ml-0
+            md:mr-4
+          
+            lg:mt-[-11rem]
+            lg:pt-3
+            lg:pr-4
+            lg:pl-3
+            lg:ml-0
+            lg:mr-12
+          
+            xl:mt-[-15rem]
+            xl:pt-8
+            xl:pr-4
+            xl:pl-3
+            xl:ml-0
+            xl:mr-12
+          
+            2xl:mt-[-20rem]     /* cleaner way to express -mt-20 */
+            2xl:pt-11
+            2xl:pl-0
+            2xl:pr-7
+            2xl:ml-0
+            2xl:mr-6
+            2xl:w-[1500px]"
             onClick={() => handleImageClick(avocados, 0)}
             alt="Avocado fruit illustration"
           />
