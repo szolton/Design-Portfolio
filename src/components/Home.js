@@ -29,15 +29,16 @@ function PortfolioItem({ link, image, title }) {
                         />
                     </div>
                     <h2
-                        className="mt-2 text-center"
-                        style={{
-                            fontFamily: 'Bebas Neue',
-                            color: '#6ac9cb',
-                            fontSize: '40px',
-                        }}
-                    >
-                        {title}
-                    </h2>
+  className="mt-2 text-center leading-tight"
+  style={{
+    fontFamily: 'Bebas Neue',
+    color: '#6ac9cb',
+    fontSize: '40px',
+  }}
+>
+  {title}
+</h2>
+
                 </div>
             </Link>
         </div>

@@ -59,10 +59,12 @@ const AlumniExhibition2023 = () => {
               2023-24 Alumni Exhibition
             </h1>
 
-            <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-84 mb-6 leading-relaxed">
-              A showcase of art and creativity from talented alumni. This exhibition highlights a diverse range of mediums and styles from a variety of 
+            <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-32 xl:mx-40 2xl:mx-52 mb-6 leading-relaxed">
+
+              A showcase of art and creativity from talented CIA alumni. This exhibition highlights a diverse range of mediums and styles from a variety of 
               artists who have contributed to the cultural landscape over the years, focusing on the theme 'Are We There Yet?' and what it means to be a mature artist.
-              This exhibition includes: vinyl, a booklet, mailed invitations, and signage all working fluidly with the visual identity.
+              I worked with the Guest Curator, Magdalena Moskalewicz, and Director of Reinberger Gallery, Nikki Woods, to produce graphic materials from exhibition vinyl,
+              to a program booklet, mailed invitations, and signage within the visual identity. 
 
             
             </p>
@@ -85,7 +87,7 @@ const AlumniExhibition2023 = () => {
       </div>
 
       <p className="text-left text-gray-600 mt-4 max-w-3xl px-4 leading-relaxed">
-        The exhibition banner designed for the event. It was well-received by alumni, and followed the identity.
+        The exhibition banner designed for the event.
       </p>
   
   </main>
@@ -96,10 +98,11 @@ const AlumniExhibition2023 = () => {
 {/* Second Image Section */}
 <div className="w-full px-4 sm:px-6 lg:px-8 py-4">
   <div className="max-w-screen-lg mx-auto">
-    <h2 className="text-2xl font-bold text-gray-800 mb-4">
+   
+    <div className="aspect-video rounded-md overflow-hidden shadow-lg">
+    <h2 className="text-2xl font-bold text-gray-800 -mb-6">
       Alumni Artist Exhibition Booklet
     </h2>
-    <div className="aspect-video rounded-md overflow-hidden shadow-lg">
       <iframe
         title="Community Impact Report"
         src="https://player.vimeo.com/video/1080880076"
@@ -113,12 +116,14 @@ const AlumniExhibition2023 = () => {
 
 
 
-  <p className="-mt-4 text-left text-gray-600 max-w-3xl px-4 leading-relaxed">
-      I worked with the Guest Curator, Magdalena Moskalewicz, and Director of Reinberger Gallery Nikki Woods, to create this booklet that described
-       every artist in the exhibition, and their pieces that were on display.
-    </p>
+
   
+
 </div>
+
+<p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-84 mb-6 leading-relaxed">
+      I designed this booklet that detailed every artist in the exhibition, and their pieces that were on display. It has a blurb from the artist and images of their work in the exhibition.
+    </p>
 
 
 {/* Postcard Section */}
@@ -148,7 +153,7 @@ const AlumniExhibition2023 = () => {
       />
     </div>
 
-    <p className="text-left text-gray-600 mt-4 max-w-3xl px-4 leading-relaxed">
+    <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-84 mb-6 leading-relaxed">
       I designed these postcards as promotional pieces for the exhibition. They were distributed across campus and at alumni events.
     </p>
 
@@ -171,7 +176,7 @@ const AlumniExhibition2023 = () => {
         />
       </div>
 
-      <p className="text-left text-gray-600 mt-4 mb-4 max-w-3xl px-4 leading-relaxed">
+      <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-84 mb-6 mt-3 leading-relaxed">
         I designed signage for the check-in table for a last-minute venue update for the exhibition's after-party seen here, as well as monitor graphics that were
         viewed all over the building and kiosk ads supporting the exhibition.
       </p>

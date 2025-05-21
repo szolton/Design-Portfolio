@@ -21,7 +21,8 @@ const Magazine = () => {
           </h1>
 
           {/* Project Description and Introduction */}
-          <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-32 mb-6 leading-relaxed">
+          <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-8 xl:mx-8 2xl:mx-48 mb-6 leading-relaxed">
+
             The Winter Issue of Cleveland Institute of Art's Link magazine. This issue was a 40-page magazine that included the college's annual report, 
             which graphics were used in discussions of fundraising with donors. It was a largely collaborative effort with creating infographics, organizing 
             content, and following the brand guide.
