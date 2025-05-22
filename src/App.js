@@ -25,6 +25,7 @@ import AlumniExhibition2023 from './components/AlumniExhibition2023';
 // import WebWeather from './components/WebWeather';
 // import WebCodingQuiz from './components/WebCodingQuiz';
 import ParamoreCollage from './components/ParamoreCollage';
+import MCRBlackParade from './components/MCRBlackParade';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/ParamoreCollage" element={<ParamoreCollage />} />
           <Route path="/AlumniExhibition2023" element={<AlumniExhibition2023 />} />
+          <Route path="/MCRBlackParade" element={<MCRBlackParade />} />
         </Routes>
       </Layout>
     </Router>

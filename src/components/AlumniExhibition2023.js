@@ -59,7 +59,7 @@ const AlumniExhibition2023 = () => {
               2023-24 Alumni Exhibition
             </h1>
 
-            <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-32 xl:mx-40 2xl:mx-52 mb-6 leading-relaxed">
+            <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-0 xl:mx-12 2xl:mx-16 mb-6 leading-relaxed">
 
               A showcase of art and creativity from talented CIA alumni. This exhibition highlights a diverse range of mediums and styles from a variety of 
               artists who have contributed to the cultural landscape over the years, focusing on the theme 'Are We There Yet?' and what it means to be a mature artist.

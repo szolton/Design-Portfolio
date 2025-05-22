@@ -182,7 +182,7 @@ const Illustrations = () => {
 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2 justify-items-center items-start">
 
   {/* MCR Black Parade illustration */}
-  <a href="/mcr-black-parade" target="_blank" rel="noopener noreferrer">
+  <a href="/MCRBlackParade" target="_blank" rel="noopener noreferrer">
     <img
       src={blackParade}
       className="w-full max-w-[68] md:max-w-[68] h-auto object-cover rounded cursor-pointer transition duration-300 hover:opacity-50"
@@ -288,7 +288,7 @@ const Illustrations = () => {
   hover:opacity-50
   
   "
-  onClick={() => handleImageClick(mcrYoung, 0)}
+  onClick={() => handleImageClick(paramoreBag, 0)}
   alt="When We Were Young 2024 My Chemical Romance skeleton illustration"
 />
 

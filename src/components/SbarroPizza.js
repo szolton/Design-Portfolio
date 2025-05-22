@@ -110,13 +110,14 @@ const SbarroPizza = () => {
             mx-2                  // Mobile: Small horizontal margin
             sm:mx-4               // Small screens: Slightly larger margin
             md:mx-8               // Medium screens: Moderate margin
-            lg:mx-84              // Large screens: Wider horizontal margin
+            lg:mx-0              // Large screens: Wider horizontal margin
             mb-6                 // Adds bottom margin for spacing below
             leading-relaxed       // Sets relaxed line-height for readability
 ">
   I collaborated with Sbarro to create a refreshed brand identity that celebrates their Italian heritage in a modern and engaging way.
-  This includes a clean, organic logo, a detailed brand guide, a mobile app design, pizza box packaging, and a cohesive set of social media ads—
-  all developed using Adobe InDesign, Illustrator, Photoshop, and AfterEffects.
+  This includes a clean, organic logo, a detailed brand guide, a mobile app design, pizza box packaging, and a cohesive set of social media ads. It was a cohesive
+  branding project built in college, and continued afterwards with a more comprehensive visual identity. I wanted a logo that was modern, fresh, and fit within their needs
+  as a company that reflected a warm and engaging tone.
 </p>
 
 
