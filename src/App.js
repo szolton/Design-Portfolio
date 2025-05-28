@@ -17,6 +17,7 @@ import WinterLinkMagazine from './components/WinterLinkMagazine';
 import InteractiveDailyPlanner from './components/InteractiveDailyPlanner';
 import About from './components/About';
 import AlumniExhibition2023 from './components/AlumniExhibition2023';
+import CIABuildingSticker from './components/CIABuildingSticker';
 // import WebHome from './components/WebDesign';
 // import PasswordGenerator from './components/PasswordGenerator';
 // import Planisphere from './components/Planisphere';
@@ -52,6 +53,7 @@ function App() {
           <Route path="/ParamoreCollage" element={<ParamoreCollage />} />
           <Route path="/AlumniExhibition2023" element={<AlumniExhibition2023 />} />
           <Route path="/MCRBlackParade" element={<MCRBlackParade />} />
+          <Route path="/CIABuildingSticker" element={<CIABuildingSticker />} />
         </Routes>
       </Layout>
     </Router>

@@ -182,7 +182,7 @@ const Illustrations = () => {
 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2 justify-items-center items-start">
 
   {/* MCR Black Parade illustration */}
-  <a href="/MCRBlackParade" target="_blank" rel="noopener noreferrer">
+  <a href="/MCRBlackParade" rel="noopener noreferrer">
     <img
       src={blackParade}
       className="w-full max-w-[68] md:max-w-[68] h-auto object-cover rounded cursor-pointer transition duration-300 hover:opacity-50"
@@ -191,7 +191,7 @@ const Illustrations = () => {
   </a>
 
   {/* CIA Alumni building drawing */}
-  <a href="/cia-alumni" target="_blank" rel="noopener noreferrer">
+  <a href="/CIABuildingSticker" rel="noopener noreferrer">
     <img
       src={ciaBuilding}
       className="w-full max-w-[68] md:max-w-[68] h-auto object-cover rounded cursor-pointer transition duration-300 hover:opacity-50"
@@ -200,7 +200,7 @@ const Illustrations = () => {
   </a>
 
   {/* Panic at the Disco When We Were Young 2025 */}
-  <a href="/panic-young" target="_blank" rel="noopener noreferrer">
+  <a href="/panic-young" rel="noopener noreferrer">
     <img
       src={panicYoung}
       className="w-full max-w-[68] md:max-w-[68] h-auto object-cover rounded cursor-pointer transition duration-300 hover:opacity-50 -mb-10 sm:mb-0"

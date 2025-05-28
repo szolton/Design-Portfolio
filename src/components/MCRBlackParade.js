@@ -90,7 +90,8 @@ const MCRBlackParade = () => {
 
 
         <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-0 xl:mx-12 2xl:mx-60 mb-6 leading-relaxed">
-        Here's some of my work process. It includes design research such as sketching, the final color palette, different iterations, close-ups of different collage pieces as I built the piece, as well as the final shirt that was worn to the Paramore concert in Columbus. </p>
+        Here's some of my work process. It includes design research such as sketching, the final color palette, different iterations, close-ups of different collage pieces as I built the piece, as well as the final product. The hardest part of this design was getting the
+        skeleton hand to look natural, I went back and forth on the natural hand motion too many times before working it out. </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 place-items-center px-4 sm:px-8 md:px-12 lg:px-24 xl:px-32 2xl:px-72">
 
