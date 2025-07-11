@@ -23,9 +23,16 @@ const Magazine = () => {
           {/* Project Description and Introduction */}
           <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-8 xl:mx-8 2xl:mx-48 mb-6 leading-relaxed">
 
-            The Winter Issue of Cleveland Institute of Art's Link magazine. This issue was a 40-page magazine that included the college's annual report, 
-            which graphics were used in discussions of fundraising with donors. It was a largely collaborative effort with creating infographics, organizing 
-            content, and following the brand guide.
+            The Winter Issue of Cleveland Institute of Art's Link magazine. I designed a 40-page community and donor-focused magazine that included an 12-page annual report section that's aimed at showcasing CIA's yearly achievements,
+            donors, community partnerships and program highlights. The publication was created for print and digital distribution.
+            <br></br>
+            <br></br>
+
+            Key responsibilities were editorial design and leading the visual design and layout of all 40 pages, including article features, infographics and the report, seamlessly integrating the annual report into the magazine format while
+            balancing narrative storytelling with a lot of content, an understanding of visual hierarcy and typography, infographic and data design with making custom charts and graphs to visually communicate key metrics and financial summaries,
+            photo editing, and prepared files for professional print production and optimized layouts for digital formats with pdfs and web-based viewing.
+            
+           
           </p>
 
           {/* Issuu Embed */}

@@ -82,12 +82,11 @@ const CIABuildingSticker = () => {
 />
 
 <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-0 xl:mx-12 2xl:mx-60 mb-6 mt-8 leading-relaxed">
-        My final version of the artwork mocked up on a bag. It includes concept elements from the albums All We Know is Falling, Riot!, Brand New Eyes, self-titled, After Laughter, This is Why, as well as some of their most famous singles such as Decode and vampire fangs.  </p>
+       My final version of the artwork mocked up as a sticker. It uses bright colors and loose linework in a fun illustration style, and captures the building's character in a cute way. </p>
 
 
         <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-0 xl:mx-12 2xl:mx-60 mb-6 leading-relaxed">
-        Here's some of my work process. It includes design research such as sketching, the final color palette, different iterations, close-ups of different collage pieces as I built the piece, as well as the final product. The hardest part of this design was getting the
-        skeleton hand to look natural, I went back and forth on the natural hand motion too many times before working it out. </p>
+        Here's some of my work process. It includes design research such as sketching, the final color palette, different iterations, font explorations, and the final product deliverable. </p>
 
         <div className="flex flex-wrap justify-center gap-2">
   <img
@@ -155,7 +154,7 @@ This is the final artwork that went to print.
 </h2>
 
     
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 2xl:px-40 mt-3 mx-4 2xl:mx-40">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 2xl:px-40 mt-3 mx-4 2xl:mx-40">
 
   <img
     src={ciaBuildingEmail}

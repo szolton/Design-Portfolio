@@ -61,10 +61,15 @@ const AlumniExhibition2023 = () => {
 
             <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-0 xl:mx-12 2xl:mx-16 mb-6 leading-relaxed">
 
-              A showcase of art and creativity from talented CIA alumni. This exhibition highlights a diverse range of mediums and styles from a variety of 
-              artists who have contributed to the cultural landscape over the years, focusing on the theme 'Are We There Yet?' and what it means to be a mature artist.
-              I worked with the Guest Curator, Magdalena Moskalewicz, and Director of Reinberger Gallery, Nikki Woods, to produce graphic materials from exhibition vinyl,
-              to a program booklet, mailed invitations, and signage within the visual identity. 
+              Led the design and production of all visual materials for a curated alumni exhibition at CIA, including a 40-page exhibition program booklet, hanging wall vinyl, printed collateral, and event signage. The goal was
+              to celebrate alumni artists and create a cohesive, professional experience for all audiences.
+              <br></br>
+              <br></br>
+
+              Key responsibilities were creating an exhibition booklet that was a catalog featuring artists, artwork, etc and managed layout, image placement, and typography to ensure visual cohesion and readability, wall vinyl, event signage
+              that included directional signage, mailed invitations, print production management where I coordinated with vendors to ensure the project was in-budget and doable in our timeframe, and collaboration. It was a huge collaboration with leadership, the
+              gallery director, and the guest curator.
+              
 
             
             </p>
@@ -189,9 +194,13 @@ const AlumniExhibition2023 = () => {
         <img
           src={monitorGraphic}
           className="w-full sm:w-[500px] md:w-[700px] lg:w-[900px] h-auto object-cover rounded-lg shadow-md cursor-pointer mb-4"
-          alt="Exhibition Banner"
+          alt="monitor graphics"
           onClick={() => handleImageClick(monitorGraphic)}
         />
+
+<p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-84 mb-6 mt-0 leading-relaxed">
+        This is an example of the monitor graphics I made for the exhibition to advertise it within the visual identity.
+      </p>
       </div>
   <div className="grid place-items-center">
         <img
@@ -200,6 +209,9 @@ const AlumniExhibition2023 = () => {
           alt="Exhibition Banner"
           onClick={() => handleImageClick(kioskAd)}
         />
+        <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-84 mb-6 mt-3 leading-relaxed">
+        This is an example of the UCI Kiosk Ad I designed that was on display at University Circle. It was a large scale formatted print that was printed in-house and coordinated with UCI to set up.
+      </p>
       </div>
 </div>
 

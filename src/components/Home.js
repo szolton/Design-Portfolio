@@ -14,6 +14,7 @@ import dailyPlannerImage from '../assets/images/daily-planner-thumbnail.webp'
 import ciaImpactReport from '../assets/images/cia-impact-report.webp';
 import ciaLinkWinter2024 from '../assets/images/cia-link.webp';
 import ciaAlumniThumbnail from '../assets/images/alumni-exhibitionthumbnail.png';
+import ciaHeadshot from '../assets/images/CIA_Headshots4595.webp';
 
 // Portfolio item component
 function PortfolioItem({ link, image, title }) {
@@ -54,7 +55,7 @@ function HomePage() {
                     <div className="flex flex-col md:flex-row justify-center items-stretch gap-4 px-4 md:px-8"> {/* Padding added here for mobile and medium+ screens */}
                         {/* Selfie image of the portfolio owner */}
                         <img
-                            src={selfiePhoto}
+                            src={ciaHeadshot}
                             alt="Stephanie Zolton"
                             className="w-full md:w-96 object-cover rounded-t-md md:rounded-l-md md:rounded-t-none"
                         />

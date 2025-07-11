@@ -200,7 +200,7 @@ const Illustrations = () => {
   </a>
 
   {/* Panic at the Disco When We Were Young 2025 */}
-  <a href="/panic-young" rel="noopener noreferrer">
+  <a href="/PanicinVegas" rel="noopener noreferrer">
     <img
       src={panicYoung}
       className="w-full max-w-[68] md:max-w-[68] h-auto object-cover rounded cursor-pointer transition duration-300 hover:opacity-50 -mb-10 sm:mb-0"

@@ -33,8 +33,15 @@ const Magazine = () => {
 
 <p className="text-left text-gray-600 mb-5 md:mb-10 2xl:mb-14">
 
-          The annual issue of Cleveland Institute of Art's Community Impact Report. These infographics were well-received and were used in presentations, shared on fliers to donors and 
-          helped fundraise.
+          I led the design and development of an 8-page Community Impact Report that showcased CIA's key initiatives, community partnerships, and measurable outcomes. My responsibilities were designing data visualizations,
+          ensuring visual consistency with the brand guide, and working with leadership on creating an accurate, fun and engaging report.
+          <br></br>
+          <br></br>
+          
+          These infographics were well-received and were used in presentations, shared on fliers to donors and 
+          helped fundraise. I designed the multi-page document, created the infographics, and worked to pressent statistics and program outcomes in a clear, creative and visual way that aligned
+          with the CIA brand guide. I coordinated with program managers and leadership to create, revise and present accurate, impactful content that's used on a variety of platforms. 
+
           </p>
     
 

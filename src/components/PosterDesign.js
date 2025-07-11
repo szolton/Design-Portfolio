@@ -41,15 +41,20 @@ const PosterDesign = () => {
     textAlign: 'center'
   }}
 >
-  Paramore 'This is Why' Tour Poster
+  Paramore Live in Columbus Poster
 </h1>
 
 
           {/* Project Description and Introduction */}
           <p className="text-left text-gray-600 mx-2 sm:mx-4 md:mx-8 lg:mx-84 mb-6 leading-relaxed">
-            This tour poster was designed in Adobe Photoshop and Illustrator and was a very fun self-oriented project to work on. I saw the need for a separate tour poster series
-            because I saw someone on Instagram make a whole series of posters for another tour, and thought it would be a cool thing to do myself. I also didn't like the actual tour posters
-            very much, so I designed my own.
+            I designed an original promotional poster for a live performance by Paramore for their June 2023 concert at the Schottenstein Center in Columbus, Ohio. The poster blends bold visuals, concert photography, and
+            stylized illustration to capture the energy of the performance and resonate with the band's aesthetic and fan base. I developed a high-energy composition that featured my original concept: a stylized image of the lead singer
+            Hayley Williams, framed within the state shape of Ohio to further anchor the location, as well as integrating rays of light and dynamic elements to highlight a sense of fluidity within the design.
+            <br></br>
+            <br></br>
+            I balanced bold headline typography with handwritten script accents to reflect Paramore's edgy, fun tone, as well as a cool-toned, high-contrast color palette inspired by vintage poster design to incorporate both a modern yet nostalgic
+            vibe to the piece. The band's music is always changing and evolving, and the artwork should also be dynamic and fluid and energetic to reflect that. Overall, the poster captures the excitement of a one-night-only event and was designed
+            to stand out and be a unique, special piece of art fans are proud to have.
           </p>
 
           {/* Poster image */}

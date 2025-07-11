@@ -27,6 +27,7 @@ import CIABuildingSticker from './components/CIABuildingSticker';
 // import WebCodingQuiz from './components/WebCodingQuiz';
 import ParamoreCollage from './components/ParamoreCollage';
 import MCRBlackParade from './components/MCRBlackParade';
+import PanicinVegas from './components/PanicinVegas';
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
           <Route path="/AlumniExhibition2023" element={<AlumniExhibition2023 />} />
           <Route path="/MCRBlackParade" element={<MCRBlackParade />} />
           <Route path="/CIABuildingSticker" element={<CIABuildingSticker />} />
+          <Route path="/PanicinVegas" element={<PanicinVegas />} />
         </Routes>
       </Layout>
     </Router>
