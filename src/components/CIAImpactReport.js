@@ -39,7 +39,7 @@ const Magazine = () => {
           <br></br>
           
           These infographics were well-received and were used in presentations, shared on fliers to donors and 
-          helped fundraise. I designed the multi-page document, created the infographics, and worked to pressent statistics and program outcomes in a clear, creative and visual way that aligned
+          helped fund raise. I designed the multi-page document, created the infographics, and worked to present statistics and program outcomes in a clear, creative and visual way that aligned
           with the CIA brand guide. I coordinated with program managers and leadership to create, revise and present accurate, impactful content that's used on a variety of platforms. 
 
           </p>

@@ -29,7 +29,7 @@ const Magazine = () => {
             <br></br>
 
             Key responsibilities were editorial design and leading the visual design and layout of all 40 pages, including article features, infographics and the report, seamlessly integrating the annual report into the magazine format while
-            balancing narrative storytelling with a lot of content, an understanding of visual hierarcy and typography, infographic and data design with making custom charts and graphs to visually communicate key metrics and financial summaries,
+            balancing narrative storytelling with a lot of content, an understanding of visual hierarchy and typography, infographic and data design with making custom charts and graphs to visually communicate key metrics and financial summaries,
             photo editing, and prepared files for professional print production and optimized layouts for digital formats with pdfs and web-based viewing.
             
            

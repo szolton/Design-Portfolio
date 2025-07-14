@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import resumePdf from '../assets/images/Zolton_resume.pdf';
+import resumePdf from '../assets/images/Zolton_resume_New copy.pdf';
 
 const Header = () => (
   <header className="nav-header text-white md:py-4 custom-header">
