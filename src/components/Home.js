@@ -15,6 +15,7 @@ import ciaImpactReport from '../assets/images/cia-impact-report.webp';
 import ciaLinkWinter2024 from '../assets/images/cia-link.webp';
 import ciaAlumniThumbnail from '../assets/images/alumni-exhibitionthumbnail.png';
 import ciaHeadshot from '../assets/images/CIA_Headshots4595.webp';
+import IMLdesigns from '../assets/images/CIA IML Grand Opening/IMG_2784.webp';
 
 // Portfolio item component
 function PortfolioItem({ link, image, title }) {
@@ -108,6 +109,13 @@ function HomePage() {
             {/* Grid container for portfolio items */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-4 sm:px-4 sm:py-4 md:mx-6 lg:mx-48">
                 {/* Portfolio items */}
+               
+                <PortfolioItem
+                    link="/CIAIMLOpening"
+                    image={IMLdesigns}
+                    title="Interactive Media Lab Grand Opening"
+                />
+               
                 <PortfolioItem
                     link="/CIAImpactReport"
                     image={ciaImpactReport}
