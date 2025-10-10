@@ -28,6 +28,7 @@ import CIABuildingSticker from './components/CIABuildingSticker';
 import ParamoreCollage from './components/ParamoreCollage';
 import MCRBlackParade from './components/MCRBlackParade';
 import PanicinVegas from './components/PanicinVegas';
+import IMLOpening from './components/IMLOpening';
 
 function App() {
   return (
@@ -43,22 +44,17 @@ function App() {
           <Route path="/Miley" element={<Miley />} />
           <Route path="/RoziBrandIdentity" element={<Rozi />} />
           <Route path="/PosterDesign" element={<PosterDesign />} />
-          {/* <Route path="/WebDesign" element={<WebHome />} /> */}
-          {/* <Route path="/PasswordGenerator" element={<PasswordGenerator />} /> */}
-          {/* <Route path="/Planisphere" element={<Planisphere />} /> */}
-          {/* <Route path="/WebPlanner" element={<WebPlanner />} /> */}
-          {/* <Route path="/WorkdayCalendar" element={<WorkdayCalendar />} /> */}
-          {/* <Route path="/WebWeather" element={<WebWeather />} /> */}
-          {/* <Route path="/WebCodingQuiz" element={<WebCodingQuiz />} /> */}
           <Route path="/" element={<Home />} />
           <Route path="/ParamoreCollage" element={<ParamoreCollage />} />
           <Route path="/AlumniExhibition2023" element={<AlumniExhibition2023 />} />
           <Route path="/MCRBlackParade" element={<MCRBlackParade />} />
           <Route path="/CIABuildingSticker" element={<CIABuildingSticker />} />
           <Route path="/PanicinVegas" element={<PanicinVegas />} />
+          <Route path="/IMLOpening" element={<IMLOpening />} />
         </Routes>
       </Layout>
     </Router>
+
   );
 }
 

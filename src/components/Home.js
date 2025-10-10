@@ -13,9 +13,9 @@ import selfiePhoto from '../assets/images/IMG_9186.png';
 import dailyPlannerImage from '../assets/images/daily-planner-thumbnail.webp'
 import ciaImpactReport from '../assets/images/cia-impact-report.webp';
 import ciaLinkWinter2024 from '../assets/images/cia-link.webp';
-import ciaAlumniThumbnail from '../assets/images/alumni-exhibitionthumbnail.png';
+import ciaAlumniThumbnail from '../assets/images/ALUMNI-EXHIBITION/53813076010_7a4d7d9b02_o.webp';
 import ciaHeadshot from '../assets/images/CIA_Headshots4595.webp';
-import IMLdesigns from '../assets/images/CIA IML Grand Opening/IMG_2784.webp';
+import IMLdesigns from '../assets/images/CIA IML Grand Opening/54805634163_a53af3f6e6_o.webp';
 
 // Portfolio item component
 function PortfolioItem({ link, image, title }) {
@@ -111,7 +111,7 @@ function HomePage() {
                 {/* Portfolio items */}
                
                 <PortfolioItem
-                    link="/CIAIMLOpening"
+                    link="/IMLOpening"
                     image={IMLdesigns}
                     title="Interactive Media Lab Grand Opening"
                 />
