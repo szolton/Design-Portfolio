@@ -155,11 +155,11 @@ function HomePage() {
                     title="Paramore Band Poster"
                 />
              
-                <PortfolioItem
+                {/* <PortfolioItem
                     link="/miley"
                     image={MileyThumbnail}
-                    title="Miley Cyrus Book Design"
-                />
+                    title="Miley Cyrus Book Design" */}
+                {/* /> */}
             </div>
         </div>
     );
