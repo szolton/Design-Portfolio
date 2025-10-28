@@ -58,7 +58,7 @@ function HomePage() {
                         <img
                             src={ciaHeadshot}
                             alt="Stephanie Zolton"
-                            className="w-full md:w-96 object-cover rounded-t-md md:rounded-l-md md:rounded-t-none"
+                            className="w-full h-[450px] md:w-96 object-cover rounded-t-md md:rounded-l-md md:rounded-t-none h-[500px]"
                         />
 
                         {/* Section for the introduction text */}
