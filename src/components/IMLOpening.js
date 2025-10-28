@@ -71,19 +71,19 @@ const IMLOpening = () => {
     IML Grand Opening Emailed Invitation
   </h2>
 
-  <div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2 gap-3 justify-items-center 2xl:pr-44 2xl:pl-44">
-    <img
-      src={imlPosterInvite}
-      className="w-full h-[900px] object-cover rounded cursor-pointer"
-      onClick={() => handleImageClick(0)}
-      alt="IML Poster Invitation"
-    />
-    <img
-      src={imlEmailInvite}
-      className="w-full h-[900px] object-cover rounded cursor-pointer"
-      onClick={() => handleImageClick(1)}
-      alt="IML Email Invitation"
-    />
+  <div className="grid grid-cols-1 gap-3 justify-items-center lg:pr-8 lg:pl-8 2xl:pr-44 2xl:pl-44">
+  <img
+    src={imlPosterInvite}
+    className="w-full h-[900px] object-cover rounded cursor-pointer lg:w-[800px] lg:h-full"
+    onClick={() => handleImageClick(0)}
+    alt="IML Poster Invitation"
+  />
+  <img
+    src={imlEmailInvite}
+    className="w-full h-[900px] object-cover rounded cursor-pointer lg:w-[800px] lg:h-full"
+    onClick={() => handleImageClick(1)}
+    alt="IML Email Invitation"
+  />
 </div>
 
 
@@ -103,7 +103,7 @@ const IMLOpening = () => {
     Poster Advertisements around Campus
   </h2>
 
-  <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-6 justify-items-center lg:pr-24 lg:pl-24 2xl:pl-64 2xl:pr-64">
+  <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-6 justify-items-center lg:pr-36 lg:pl-32 2xl:pl-64 2xl:pr-64">
     <img
       src={imlPosterRSVP}
       className="w-full h-[900px] object-cover rounded cursor-pointer"
@@ -162,20 +162,21 @@ const IMLOpening = () => {
     CIA Tablerunners
   </h2>
 
-  <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-3 justify-items-center 2xl:pl-44 2xl:pr-44">
-    <img
-      src={imlTableOrange}
-      className="w-full h-[800px] object-cover rounded cursor-pointer"
-      onClick={() => handleImageClick(7)}
-      alt="IML Table Orange"
-    />
-    <img
-      src={imlTableBlue}
-      className="w-full h-[800px] object-cover rounded cursor-pointer"
-      onClick={() => handleImageClick(8)}
-      alt="IML Table Blue"
-    />
-  </div>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 justify-items-center lg:pl-24 lg:pr-24 2xl:pl-44 2xl:pr-44">
+  <img
+    src={imlTableOrange}
+    className="w-full h-[800px] object-cover rounded cursor-pointer"
+    onClick={() => handleImageClick(7)}
+    alt="IML Table Orange"
+  />
+  <img
+    src={imlTableBlue}
+    className="w-full h-[800px] object-cover rounded cursor-pointer"
+    onClick={() => handleImageClick(8)}
+    alt="IML Table Blue"
+  />
+</div>
+
 
 
 
